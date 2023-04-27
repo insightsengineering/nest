@@ -4,6 +4,9 @@ project:
 website:
   title: "Nest"
   navbar:
+    title: false
+    logo: nest.png
+    search: true
     left:
       - href: index.qmd
         text: Home

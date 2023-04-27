@@ -1,7 +1,7 @@
 # Nest website
 This repository contains the source code of the public website for the Nest project 🪺.
 
-The website is built by [Quarto](https://quarto.org/), and the public site is hosted at [link to be added]
+The website is built by [Quarto](https://quarto.org/ target="_blank"), and the public site is hosted at [link to be added]
 
 # Content for the website
 

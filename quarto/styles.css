@@ -1,1 +1,30 @@
 /* css styles */
+
+/*navbar settings*/
+/** logo **/
+.navbar-logo {
+    position: relative;
+    max-height:60px;
+    background-size: contain;
+}
+
+.navbar li.nav-item a.nav-link span {
+    color: #161b58 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+
+/*carousel settings*/
+.carousel.card {
+    padding-top: 2em;
+  }
+  .carousel img {
+    width: 300px;
+    margin-bottom: 110px;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    margin-bottom: 110px;
+  }
+  .carousel-caption {
+    padding-top: 1em;
+  }

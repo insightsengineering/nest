@@ -1,5 +1,38 @@
 ---
-title: "Homepage"
+page-layout: full
+filters:
+    - lightbox
+lightbox: auto
+execute:
+  echo: false
 ---
 
-This is the homepage for Nest website.
+::: {.grid}
+::: {.g-col-4}
+![](img/nest.png){fig-align="center" width=50%}
+:::
+::: {.g-col-8}
+### **some short introductory texts for Nest**
+:::
+:::  
+
+### PLACEHOLDER FOR NEST VIDEO:
+{{< video https://youtu.be/wo9vZccmqwc aspect-ratio="21x9">}}
+
+
+### DRAFT CONTENT OUTLINE:
+This is the homepage for Nest website, containing:
+
+* history
+* scope
+* roadmap
+* short ad-like video
+
+### TESTING IMAGE CAROUSEL:
+
+```{r}
+## carousel.R defines how cards/images should be displayed
+## carouel.yml defines metadata for images
+source("carousel.R")
+carousel("gallery-carousel", 5000, yaml::yaml.load_file("carousel.yml"))
+```

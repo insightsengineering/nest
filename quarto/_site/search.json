@@ -2,15 +2,50 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Homepage",
+    "title": "Nest",
     "section": "",
-    "text": "This is the homepage for Nest website."
+    "text": "some short introductory texts for Nest\n\n\n\nPLACEHOLDER FOR NEST VIDEO:\n\n\n\nDRAFT CONTENT OUTLINE:\nThis is the homepage for Nest website, containing:\n\nhistory\nscope\nroadmap\nshort ad-like video\n\n\n\nTESTING IMAGE CAROUSEL:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nteal\n\n\n\n\n\n\n\nrtables\n\n\n\n\n\n\n\ntern\n\n\n\n\n\nPrevoius\n\n\n\nNext"
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Us",
     "section": "",
-    "text": "About this site"
+    "text": "containing reference links, how to reach out, PoC names"
+  },
+  {
+    "objectID": "events.html",
+    "href": "events.html",
+    "title": "Events",
+    "section": "",
+    "text": "host external presentation materials + event calendar"
+  },
+  {
+    "objectID": "gallery.html",
+    "href": "gallery.html",
+    "title": "Gallery",
+    "section": "",
+    "text": "host example teal apps + TLG-C, potentially coursera contents"
+  },
+  {
+    "objectID": "products.html",
+    "href": "products.html",
+    "title": "Products",
+    "section": "",
+    "text": "List of all Nest products"
+  },
+  {
+    "objectID": "learn.html",
+    "href": "learn.html",
+    "title": "Learn",
+    "section": "",
+    "text": "host available training/onboarding materials (external-facing)"
+  },
+  {
+    "objectID": "index.html#second-column",
+    "href": "index.html#second-column",
+    "title": "Nest",
+    "section": "",
+    "text": "and here\nMore text"
   }
 ]

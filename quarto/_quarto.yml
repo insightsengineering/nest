@@ -1,22 +1,35 @@
 project:
   type: website
+  preview:
+    browser: true
 
 website:
   title: "Nest"
+  favicon: img/nest.png
   navbar:
+    background: light
     title: false
-    logo: nest.png
+    logo: img/nest.png
     search: true
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    right:
+      - text: "Home"
+        file: index.qmd
+      - text: "Products"
+        file: products.qmd
+      - text: "Gallery"
+        file: gallery.qmd
+      - text: "Learn"
+        file: learn.qmd
+      - text: "Events"
+        file: events.qmd
+      - text: "About Us"
+        file: about.qmd
 
 format:
   html:
     theme: cosmo
     css: styles.css
-    toc: true
+    toc: false
 
 
 

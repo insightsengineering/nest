@@ -2,6 +2,7 @@ project:
   type: website
   preview:
     browser: true
+    port: 5555
 
 website:
   title: "Nest"
@@ -27,7 +28,14 @@ website:
 
 format:
   html:
+    grid:
+      sidebar-width: 200px
+      body-width: 1200px
+      margin-width: 200px
+      gutter-width: 1.5rem
     theme: cosmo
+    mainfont: system-ui
+    fontcolor: "#161b58"
     css: styles.css
     toc: false
 

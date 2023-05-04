@@ -1,5 +1,11 @@
 ---
 title: "Products"
+page-layout: full
+filters:
+    - lightbox
+lightbox: auto
+execute:
+  echo: false
 ---
 
 List of all Nest products

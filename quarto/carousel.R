@@ -42,7 +42,7 @@ carousel_item <- function(caption, image, link, index, interval) {
                              ifelse(index == 0, " active", "")),
               `data-bs-interval` = interval,
               a(href = link,
-                img(src = image, class = "d-block  mx-auto border")),
+                img(src = image, class = "d-block  mx-auto")),
               div(class = "carousel-caption d-none d-md-block",
                   tags$p(class = "fw-light", caption)
               )

@@ -40,9 +40,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -121,26 +118,75 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content page-columns page-full column-page" id="quarto-document-content">
 
 
 
-<div class="grid">
-<div class="g-col-4">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="img/nest.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="img/nest.png" class="img-fluid figure-img" style="width:50.0%"></a></p>
-</figure>
+<!----------------------
+TEMP: SITE UNDER DEV
+------------------------>
+<div class="container">
+    <span style="width:100%;background-color:antiquewhite;text-align:center;color:red;font-size:30px;">SITE UNDER DEVELOPMENT</span>
 </div>
+
+<!----------------------
+First Section:
+- logo
+- tagline
+- history
+- video
+------------------------>
+<div class="container">
+  <img style="vertical-align:middle" src="img/nest.png" width="20%">
+  <span style="font-size:45px;"><b><i>Insights Unleashed: Accelerating Clinical Discoveries</i></b></span>
 </div>
-<section id="some-short-introductory-texts-for-nest" class="level3 g-col-8">
-<h3 class="anchored" data-anchor-id="some-short-introductory-texts-for-nest"><strong>some short introductory texts for Nest</strong></h3>
-</section>
+<br><br>
+<div class="column-container">
+    <div class="column">
+        <!-- Content for the first column -->
+        <h2 class="anchored"><i>History of NEST</i></h2>     
+        <section class="timeline">
+            <ol>
+                <li>
+                    <div>
+                    <p><time>2017 <img style="float:right;" src="img/teal.png" width="15%"></time></p>
+                    <p>some more intro text....</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                    </div>
+                </li>
+                <li></li>
+            </ol>
+            <script src="timeline.js"></script>
+        </section>
+
+    </div>
+    <div class="column">
+        <!-- Content for the second column -->
+        <h2 class="anchored"><i>NEST in 90 seconds</i></h2>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/wo9vZccmqwc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div>
+    </div>
 </div>
-<section id="placeholder-for-nest-video" class="level3">
-<h3 class="anchored" data-anchor-id="placeholder-for-nest-video">PLACEHOLDER FOR NEST VIDEO:</h3>
-<div class="quarto-video ratio ratio-21x9"><iframe data-external="1" src="https://www.youtube.com/embed/wo9vZccmqwc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
 <section id="draft-content-outline" class="level3">
 <h3 class="anchored" data-anchor-id="draft-content-outline">DRAFT CONTENT OUTLINE:</h3>
 <p>This is the homepage for Nest website, containing:</p>
@@ -165,7 +211,7 @@ ul.task-list li input[type="checkbox"] {
 <div class="carousel-inner">
 <div class="carousel-item active" data-bs-interval="5000">
 <a href="https://insightsengineering.github.io/teal/latest-tag/">
-<img src="img/teal.png" class="d-block  mx-auto border">
+<img src="img/teal.png" class="d-block  mx-auto">
 </a>
 <div class="carousel-caption d-none d-md-block">
 <p class="fw-light">teal</p>
@@ -173,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="carousel-item" data-bs-interval="5000">
 <a href="https://insightsengineering.github.io/rtables/main/">
-<img src="img/rtables.png" class="d-block  mx-auto border">
+<img src="img/rtables.png" class="d-block  mx-auto">
 </a>
 <div class="carousel-caption d-none d-md-block">
 <p class="fw-light">rtables</p>
@@ -181,7 +227,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="carousel-item" data-bs-interval="5000">
 <a href="https://insightsengineering.github.io/tern/latest-tag/">
-<img src="img/tern.png" class="d-block  mx-auto border">
+<img src="img/tern.png" class="d-block  mx-auto">
 </a>
 <div class="carousel-caption d-none d-md-block">
 <p class="fw-light">tern</p>
@@ -442,7 +488,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","loop":true,"closeEffect":"zoom","descPosition":"bottom"});</script>
 
 
 

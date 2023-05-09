@@ -1,0 +1,407 @@
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------- 991px x 768px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .header-search {
+        padding: 15px 0px;
+    }
+}
+
+
+/*------------------------------------------------------------------- 767px x 599px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 599px) and (max-width: 767px) {
+    .logo {
+        text-align: center;
+    }
+    .cart-content-right {
+        padding-bottom: 5px;
+    }
+    .mg {
+        margin: 0px 0px;
+    }
+    .menu-area-main {
+        height: 256px;
+        overflow-y: auto;
+    }
+    .megamenu>.row [class*="col-"] {
+        padding: 0px;
+    }
+    .menu-area-main .megamenu .men-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .women-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .el-cat {
+        padding: 0px 15px;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        height: 19px;
+    }
+    .category-box.women-box {
+        display: none;
+    }
+    .cart-box {
+        display: inline-block;
+        margin: 0px 30px;
+    }
+    .wish-box {
+        float: none;
+        margin: 0px 30px;
+        display: inline-block;
+    }
+    .menu-add {
+        display: none;
+    }
+    .category-box {
+        display: none;
+    }
+    .mean-container .mean-nav ul li ol {
+        padding: 0px;
+    }
+    .mean-container .mean-nav ul li a {
+        padding: 10px 20px;
+        width: 94.8%;
+    }
+    .mean-container .mean-nav ul li li a {
+        width: 92%;
+        padding: 1em 4%;
+    }
+    .mean-container .mean-nav ul li li li a {
+        width: 100%;
+    }
+    .header-search {
+        padding: 15px 0px;
+    }
+    #collapseFilter.d-md-block {
+        padding: 30px 0px;
+    }
+}
+
+
+/*------------------------------------------------------------------- 599px x 280px ---------------------------------------------------------------------*/
+
+@media only screen and (min-width: 280px) and (max-width: 599px) {
+    .cart-content-right {
+        padding-bottom: 5px;
+    }
+    .megamenu>.row [class*="col-"] {
+        padding: 0px;
+    }
+    .menu-area-main .megamenu .men-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .women-cat {
+        padding: 0px 15px;
+    }
+    .menu-area-main .megamenu .el-cat {
+        padding: 0px 15px;
+    }
+    .mean-container .mean-nav ul li a {
+        padding: 1em 4%;
+        width: 92%;
+    }
+    .mean-container .mean-nav ul li li a {
+        width: 90%;
+        padding: 1em 5%;
+    }
+    .mean-container .sub-full.megamenu-categories ol li a {
+        padding: 5px 0px;
+        text-transform: capitalize;
+        width: 100%;
+    }
+    .megamenu .sub-full.megamenu-categories .women-box .banner-up-text a {
+        width: auto;
+        border: none;
+        float: none;
+    }
+    .menu-area-main {
+        height: 45px;
+        overflow-y: auto;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        top: 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .navbar {
+        padding: 10px 0px 10px 0px;
+    }
+    .banner_taital {
+        padding-top: 0px;
+    }
+    .banner_text {
+        width: 100%;
+    }
+    #my_slider a.carousel-control-prev {
+        left: 660px;
+    }
+    #my_slider a.carousel-control-next {
+        right: 190px;
+    }
+    .about_section::after {
+        height: 341px;
+        width: 480px;
+        top: 65px;
+    }
+    .image_15 {
+        width: 23%;
+    }
+    .hannery_text {
+        font-size: 19px;
+    }
+    .quote_icon {
+        height: 30px;
+    }
+    .footer_text_1 {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner_taital {
+        padding-top: 0px;
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .banner_text {
+        width: 100%;
+        font-size: 14px;
+    }
+    #my_slider a.carousel-control-prev {
+        left: 510px;
+        top: 85%;
+    }
+    #my_slider a.carousel-control-next {
+        right: 120px;
+        top: 85%;
+    }
+    .about_section::after {
+        height: 266px;
+        width: 375px;
+        top: 57px;
+    }
+    .hannery_text {
+        font-size: 15px;
+        padding-left: 0px;
+        text-align: center;
+    }
+    .fact_text {
+        font-size: 14px;
+        padding-left: 6px;
+    }
+    .image_15 {
+        width: 32%;
+    }
+    .mail_text {
+        width: 200px;
+    }
+    .subscribe_bt {
+        width: 120px;
+        margin-left: 10px;
+    }
+    .tempor_text {
+        font-size: 14px;
+    }
+    .consectetur_text {
+        font-size: 16px;
+    }
+    .right_main {
+        padding-left: 15px;
+    }
+    .client_box {
+        padding: 30px 20px 10px 20px;
+    }
+    .quote_icon {
+        height: 27px;
+    }
+    .ipsum_text {
+        font-size: 14px;
+    }
+    .padding_left_15 {
+        padding-left: 5px;
+    }
+    .address_main {
+        padding: 5px 0px;
+    }
+    .address_text {
+        font-size: 14px;
+        padding-left: 20px;
+    }
+    .footer_section_2 {
+        padding-bottom: 50px;
+    }
+    .about_section {
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .carousel-control-prev {
+        display: none;
+    }
+    .carousel-control-next {
+        display: none;
+    }
+    .banner_taital {
+        font-size: 40px;
+        padding-top: 0px;
+    }
+    .banner_text {
+        font-size: 14px;
+    }
+    .header_section {
+        padding-bottom: 0px;
+    }
+    .image_2 {
+        width: 100%;
+    }
+    .about_text {
+        font-size: 14px;
+    }
+    .about_section .row {
+        flex-direction: column-reverse;
+    }
+    .about_section {
+        padding: 90px 0px;
+        background-color: #f5f3f3;
+    }
+    .about_section::after {
+        display: none;
+    }
+    .design_text {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .lorem_text {
+        width: 100%;
+        font-size: 14px;
+    }
+    .image_15 {
+        width: 14%;
+        top: 10px;
+    }
+    .hannery_text {
+        font-size: 19px;
+    }
+    .box_main {
+        margin-top: 50px;
+    }
+    .newsletter_text {
+        font-size: 36px;
+    }
+    .consectetur_text {
+        font-size: 15px;
+    }
+    .right_main {
+        padding-left: 10px;
+    }
+    .client_box {
+        padding: 30px 10px 10px 10px;
+        margin-top: 27px;
+    }
+    .quote_icon {
+        height: 27px;
+    }
+    .address_main {
+        background: #402fb7;
+        display: block;
+        text-align: left;
+        padding-left: 15px;
+    }
+    .link_text {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel-control-prev {
+        display: none;
+    }
+    .carousel-control-next {
+        display: none;
+    }
+    .banner_taital {
+        font-size: 40px;
+        padding-top: 0px;
+    }
+    .banner_text {
+        font-size: 14px;
+    }
+    .header_section {
+        padding-bottom: 0px;
+    }
+    .image_2 {
+        width: 100%;
+    }
+    .about_text {
+        font-size: 14px;
+    }
+    .about_section .row {
+        flex-direction: column-reverse;
+    }
+    .about_section {
+        padding: 90px 0px;
+        background-color: #f5f3f3;
+    }
+    .about_section::after {
+        display: none;
+    }
+    .icon_1 {
+        padding-top: 40px;
+    }
+    .icon_3 {
+        padding-top: 40px;
+    }
+    .read_bt_2 {
+        display: none;
+    }
+    .image_15 {
+        width: 24%;
+        top: 10px;
+    }
+    .hannery_text {
+        font-size: 19px;
+    }
+    .box_main {
+        margin-top: 50px;
+    }
+    .newsletter_text {
+        font-size: 36px;
+    }
+    .mail_text {
+        width: 165px;
+        font-size: 14px;
+    }
+    .subscribe_bt {
+        width: 120px;
+        font-size: 14px;
+        margin-left: 5px;
+    }
+    .consectetur_text {
+        font-size: 15px;
+    }
+    .right_main {
+        padding-left: 10px;
+    }
+    .client_box {
+        padding: 30px 10px 10px 10px;
+        margin-top: 27px;
+    }
+    .quote_icon {
+        height: 27px;
+    }
+    .address_main {
+        background: #402fb7;
+        display: block;
+        text-align: left;
+        padding-left: 15px;
+    }
+    .link_text {
+        padding-top: 20px;
+    }
+}

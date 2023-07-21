@@ -178,7 +178,7 @@ img {
 .header_bg {
     width: 100%;
     float: left;
-    background: #2d4fbc !important;
+    background: #023047 !important;
     padding-bottom: 20px !important;
 }
 
@@ -262,14 +262,14 @@ img {
     color: #ffffff;
     text-align: center;
     background-color: #070414;
-    border-bottom: 7px solid #393bb9;
+    border-bottom: 7px solid #023047;
     border-radius: 30px;
     padding: 9px 0px;
 }
 
 .read_bt a:hover {
-    background-color: #8480f9;
-    border-bottom: 7px solid #393bb9;
+    background-color: #8ecae6;
+    border-bottom: 7px solid #219ebc;
 }
 
 #my_slider .carousel-control-prev:hover,
@@ -290,7 +290,7 @@ img {
     position: absolute;
     right: 50%;
     top: 100%;
-    background-color: #2758bd;
+    background-color: #023047;
 }
 
 #my_slider .carousel-control-prev,
@@ -350,7 +350,7 @@ img {
 .us_text {
     background-color: #ececeb;
     border-radius: 100%;
-    color: #5114b2;
+    color: #023047;
     padding: 5px 10px;
 }
 
@@ -367,13 +367,13 @@ img {
     font-size: 16px;
     color: #ffffff;
     text-align: center;
-    background-color: #393bb9;
+    background-color: #023047;
     border-radius: 30px;
     padding: 9px 0px;
 }
 
 .read_bt_1 a:hover {
-    background-color: #8480f9;
+    background-color: #8ecae6;
 }
 
 .services_section {
@@ -407,7 +407,7 @@ img {
 .our_text {
     background-color: #ececeb;
     border-radius: 100%;
-    color: #5114b2;
+    color: #023047;
     padding: 17px 10px;
 }
 
@@ -466,7 +466,7 @@ img {
 }
 
 .read_bt_2 a:hover {
-    background-color: #8480f9;
+    background-color: #8ecae6;
 }
 
 .blog_section {
@@ -529,7 +529,7 @@ img {
     text-align: center;
     position: absolute;
     top: -40px;
-    background: #334bbb;
+    background: #023047;
     display: block;
     border-radius: 100%;
     color: #ffffff;
@@ -563,7 +563,7 @@ img {
 .newsletter_section {
     width: 100%;
     float: left;
-    background-color: #2e4dbc;
+    background-color: #023047;
     height: auto;
     padding: 40px 0px;
 }
@@ -629,7 +629,7 @@ img {
 .tes_text {
     background-color: #ececeb;
     border-radius: 100%;
-    color: #5114b2;
+    color: #023047;
     padding: 15px 10px;
 }
 
@@ -641,7 +641,7 @@ img {
 .client_box {
     width: 100%;
     float: left;
-    background-color: #402fb7;
+    background-color: #023047;
     padding: 30px 30px 10px 30px;
     border-radius: 20px;
 }
@@ -739,7 +739,7 @@ img {
 }
 
 .carousel-indicators .active {
-    background-color: #402fb7;
+    background-color: #023047;
 }
 
 .carousel-indicators {
@@ -805,7 +805,7 @@ img {
     text-align: center;
     font-size: 20px;
     color: #ffffff;
-    background-color: #4c35bc;
+    background-color: #023047;
     padding: 10px;
     border-radius: 30px;
 }

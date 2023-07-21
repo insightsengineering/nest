@@ -13,7 +13,7 @@
 
 
 /*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
- 2) font-family: 'Poppins', sans-serif;
+ 2) font-family: 'Helvetica', sans-serif;
  ----------------------------------------*****/
 
 
@@ -45,7 +45,7 @@ html {
 body {
     color: #666666;
     font-size: 14px;
-    font-family: Poppins;
+    font-family: Helvetica;
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;

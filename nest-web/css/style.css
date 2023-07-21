@@ -261,7 +261,7 @@ img {
     font-size: 16px;
     color: #ffffff;
     text-align: center;
-    background-color: #070414;
+    background-color: #023047;
     border-bottom: 7px solid #023047;
     border-radius: 30px;
     padding: 9px 0px;
@@ -963,7 +963,7 @@ img {
     padding: 20px;
     position:relative;
     box-sizing: border-box;
-    background: #402fb7;
+    background: #023047;
     overflow: auto;
     display: flex;
   }

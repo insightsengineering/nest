@@ -1,5 +1,0 @@
----
-title: "Gallery"
----
-
-host example teal apps + TLG-C, potentially coursera contents

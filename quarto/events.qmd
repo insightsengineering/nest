@@ -1,5 +1,0 @@
----
-title: "Events"
----
-
-host external presentation materials + event calendar

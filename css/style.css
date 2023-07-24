@@ -958,9 +958,10 @@ img {
     margin: 0;
   } 
 
-  :root {
+/* timeline css */
+:root {
     --color-accent-light: #00DBDE;
-    --color-accent-dark: #FC00FF;
+    --color-accent-dark: #023047;
     --color-secondary: #ccc;
 
     --text-color-default: #2c2c2c;
@@ -988,16 +989,14 @@ img {
     --negative-multiplier: -1;
 
     --gradient-default: linear-gradient(122deg, var(--color-accent-light) 0%, var(--color-accent-dark) 100%);
-
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     font-size: var(--font-size-default);
     color: var(--text-color-default);
 }
 
-/* EXAMPLE STYLES: YOU DON'T NEED THEM!!! */
 .header {
     max-width: 500px;
     margin: auto;

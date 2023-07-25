@@ -1,246 +1,291 @@
-const DOM = {
-    timeline: "timeline",
-    timelineStepper: "timeline__stepper",
-    timelineStep: "timeline__step",
-    timelineStepTitle: "timeline__step-title",
-    timelineStepActive: "is-active",
-    timelineStepActiveMarker: "timeline__step-active-marker",
-    timelineSlidesContainer: "timeline__slides",
-    timelineSlide: "timeline__slide",
-    timelineSlideActive: "is-active",
-  };
+class PRESTimeline {
   
-  const STEP_ACTIVE_MARKEP_CUSTOM_PROPS = {
-    width: "--slide-width",
-    posX: "--slide-pos-x",
-    posY: "--slide-pos-y",
-  };
+  base: HTMLElement
+  periodContainer: HTMLElement
+  cardContainer: HTMLElement
+  activePeriod: HTMLElement
+  activeCard: HTMLElement
+  activePeriodIndex: number
+  activeCardIndex: number
+  periodData: object[]
+  cardData: object[]
+  color: object
+  timelineNodeContainer: HTMLElement
+  timelineData: object[]
   
-  const SLIDES_CONTAINER_CUSTOM_PROPS = {
-    height: "--slides-container-height",
-  };
-  
-  const timeline = document.querySelector(`.${DOM.timeline}`);
-  const timelineStepper = timeline?.querySelector(`.${DOM.timelineStepper}`);
-  const timelineStepTitle = timeline?.querySelector(`.${DOM.timelineStepTitle}`);
-  const timelineSlidesContainer = timeline?.querySelector(
-    `.${DOM.timelineSlidesContainer}`
-  ) as HTMLElement;
-  const timelineSlides =
-    timeline && Array.from(timeline.querySelectorAll(`.${DOM.timelineSlide}`));
-  
-  interface IGetStepActiveMarkerPositionProps {
-    posX: number;
-    posY: number;
-    width: number;
+  constructor(target: HTMLElement, color: object){
+    
+    // this.__process_stylesheet(document.styleSheets[0]);
+    
+    this.base = target
+    this.color = color
+    // console.log(this.color)
+    this.periodContainer = $(this.base).find('.periods-container')
+    this.cardContainer = $(this.base).find('.cards-container')
+    this.timelineNodeContainer = $(this.base).find('.timeline-container .timeline')
+    // this.activePeriod = $(this.base).find('.periods-container section.active')
+    this._parseData()
+    this._initialColor()
+    this._generateTimeline()
+    this._setStateClasses()
+    this._assignBtn()
+    this._adjustPeriodContainer()
+    this._adjustCardContainer()
+    // console.log(this.cardData)
   }
   
-  interface ISetStepActiveMarkerPositionProps
-    extends IGetStepActiveMarkerPositionProps {
-    stepActiveMarker: HTMLElement;
-  }
-  
-  interface ICurrentStepProps {
-    currentStep: Element | undefined;
-    currentStepIndex: number | undefined;
-  }
-  
-  window.addEventListener("load", () => {
-    createStepActiveMarker();
-    activateCurrentSlide();
-  });
-  
-  window.addEventListener("resize", () => {
-    recalcStepActiveMarkerProps();
-  });
-  
-  timeline?.addEventListener("click", (event) => {
-    const { target } = event;
-  
-    if (
-      !target ||
-      !(target instanceof Element) ||
-      !target.closest(`.${DOM.timelineStep}`)
-    ) {
-      return;
+  _parseData(){    
+    let base = this.base
+    let periods: object[] = $(base).find('.periods-container section')
+    for (let section of periods) {
+      section.period = $(section).attr('period')
+      section.index = $(section).index()
     }
-  
-    const currentStep = target.closest(`.${DOM.timelineStep}`);
-  
-    if (!currentStep) {
-      return;
+    // console.log(periods)
+    this.periodData = periods
+    let data: object[] = $(base).find('.cards-container section')
+    // console.log(data)
+    for(let section of data) {
+      section.period = $(section).attr('period')
+      section.index = $(section).index()
     }
-  
-    deactivateSteps();
-    activateCurrentStep(currentStep);
-  
-    recalcStepActiveMarkerProps();
-  
-    deactivateSlides();
-    activateCurrentSlide();
-  });
-  
-  function deactivateSteps(): void {
-    const steps = document.querySelectorAll(`.${DOM.timelineStep}`);
-    steps?.forEach((elem) => elem.classList.remove(`${DOM.timelineStepActive}`));
+    // console.log(data)
+    this.cardData = data
+    // #assign initial entry point (active items)
+    this.activePeriod = this.periodData[0]
+    this.activePeriodIndex = 0
+    this.activeCard = this.cardData[0]
+    this.activeCardIndex = 0
   }
   
-  function activateCurrentStep(currentStep: Element): void {
-    currentStep?.classList.add(`${DOM.timelineStepActive}`);
-  }
-  
-  function deactivateSlides() {
-    timelineSlides?.forEach((elem) =>
-      elem.classList.remove(`${DOM.timelineSlideActive}`)
-    );
-  }
-  
-  function activateCurrentSlide() {
-    const currentSlide = getCurrentSlide();
-  
-    if (!currentSlide) {
-      return;
+  _setStateClasses(){
+    // # periods
+    $(this.base).find('.periods-container section.active').removeClass('active')
+    $(this.base).find('.periods-container section.prev').removeClass('prev')
+    $(this.base).find('.periods-container section.next').removeClass('next')
+    // console.log("setclass: " + this.activePeriod.index)
+    $(this.activePeriod).addClass('active')
+    // console.log(this.activePeriod.index)
+    // this.activePeriodIndex = this.activePeriod.index
+    if ( $(this.activePeriod).prev().length != 0 ){
+      $(this.activePeriod).prev().addClass('prev')
+      $(this.base).find('.periods-container .btn-back').removeClass('hide')
+    }else{
+      $(this.base).find('.periods-container .btn-back').addClass('hide')
     }
-  
-    const currentSlideHeight = getCurrentSlideHeight(currentSlide);
-    setSlideContainerHeight(currentSlideHeight);
-    currentSlide.classList.add(`${DOM.timelineSlideActive}`);
-  }
-  
-  function createStepActiveMarker() {
-    const stepActiveMarker = document.createElement("div");
-    stepActiveMarker.classList.add(`${DOM.timelineStepActiveMarker}`);
-    timelineStepper?.appendChild(stepActiveMarker);
-  
-    const positionProps = getStepActiveMarkerProps();
-  
-    if (!positionProps) {
-      return;
+    if ( $(this.activePeriod).next().length != 0){
+      $(this.activePeriod).next().addClass('next')
+      $(this.base).find('.periods-container .btn-next').removeClass('hide')
+    }else{
+      $(this.base).find('.periods-container .btn-next').addClass('hide')
     }
-  
-    setStepActiveMarkerProps({
-      stepActiveMarker,
-      ...positionProps,
-    });
-  }
-  
-  function recalcStepActiveMarkerProps(): void {
-    const stepActiveMarker = timeline?.querySelector(
-      `.${DOM.timelineStepActiveMarker}`
-    ) as HTMLElement;
-  
-    const stepActiveMarkerProps = getStepActiveMarkerProps();
-    if (!stepActiveMarkerProps) {
-      return;
+    
+    // ## cards
+    $(this.base).find('.cards-container section.active').removeClass('active')
+    $(this.base).find('.cards-container section.prev').removeClass('prev')
+    $(this.base).find('.cards-container section.next').removeClass('next')
+    $(this.activeCard).addClass('active')
+    // this.activeCardIndex - this.activeCard.index
+    if( $(this.activeCard).prev().length != 0 ){
+      $(this.activeCard).prev().addClass('prev')
     }
-  
-    setStepActiveMarkerProps({ stepActiveMarker, ...stepActiveMarkerProps });
-  }
-  
-  function setStepActiveMarkerProps({
-    stepActiveMarker,
-    posX,
-    posY,
-    width,
-  }: ISetStepActiveMarkerPositionProps): void {
-    stepActiveMarker.style.setProperty(
-      `${STEP_ACTIVE_MARKEP_CUSTOM_PROPS.width}`,
-      `${width}px`
-    );
-  
-    stepActiveMarker.style.setProperty(
-      `${STEP_ACTIVE_MARKEP_CUSTOM_PROPS.posX}`,
-      `${posX}px`
-    );
-  
-    if (typeof posY === "number") {
-      stepActiveMarker.style.setProperty(
-        `${STEP_ACTIVE_MARKEP_CUSTOM_PROPS.posY}`,
-        `${posY}px`
-      );
+    if ($(this.activeCard).next().length != 0 ){
+      $(this.activeCard).next().addClass('next')
+    }
+    
+    // ## timeline 
+    $(this.base).find('.timeline li.active').removeClass('active')
+    // let findNode = $(this.base).find('.timeline ol li')[this.activeCard.index]
+    $(this.timelineData[this.activeCard.index]).addClass('active')
+    
+    let timelineB = $(this.base).find('.timeline-container .btn-back')
+    let timelineN = $(this.base).find('.timeline-container .btn-next')
+    // console.log($(timelineN))
+    if (this.activeCardIndex === 0){
+      timelineB.addClass('hide')
+    }else{
+      timelineB.removeClass('hide')
+    }
+    if (this.activeCardIndex >= this.cardData.length-1) {
+      timelineN.addClass('hide')
+    }else{
+      timelineN.removeClass('hide')
     }
   }
-  
-  function getStepActiveMarkerProps(): IGetStepActiveMarkerPositionProps | null {
-    const { currentStep } = getCurrentStep();
-  
-    if (!currentStep) {
-      return null;
+  // ## timeline generater
+  _generateTimeline(){
+    // ## create node list
+    let htmlWrap = '<ol></ol>'
+    $(this.timelineNodeContainer).append(htmlWrap)
+    let wrap = $(this.timelineNodeContainer).find('ol')
+    let numNode: number = this.cardData.length
+    for (let i=0; i < numNode; i++) {
+      let c = this.cardData[i].color
+      let el = wrap.append('<li class="' + this.cardData[i].period + '" style="border-color: ' + c + '"></li>')
     }
+    // ## width of timeline
+    let nodeW: number = 200
+    wrap.css('width', nodeW * numNode - 16)
+    let nodeList: object[] = $(this.base).find('.timeline ol li')
+    this.timelineData = nodeList
+  }
+  // ## assign button actions
+  _assignBtn(){
+    let periodPrev = $(this.base).find('.periods-container .btn-back')
+    let periodNext = $(this.base).find('.periods-container .btn-next')
+    periodPrev.click(()=>{
+      if (this.activePeriodIndex > 0){
+        // console.log('prev')
+        this.activePeriodIndex -= 1
+        this.activePeriod = this.periodData[this.activePeriodIndex]
+        this._chainActions('period')
+        this._setStateClasses()
+      }
+      this._adjustPeriodContainer()
+    })
+    periodNext.click(()=>{
+      if (this.activePeriodIndex < this.periodData.length-1){
+        // console.log('next' + this.activePeriodIndex)
+        this.activePeriodIndex += 1
+        this.activePeriod = this.periodData[this.activePeriodIndex]
+        this._chainActions('period')
+        this._setStateClasses()
+      }
+      this._adjustPeriodContainer()
   
-    const width = getElementWidth(currentStep);
-    const posX = getStepActiveMarkerPosX(currentStep);
-    const posY = getStepActiveMarkerPosY();
-  
-    if (typeof posX !== "number" || typeof posY !== "number") {
-      return null;
+    })
+    let timelinePrev = $(this.base).find('.timeline-container .btn-back')
+    let timelineNext = $(this.base).find('.timeline-container .btn-next')
+    timelinePrev.click(()=>{
+      if (this.activeCardIndex > 0){
+        this.activeCardIndex -= 1
+        this.activeCard = this.cardData[this.activeCardIndex]
+        this._chainActions('timeline')
+        this._setStateClasses()
+      }
+      this._adjustCardContainer()
+      this._adjustPeriodContainer()
+    })
+    timelineNext.click(()=>{
+      if (this.activeCardIndex < this.cardData.length-1){
+        this.activeCardIndex += 1
+        this.activeCard = this.cardData[this.activeCardIndex]
+        this._chainActions('timeline')
+        this._setStateClasses()
+      }
+      this._adjustCardContainer()
+      this._adjustPeriodContainer()
+    })
+    
+    // ## assign each timeline li
+    for (let i = 0; i < this.timelineData.length; i++){
+      $(this.timelineData[i]).click(()=>{
+        this.activeCardIndex = this.cardData[i].index
+        this.activeCard = this.cardData[this.activeCardIndex]
+        this._chainActions('timeline')
+        this._setStateClasses()
+        this._adjustCardContainer()
+        this._shiftTimeline()
+      })
     }
-  
-    return { posX, posY, width };
   }
-  
-  function getCurrentStep(): ICurrentStepProps {
-    const timelineSteps = Array.from(
-      document.querySelectorAll(`.${DOM.timelineStep}`)
-    );
-  
-    const currentStep = timelineSteps.find((element) =>
-      element.classList.contains(`${DOM.timelineStepActive}`)
-    );
-  
-    const currentStepIndex =
-      currentStep &&
-      timelineSteps.findIndex((element) =>
-        element.classList.contains(`${DOM.timelineStepActive}`)
-      );
-  
-    return { currentStep, currentStepIndex };
-  }
-  
-  function getCurrentSlide(): Element | null {
-    const { currentStepIndex } = getCurrentStep();
-  
-    if (typeof currentStepIndex !== "number" || !timelineSlides) {
-      return null;
+  // ## color ##
+  _initialColor(){
+
+    for(let i = 0; i < this.periodData.length; i++){
+      let p = this.periodData[i].period
+      this.periodData[i].color = this.color[p]
+      let temp = this.periodData[i]
+      $(temp).css('border-color', temp.color)
+      $(temp).find('.year').css('color', temp.color)
+      
+      // ## color for timeline items, this part utilize the period name as class which will be add to the li later
+      
+      // ### cross browser bug fix
+      let sbstyle = document.createElement("style")
+      document.head.appendChild(sbstyle)
+      // let sheet = document.styleSheets[0]
+      sbstyle.sheet.insertRule('li.'+p+'.active { background-color: '+this.color[p]+' !important } ', 0)
+      sbstyle.sheet.insertRule('li.'+p+'::before { background-color: '+this.color[p]+' } ', 0)
+      sbstyle.sheet.insertRule('li.'+p+'::after { background-color: '+this.color[p]+' } ', 0)
+      
     }
-  
-    return timelineSlides[currentStepIndex];
-  }
-  
-  function setSlideContainerHeight(height: number): void {
-    timelineSlidesContainer?.style.setProperty(
-      `${SLIDES_CONTAINER_CUSTOM_PROPS.height}`,
-      `${height}px`
-    );
-  }
-  
-  function getCurrentSlideHeight(currentSlide: Element): number {
-    return currentSlide.clientHeight;
-  }
-  
-  function getStepActiveMarkerPosY(): number | null {
-    const timelineTitlePosY = timelineStepTitle?.getBoundingClientRect().top;
-    const timelineStepperPosY = timelineStepper?.getBoundingClientRect().top;
-  
-    if (!timelineTitlePosY || !timelineStepperPosY) {
-      return null;
+    for(let i = 0; i < this.cardData.length; i++){
+      let p = this.cardData[i].period
+      this.cardData[i].color = this.color[p]
+      let temp = this.cardData[i]
+      $(temp).css('border-color', temp.color)
+      $(temp).find('.year').css('color', temp.color)
     }
-  
-    return timelineTitlePosY - timelineStepperPosY;
   }
   
-  function getStepActiveMarkerPosX(currentStep: Element): number | null {
-    const timelineStepperPosX = timelineStepper?.getBoundingClientRect().left;
-    const currentStepPosX = currentStep.getBoundingClientRect().left;
-  
-    if (!timelineStepperPosX) {
-      return null;
+  _adjustPeriodContainer(){
+    let activeH = $(this.activePeriod).outerHeight()
+    $(this.periodContainer).height(activeH)
+    console.log('top adjusted')
+  }
+  _adjustCardContainer(){
+    let activeH = $(this.activeCard).outerHeight() + 24
+    $(this.cardContainer).height(activeH)
+    console.log('bot adjusted')
+  }
+  _shiftTimeline(){
+    // #### We need to fix this part if using this component in different sizes ####
+    let timelineW = $(this.base).find('.timeline-container').outerWidth()
+    let timelinePadding = 210
+    let timelineCenter = 300
+    let liWidth = 16
+    let activeNodeX = $(this.timelineData[this.activeCardIndex]).position().left
+    let finalPos =   -activeNodeX + timelinePadding
+    $(this.timelineNodeContainer).css('left', finalPos)
+    console.log(activeNodeX)
+  }
+  _chainActions(state: string){
+    switch (state){
+      case 'period':
+          console.log('period')
+          if (this.activePeriod.period != this.activeCard.period){
+            // ## find the closest li with the active period
+            let ta: object[] = []
+            for (let i = 0; i < this.cardData.length; i++){
+              let temp = this.cardData[i]
+              if (this.activePeriod.period === temp.period) ta.push(temp)
+            }
+            this.activeCard = ta[0]
+            this.activeCardIndex = ta[0].index
+          }
+
+          break
+      case 'timeline':
+          console.log('timeline')
+          if (this.activeCard.period != this.activePeriod.period){
+            let ta: object
+            for (let i = 0; i < this.periodData.length; i++){
+              let temp = this.periodData[i]
+              if (this.activeCard.period === temp.period) ta = temp
+            }
+            this.activePeriod = ta
+            this.activePeriodIndex = ta.index
+            
+          }
+          
+          break
     }
-  
-    return currentStepPosX - timelineStepperPosX;
+    this._shiftTimeline()
+    this._adjustCardContainer()
   }
   
-  function getElementWidth(elem: Element): number {
-    return elem.clientWidth;
-  }
   
+}
+
+
+// ## document load ##
+
+$(document).ready(function(){
+  let colorcode = {
+    'period1':'#fec541',
+    'period2':'#36d484',
+    'period3':'#32ccf4'
+  }
+  let timeline = new PRESTimeline( $('#this-timeline'), colorcode )
+})

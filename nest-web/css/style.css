@@ -188,7 +188,6 @@ img {
     background-image: url(../images/banner-bg.png);
     height: auto;
     background-size: cover;
-    padding-bottom: 90px;
 }
 
 .bg-dark {
@@ -217,7 +216,7 @@ img {
 
 .navbar-dark .navbar-nav .nav-link {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 30px;
     padding-bottom: 0px;
 }
 
@@ -227,7 +226,7 @@ img {
 }
 
 .logo {
-    width: 10%;
+    width: 16%;
     float: left;
 }
 

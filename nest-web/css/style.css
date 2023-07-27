@@ -184,9 +184,8 @@ img {
 
 .header_section {
     width: 100%;
-    float: left;
+    float: none;
     background-image: url(../images/banner-bg.png);
-    height: auto;
     background-size: cover;
 }
 
@@ -307,7 +306,7 @@ img {
     float: inline-start;
     position: relative;
     padding-bottom: 90px;
-    padding-top: 300px;
+    padding-top: 90px;
 }
 
 .image_2 {
@@ -316,7 +315,6 @@ img {
 }
 
 .about_section::after {
-    content: '';
     position: absolute;
     height: 466px;
     width: 655px;

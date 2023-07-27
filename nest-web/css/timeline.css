@@ -1,12 +1,12 @@
 html,
 body {
-  position: relative;
+  position: sticky;
   height: 100%;
-  background: #eee;
+  background: transparent;
 }
 
 body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: Helvetica;
   font-size: 16px;
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ body {
 
 .swiper-container-wrapper--timeline .swiper-slide {
   display: flex;
-  background: #fff;
+  background: transparent;
   min-height: 300px;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,7 @@ body {
   opacity: 1;
 }
 .swiper-container-wrapper--timeline .swiper-pagination-progressbar {
-  position: relative;
+  position: sticky;
   margin-bottom: 70px;
   background-color: transparent;
   height: 4px;

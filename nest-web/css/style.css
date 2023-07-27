@@ -304,9 +304,10 @@ img {
 
 .about_section {
     width: 100%;
-    float: left;
-    position: sticky;
+    float: inline-start;
+    position: relative;
     padding-bottom: 90px;
+    padding-top: 300px;
 }
 
 .image_2 {
@@ -324,7 +325,6 @@ img {
     left: 0px;
     right: initial;
     display: block;
-    background-image: url(../images/about-bg.png);
     top: 37px;
     z-index: -1;
     background-size: 100%;

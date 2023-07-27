@@ -23,8 +23,7 @@ body {
   width: 100%;
 }
 .swiper-container-wrapper--timeline .swiper-slide .title {
-  font-size: 20px;
-  opacity: 0;
+  font-size: 24px;
   transition: 0.5s ease 0.5s;
   padding-bottom: 80px;
 }
@@ -83,6 +82,7 @@ body {
 }
 .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch .switch-title {
   position: absolute;
+  color: #219ebc;
   font-weight: 400;
   right: 0;
   transform: translateX(50%);

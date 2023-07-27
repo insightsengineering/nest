@@ -18,6 +18,7 @@
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
       <!-- style css -->
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="css/timeline.css">
       <!-- Responsive-->
       <link rel="stylesheet" href="css/responsive.css">
       <!-- fevicon -->
@@ -31,6 +32,7 @@
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
    </head>
+
    <body>
       <!--header section start -->
       <div class="header_section header_bg">
@@ -222,7 +224,30 @@
       <!--blog section end -->
 
       <!-- interative timeline starts-->
-      
+      <div class="container">
+         <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
+           <!-- Timeline -->
+           <ul class="swiper-pagination-custom">
+             <li class='swiper-pagination-switch first active'><span class='switch-title'>2018</span></li>
+             <li class='swiper-pagination-switch'><span class='switch-title'>2019</span></li>
+             <li class='swiper-pagination-switch'><span class='switch-title'>2021</span></li>
+             <li class='swiper-pagination-switch last'><span class='switch-title'>2024</span></li>
+             <li class='swiper-pagination-switch last'><span class='switch-title'>3000</span></li>
+           </ul>
+           <!-- Progressbar -->
+           <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+           <!-- Swiper -->
+           <div class="swiper swiper-container swiper-container--timeline">
+             <div class="swiper-wrapper">
+               <!-- Slides -->
+               <div class="swiper-slide"><span class="title">Swiper Timeline Progressbar</span></div>
+               <div class="swiper-slide"><span class="title">Title 2</span></div>
+               <div class="swiper-slide"><span class="title">Title 3</span></div>
+               <div class="swiper-slide"><span class="title">Title 4</span></div>
+             </div>
+           </div>
+         </div>
+       </div>
       <!-- timeline ends-->
 
       <!-- roadmap starts-->
@@ -291,7 +316,7 @@
       <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
       <script src="js/custom.js"></script>
 
-      <script src="js/main.ts"></script>
+      <script src="js/timeline.js"></script>
       
       <script src="js/owl.carousel.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 

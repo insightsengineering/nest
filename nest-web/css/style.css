@@ -210,13 +210,12 @@ img {
 }
 
 .navbar {
-    padding: 30px 0px 10px 0px;
+    padding: 30px 0px 10px 700px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
     color: #ffffff;
     font-size: 30px;
-    padding-bottom: 0px;
 }
 
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -225,8 +224,18 @@ img {
 }
 
 .logo {
-    width: 16%;
+    width: 100px;
     float: left;
+    position: absolute;
+    top: 20px;
+    left: 90px;
+}
+
+.slogan {
+    float: none;
+    position: absolute;
+    top: 48px;
+    left: 200px;
 }
 
 .banner_taital {
@@ -922,7 +931,6 @@ img {
     width: 100%;
     float: left;
     background-color: #ffffff;
-    height: auto;
 }
 
 .copyright_text {

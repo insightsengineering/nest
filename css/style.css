@@ -305,7 +305,7 @@ img {
 .about_section {
     width: 100%;
     float: left;
-    position: relative;
+    position: sticky;
     padding-bottom: 90px;
 }
 
@@ -334,7 +334,7 @@ img {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #383838;
+    color: #000006;
     margin-left: 100px;
 }
 

@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var mySwiper = new Swiper(".swiper", {
-    autoHeight: true,
+    
     autoplay: {
       delay: 5000,
       disableOnInteraction: false

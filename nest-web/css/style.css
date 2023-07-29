@@ -254,16 +254,16 @@ img {
 
 #my_slider a.carousel-control-next {
     position: absolute;
-    right: 50%;
+    right: 40%;
     top: 100%;
     background-color: #219ebc;
 }
 
 #my_slider .carousel-control-prev,
 #my_slider .carousel-control-next {
-    width: 65px;
-    height: 65px;
-    background: #000006;
+    width: 70px;
+    height: 70px;
+    background: #219ebc;
     opacity: 1;
     font-size: 30px;
     color: #219ebc;

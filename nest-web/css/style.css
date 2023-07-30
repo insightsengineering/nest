@@ -447,7 +447,6 @@ img {
     background-size: cover;
     height: auto;
     padding-bottom: 90px;
-    margin-top: 90px;
     background-repeat: no-repeat;
 }
 
@@ -455,17 +454,19 @@ img {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #ffffff;
+    color: #ececeb;
+    padding-top: 60px;
     text-align: center;
 }
 
 .service_text {
     width: 100%;
     float: left;
-    font-size: 16px;
-    color: #dcdada;
+    font-size: 20px;
+    color: #ececeb;
     margin-left: 0px;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .our_text {

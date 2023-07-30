@@ -430,6 +430,16 @@ img {
     text-align: center;
 }
 
+.timeline_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #0c0900;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .services_section {
     width: 100%;
     float: left;

@@ -238,53 +238,12 @@ img {
     left: 200px;
 }
 
-.banner_taital {
-    width: 100%;
-    float: left;
-    font-size: 90px;
-    color: #060303;
-    font-weight: bold;
-    line-height: 100px;
-    padding-top: 60px;
-}
-
-.banner_text {
-    width: 90%;
-    float: left;
-    font-size: 16px;
-    color: #383838;
-    margin-left: 0px;
-}
-
-.read_bt {
-    width: 170px;
-    float: left;
-    margin-top: 10px;
-}
-
-.read_bt a {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #ffffff;
-    text-align: center;
-    background-color: #219ebc;
-    border-bottom: 7px solid #219ebc;
-    border-radius: 30px;
-    padding: 9px 0px;
-}
-
-.read_bt a:hover {
-    background-color: #8ecae6;
-    border-bottom: 7px solid #219ebc;
-}
-
 #my_slider .carousel-control-prev:hover,
 #my_slider .carousel-control-next:hover,
 #my_slider .carousel-control-prev:focus,
 #my_slider .carousel-control-next:focus {
     background: #219ebc;
-    color: #fff;
+    color: #219ebc;
 }
 
 #my_slider a.carousel-control-prev {
@@ -295,19 +254,19 @@ img {
 
 #my_slider a.carousel-control-next {
     position: absolute;
-    right: 50%;
+    right: 40%;
     top: 100%;
     background-color: #219ebc;
 }
 
 #my_slider .carousel-control-prev,
 #my_slider .carousel-control-next {
-    width: 65px;
-    height: 65px;
-    background: #000006;
+    width: 70px;
+    height: 70px;
+    background: #219ebc;
     opacity: 1;
     font-size: 30px;
-    color: #ffffff;
+    color: #219ebc;
 }
 
 .about_section {
@@ -340,31 +299,28 @@ img {
 .about_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
-    color: #000006;
-    margin-left: 100px;
+    font-size: 25px;
+    color: #0c0900;
 }
 
 .about_text {
     width: 100%;
     float: left;
-    font-size: 16px;
+    font-size: 18px;
     color: #0c0900;
-    margin-left: 100px;
 }
 
-.us_text {
+.nest_text {
     background-color: #ececeb;
     border-radius: 100%;
     color: #219ebc;
-    padding: 5px 10px;
+    padding: 10px 10px;
 }
 
 .read_bt_1 {
-    width: 170px;
+    width: 180px;
     float: left;
-    margin-top: 40px;
-    margin-left: 100px;
+    margin-top: 20px;
 }
 
 .read_bt_1 a {
@@ -382,6 +338,108 @@ img {
     background-color: #8ecae6;
 }
 
+.product_section {
+    width: 100%;
+    float: left;
+    background-image: url(../images/services-bg.png);
+    background-size: cover;
+    height: auto;
+    padding-bottom: 90px;
+    background-repeat: no-repeat;
+}
+
+.product_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #ececeb;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.product_text {
+    width: 100%;
+    float: left;
+    font-size: 20px;
+    color: #ececeb;
+    margin-left: 0px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.carousel_taital {
+    width: 100%;
+    float: left;
+    font-size: 60px;
+    color: #ececeb;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.carousel_text {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #ececeb;
+    margin-left: 0px;
+}
+
+.carousel_read_bt {
+    width: 180px;
+    float: left;
+    margin-top: 20px;
+}
+
+.carousel_read_bt a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #219ebc;
+    text-align: center;
+    background-color: #ececeb;
+    border-radius: 30px;
+    padding: 9px 0px;
+}
+
+.carousel_read_bt a:hover {
+    background-color: #8ecae6;
+}
+
+.carousel_row {
+    width: 100%;
+    height: 100%;
+    display:table-row;
+}
+
+.carousel-left {
+    width: 70%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.carousel-middle {
+    width: 10%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.carousel-right {
+    width: 20%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.timeline_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #0c0900;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .services_section {
     width: 100%;
     float: left;
@@ -389,7 +447,6 @@ img {
     background-size: cover;
     height: auto;
     padding-bottom: 90px;
-    margin-top: 90px;
     background-repeat: no-repeat;
 }
 
@@ -397,17 +454,19 @@ img {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #ffffff;
+    color: #ececeb;
+    padding-top: 60px;
     text-align: center;
 }
 
 .service_text {
     width: 100%;
     float: left;
-    font-size: 16px;
-    color: #dcdada;
+    font-size: 20px;
+    color: #ececeb;
     margin-left: 0px;
     text-align: center;
+    padding-bottom: 30px;
 }
 
 .our_text {
@@ -522,11 +581,6 @@ img {
     position: relative;
     min-height: 287px;
     background-repeat: no-repeat;
-}
-
-.image_1 {
-    width: 40%; 
-    height: 40%;
 }
 
 .image_15 {

@@ -38,10 +38,7 @@
       <div class="header_section header_bg">
          <div class="container">
             <a class="logo" href="index.html"><img src="images/logo.png"></a>
-            <h2 class="slogan" style="color: #fff; font-size: 30px;">Accelerating Clinical Reporting</h2>
-            
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-   
                <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
                      <a class="nav-link" href="index.html">Home</a>
@@ -53,10 +50,10 @@
                      <a class="nav-link" href="blog.html">Blog</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="services.html">Contribute</a>
+                     <a class="nav-link" href="contribute.html">Contribute</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="client.html">Learn</a>
+                     <a class="nav-link" href="learn.html">Learn</a>
                   </li>
                </ul>
             </nav>
@@ -68,94 +65,156 @@
       <div class="about_section layout_padding">
          <div class="container">
             <div class="row">
-               <div class="col-md-6">
-                  <iframe width="600" height="360" src="https://www.youtube.com/embed/GlSWP21Iow4?autoplay=1&mute=1" frameborder='10' allowfullscreen></iframe>
-                  
+               <div class="col-md-7">
+                  <iframe width="600" height="360" src="https://www.youtube.com/embed/GlSWP21Iow4?autoplay=1&mute=1" frameborder='10' allowfullscreen></iframe>                 
                </div>
-               <div class="col-md-6">
-                  <h1 class="about_taital">About <span class="us_text">NEST</span></h1>
-                  <p class="about_text">NEST is one of a variety of projects developed at the Roche/Genentech Insights Engineering organization and its wonderful community of collaborators.</p>
-                  <div class="read_bt_1"><a href="about.html">Read More</a></div>
+               <div class="col-md-5">
+                  <h1 class="about_taital"><span class="nest_text">NEST</span><em>&nbsp; Accelerating Clinical Reporting</em></h1>
+                  <p class="about_text">NEST is a collection of open-sourced R packages, which enables faster and more efficient insights generation 
+                     for exploratory and regulatory purposes under clinical research settings.</p>
+                  <p class="about_text">NEST was originally developed at Roche/Genentech. Since open-sourced, it has attracted many collaborators 
+                     through efforts such as <u><a href="https://pharmaverse.org/" target="_blank">pharmaverse</a></u>. With the vision of accelerating clinical reporting, 
+                     we welcome new collaborators from academia, pharmaceutical industry, as well as clinical research institutes.</p> 
                </div>
             </div>
+            <div class="row">
+               <div class="offset-md-1"></div>
+               <div class="col-md-2">
+                  <div class="read_bt_1"><a href="about.html">More about NEST</a></div>
+               </div>
+               <div class="offset-md-2"></div>
+               <div class="col-md-2">
+                  <div class="read_bt_1"><a href="learn.html">Learn NEST</a></div>
+               </div>
+               <div class="offset-md-2"></div>
+               <div class="col-md-2">
+                  <div class="read_bt_1"><a href="https://github.com/insightsengineering" target="_blank">NEST on GitHub</a></div>
+               </div>
+            </div> 
          </div>
       </div>
       <!--about section end -->
 
-      <!--banner section start -->
-      <div class="banner_section layout_padding">
-         <div id="my_slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="taital_main">
-                              <h4 class="banner_taital">TERN</h4>
-                              <p class="banner_text">description: site under construction</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5">
-                           <div><img src="images/tern.png" class="image_1"></div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="taital_main">
-                              <h4 class="banner_taital">rtables</h4>
-                              <p class="banner_text">description: site under construction</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
-                           </div>
-                        </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5">
-                           <div>
-                              <img src="images/rtables.png" class="image_1">
+      <!-- product section start -->
+      <div class="product_section">
+         <div class="container">
+            <h1 class="product_taital"><span class="nest_text">NEST</span> Products</h1>
+            <p class="product_text">Packages and products under NEST cover a variety of needs for clinical reporting, ranging from 
+               generation of regulatory-required tables, listings and graphs (TLGs), to creation of interactive dashboard for data exploration.
+            </p>
+            <div id="my_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <!-- Carousel Item: rtables -->
+                  <div class="carousel-item active">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-1"></div>
+                           <div class="col-md-10">
+                              <div class="carousel_row">
+                                 <div class="carousel-left">
+                                    <h4 class="carousel_taital">rtables</h4>
+                                    <p class="carousel_text">A package creating and displaying complex tables in R</p>
+                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/rtables/latest-release/" target="_blank">Learn More</a></div>
+                                 </div>
+                                 <div class="carousel-middle"></div>
+                                 <div class="carousel-right">
+                                    <div><img src="images/rtables.png"></div>
+                                 </div>
+                              </div>
                            </div>
                         </div>
                      </div>
                   </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="container">
-                     <div class="row">
-                        <div class="col-md-6">
-                           <div class="taital_main">
-                              <h4 class="banner_taital">TEAL</h4>
-                              <p class="banner_text">description: site under construction</p>
-                              <div class="read_bt"><a href="#">Read More</a></div>
+                  <!-- Carousel Item: tern -->
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-1"></div>
+                           <div class="col-md-10">
+                              <div class="carousel_row">
+                                 <div class="carousel-left">
+                                    <h4 class="carousel_taital">tern</h4>
+                                    <p class="carousel_text">An R package built for conducting statistical analyses in clinical trials</p>
+                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/tern/latest-tag/" target="_blank">Learn More</a></div>
+                                 </div>
+                                 <div class="carousel-middle"></div>
+                                 <div class="carousel-right">
+                                    <div><img src="images/tern.png"></div>
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="col-md-1"></div>
-                        <div class="col-md-5">
-                           <div><img src="images/teal.png" class="image_1"></div>
+                     </div>
+                  </div>
+                  <!-- Carousel Item: teal -->
+                  <div class="carousel-item">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-md-1"></div>
+                           <div class="col-md-10">
+                              <div class="carousel_row">
+                                 <div class="carousel-left">
+                                    <h4 class="carousel_taital">teal</h4>
+                                    <p class="carousel_text">A modularized RShiny-based interactive data exploration framework</p>
+                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/teal/latest-tag/" target="_blank">Learn More</a></div>
+                                 </div>
+                                 <div class="carousel-middle"></div>
+                                 <div class="carousel-right">
+                                    <div><img src="images/teal.png"></div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
                </div>
-            </div>
-            <div>
-               <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-               <i class=""><img src="images/left-arrow.png" width="100%"></i>
-               </a>
-               <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-               <i class=""><img src="images/right-arrow.png" width="100%"></i>
-               </a>
+               <div>
+                  <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
+                  <i class=""><img src="images/left-arrow.png" width="100%"></i>
+                  </a>
+                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
+                  <i class=""><img src="images/right-arrow.png" width="100%"></i>
+                  </a>
+               </div>
             </div>
          </div>
       </div>
-      <!--banner section end -->
+      <!-- product section end -->
+
+      <!-- interative timeline starts-->
+      <div class="container layout_padding">
+         <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
+            <h1 class="timeline_taital"><span class="nest_text">NEST</span> Timeline</h1>
+           
+            <!-- Timeline -->
+           <ul class="swiper-pagination-custom">
+             <li class="swiper-pagination-switch first active"><span class='switch-title'>2018</span></li>
+             <li class="swiper-pagination-switch"><span class='switch-title'>2019</span></li>
+             <li class="swiper-pagination-switch"><span class='switch-title'>2021</span></li>
+             <li class="swiper-pagination-switch"><span class='switch-title'>2022</span></li>
+             <li class="swiper-pagination-switch last"><span class='switch-title'>2023</span></li>
+           </ul>
+           <!-- Progressbar -->
+           <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
+           <!-- Swiper -->
+           <div class="swiper swiper-container swiper-container--timeline">
+             <div class="swiper-wrapper">
+               <!-- Slides -->
+               <div class="swiper-slide"><span class="title">What happened in 2018</span></div>
+               <div class="swiper-slide"><span class="title">What happened in 2019</span></div>
+               <div class="swiper-slide"><span class="title">What happened in 2021</span></div>
+               <div class="swiper-slide"><span class="title">What happened in 2022</span></div>
+               <div class="swiper-slide"><span class="title">What happened in 2023</span></div>
+             </div>
+           </div>
+         </div>
+       </div>
+      <!-- timeline ends-->
 
       <!--services section start -->
-      <div class="services_section layout_padding">
+      <div class="services_section">
          <div class="container">
-            <h1 class="service_taital"><span class="our_text">Core</span> Functions</h1>
+            <h1 class="service_taital">How <span class="nest_text">NEST</span> Works</h1>
             <p class="service_text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
             <div class="services_section_2">
                <div class="row">
@@ -223,36 +282,6 @@
          </div>
       </div>
       <!--blog section end -->
-
-      <!-- interative timeline starts-->
-      <div class="container layout_padding">
-         <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
-            <h1 class="blog_taital" style="padding-bottom: 90px;"><span class="our_text">NEST</span> Timeline</h1>
-           
-            <!-- Timeline -->
-           <ul class="swiper-pagination-custom">
-             <li class="swiper-pagination-switch first active"><span class='switch-title'>2018</span></li>
-             <li class="swiper-pagination-switch"><span class='switch-title'>2019</span></li>
-             <li class="swiper-pagination-switch"><span class='switch-title'>2021</span></li>
-             <li class="swiper-pagination-switch"><span class='switch-title'>2022</span></li>
-             <li class="swiper-pagination-switch last"><span class='switch-title'>2023</span></li>
-           </ul>
-           <!-- Progressbar -->
-           <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
-           <!-- Swiper -->
-           <div class="swiper swiper-container swiper-container--timeline">
-             <div class="swiper-wrapper">
-               <!-- Slides -->
-               <div class="swiper-slide"><span class="title">What happened in 2018</span></div>
-               <div class="swiper-slide"><span class="title">What happened in 2019</span></div>
-               <div class="swiper-slide"><span class="title">What happened in 2021</span></div>
-               <div class="swiper-slide"><span class="title">What happened in 2022</span></div>
-               <div class="swiper-slide"><span class="title">What happened in 2023</span></div>
-             </div>
-           </div>
-         </div>
-       </div>
-      <!-- timeline ends-->
 
       <!--footer section start -->
       <div class="footer_section layout_padding">

@@ -11,7 +11,7 @@ body {
 }
 
 .swiper-container-wrapper--timeline .swiper-slide {
-  display: inline-flex;
+  display: flex;
   background: transparent;
   min-height: 100px;
   align-items: center;
@@ -66,12 +66,12 @@ body {
   list-style: none;
   margin: 1rem 0;
   padding: 0;
-  display: inline-flex;
+  display: flex;
   line-height: 1.66;
   bottom: 0;
   z-index: 11;
   width: 100%;
-  display: inline-flex;
+  display: flex;
 }
 .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch {
   position: relative;

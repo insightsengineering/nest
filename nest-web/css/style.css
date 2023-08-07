@@ -227,7 +227,7 @@ img {
     width: 100px;
     float: left;
     position: absolute;
-    top: 20px;
+    top: 12px;
     left: 90px;
 }
 
@@ -299,7 +299,7 @@ img {
 .about_taital {
     width: 100%;
     float: left;
-    font-size: 25px;
+    font-size: 24px;
     color: #0c0900;
 }
 
@@ -351,7 +351,7 @@ img {
 .product_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 30px;
     color: #ececeb;
     padding-top: 60px;
     text-align: center;
@@ -360,7 +360,7 @@ img {
 .product_text {
     width: 100%;
     float: left;
-    font-size: 20px;
+    font-size: 18px;
     color: #ececeb;
     margin-left: 0px;
     text-align: center;
@@ -432,12 +432,21 @@ img {
 
 .timeline_taital {
     width: 100%;
+    float: center;
+    font-size: 30px;
+    color: #ececeb;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.timeline_text {
+    width: 100%;
     float: left;
-    font-size: 40px;
-    color: #0c0900;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    font-size: 18px;
+    color: #ececeb;
+    margin-left: 5px;
+    padding-right: 10px;
 }
 
 .services_section {
@@ -453,7 +462,7 @@ img {
 .service_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 30px;
     color: #ececeb;
     padding-top: 60px;
     text-align: center;
@@ -543,7 +552,7 @@ img {
 .blog_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 30px;
     color: #181717;
     text-align: center;
     margin-top: 15px;

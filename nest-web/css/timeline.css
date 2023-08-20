@@ -2,7 +2,7 @@
 
 :root {
   --white: #8ecae6;
-  --black: #023047;
+  --black: #0c0900;
   --crystal: #fff;
   --columbia-blue: #fff;
   --midnight-green: #023047;
@@ -103,7 +103,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 40px;
+  padding: 20px 40px 20px 20px;
   color: var(--white);
   background: var(--midnight-green);
   white-space: normal;

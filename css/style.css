@@ -227,7 +227,7 @@ img {
     width: 100px;
     float: left;
     position: absolute;
-    top: 20px;
+    top: 12px;
     left: 90px;
 }
 
@@ -299,7 +299,7 @@ img {
 .about_taital {
     width: 100%;
     float: left;
-    font-size: 25px;
+    font-size: 24px;
     color: #0c0900;
 }
 
@@ -351,7 +351,7 @@ img {
 .product_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 30px;
     color: #ececeb;
     padding-top: 60px;
     text-align: center;
@@ -360,7 +360,7 @@ img {
 .product_text {
     width: 100%;
     float: left;
-    font-size: 20px;
+    font-size: 18px;
     color: #ececeb;
     margin-left: 0px;
     text-align: center;
@@ -432,72 +432,61 @@ img {
 
 .timeline_taital {
     width: 100%;
-    float: left;
-    font-size: 40px;
-    color: #0c0900;
-    text-align: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    float: center;
+    font-size: 30px;
+    color: #ececeb;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
 }
 
-.services_section {
+.timeline_text {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #ececeb;
+    margin-left: 5px;
+    padding-right: 10px;
+}
+
+.operating_section {
     width: 100%;
     float: left;
     background-image: url(../images/services-bg.png);
     background-size: cover;
     height: auto;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
     background-repeat: no-repeat;
 }
 
-.service_taital {
+.operating_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
+    font-size: 30px;
     color: #ececeb;
     padding-top: 60px;
     text-align: center;
 }
 
-.service_text {
+.operating_text {
     width: 100%;
     float: left;
-    font-size: 20px;
+    font-size: 18px;
     color: #ececeb;
     margin-left: 0px;
     text-align: center;
-    padding-bottom: 30px;
 }
 
-.our_text {
-    background-color: #ececeb;
-    border-radius: 100%;
-    color: #219ebc;
-    padding: 17px 10px;
-}
-
-.services_section_2 {
-    width: 100%;
-    float: left;
-}
-
-.icon_1 {
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding-top: 90px;
-}
-
-.design_text {
+.principle_text {
     width: 100%;
     float: left;
     text-align: center;
     font-size: 24px;
-    color: #ffffff;
+    color: #ececeb;
     padding-top: 10px;
 }
 
-.lorem_text {
+.principle_detail_text {
     width: 80%;
     text-align: center;
     color: #d5d5d5;
@@ -505,58 +494,49 @@ img {
     margin: 0 auto;
 }
 
-.icon_3 {
+.icon_1 {
     width: 100%;
     float: left;
     text-align: center;
-    padding-top: 220px;
+    padding-top: 40px;
 }
 
-.read_bt_2 {
-    width: 170px;
+.principle_read_bt {
+    width: 250px;
     margin: 0 auto;
     text-align: center;
 }
 
-.read_bt_2 a {
+.principle_read_bt a {
     width: 100%;
     float: left;
-    font-size: 16px;
-    color: #000;
+    font-size: 18px;
+    color: #219ebc;
     text-align: center;
-    background-color: #ffffff;
+    background-color: #ececeb;
     border-radius: 30px;
     padding: 9px 0px;
     margin-top: 70px;
 }
 
-.read_bt_2 a:hover {
+.principle_read_bt a:hover {
     background-color: #8ecae6;
 }
 
 .blog_section {
     width: 100%;
     float: left;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
 }
 
 .blog_taital {
     width: 100%;
     float: left;
-    font-size: 40px;
-    color: #181717;
+    font-size: 30px;
+    color: #0c0900;
     text-align: center;
-    margin-top: 15px;
-}
-
-.blog_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #2d2d2d;
-    margin-left: 0px;
-    text-align: center;
-    font-weight: 400;
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 
 .box_main {
@@ -600,21 +580,21 @@ img {
     right: 0;
 }
 
-.hannery_text {
+.post_title {
     width: 100%;
     float: left;
     font-size: 20px;
-    color: #1d1f1e;
+    color: #0c0900;
     font-weight: bold;
     padding-left: 20px;
     padding-top: 15px;
 }
 
-.fact_text {
+.post_text {
     width: 100%;
     float: left;
     font-size: 15px;
-    color: #282828;
+    color: #0c0900;
     margin: 0px;
     padding: 0px 11px;
     padding-left: 20px;

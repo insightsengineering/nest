@@ -224,10 +224,10 @@ img {
 }
 
 .logo {
-    width: 100px;
+    width: 90px;
     float: left;
     position: absolute;
-    top: 12px;
+    top: 10px;
     left: 90px;
 }
 
@@ -578,6 +578,21 @@ img {
     padding: 13px 20px;
     left: 0;
     right: 0;
+}
+
+.temp_section {
+    width: 100%;
+    float: left;
+    padding-bottom: 60px;
+}
+
+.temp_taital {
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    color: #0c0900;
+    padding-top: 60px;
+    text-align: center;
 }
 
 .post_title {

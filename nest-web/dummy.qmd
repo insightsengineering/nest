@@ -1,0 +1,102 @@
+---
+page-layout: full
+filters:
+    - lightbox
+lightbox: auto
+execute:
+  echo: false
+---
+
+<!----------------------
+TEMP: SITE UNDER DEV
+------------------------>
+```{=html}
+<div class="container">
+    <span style="width:100%;background-color:antiquewhite;text-align:center;color:red;font-size:30px;">SITE UNDER DEVELOPMENT</span>
+</div>
+
+```
+
+<!----------------------
+First Section:
+- logo
+- tagline
+- history
+- video
+------------------------>
+
+```{=html}
+<div class="container">
+  <img style="vertical-align:middle" src="img/nest.png" width="20%">
+  <span style="font-size:45px;"><b><i>Insights Unleashed: Accelerating Clinical Discoveries</i></b></span>
+</div>
+<br><br>
+<div class="column-container">
+    <div class="column">
+        <!-- Content for the first column -->
+        <h2><i>History of NEST</i></h2>     
+        <section class="timeline">
+            <ol>
+                <li>
+                    <div>
+                    <p><time>2017 <img style="float:right;" src="img/teal.png" width="15%"></time></p>
+                    <p>some more intro text....</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                    </div>
+                </li>
+                <li>
+                    <div>
+                    <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
+                    </div>
+                </li>
+                <li></li>
+            </ol>
+            <script src="timeline.js"></script>
+        </section>
+
+    </div>
+    <div class="column">
+        <!-- Content for the second column -->
+        <h2><i>NEST in 90 seconds</i></h2>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/wo9vZccmqwc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+```
+
+
+### DRAFT CONTENT OUTLINE:
+This is the homepage for Nest website, containing:
+
+* history
+* scope
+* roadmap
+* short ad-like video
+
+### TESTING IMAGE CAROUSEL:
+
+```{r}
+## carousel.R defines how cards/images should be displayed
+## carouel.yml defines metadata for images
+source("carousel.R")
+carousel("gallery-carousel", 5000, yaml::yaml.load_file("carousel.yml"))
+```
+
+### ROADMAP
+
+post roadmap here...

@@ -1,1 +1,0 @@
-this is the first blog ever created

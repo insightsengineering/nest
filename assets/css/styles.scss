@@ -1,0 +1,31 @@
+/*-- scss:defaults --*/
+
+// Sass Variables
+// https://quarto.org/docs/output-formats/html-themes.html#sass-variables
+
+/* Colors */
+$body-bg: #FFFFFF;
+$body-color: rgb(55, 58, 60);
+
+$body-color: rgb(54, 53, 58);
+$link-color: rgb(39, 128, 227);
+
+/* Fonts */
+$font-family-sans-serif: "Source Sans Pro", -apple-system, "system-ui", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-size-root: 17px;
+
+.hexwall {
+    position: relative;
+}
+
+.hexwall p.hex_second_row, p.hex_third_row {
+    margin-top: -50px;
+}
+
+.hexwall img {
+    width: 120px;
+    height: 139px;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+}
+

@@ -1,0 +1,16 @@
+---
+title: "First Post"
+description: "Post description for first post"
+author: "Alicia"
+date: "5/22/2021"
+image: "cover.jpg"
+categories:
+  - Science
+  - Technology
+---
+
+Sed risus ultricies tristique nulla aliquet. Neque volutpat ac tincidunt vitae semper quis lectus nulla.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim sed faucibus turpis in eu mi bibendum neque. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Velit sed ullamcorper morbi tincidunt ornare massa. Sagittis id consectetur purus ut faucibus pulvinar elementum integer. Tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Lobortis feugiat vivamus at augue eget arcu. Aliquam ut porttitor leo a diam sollicitudin tempor id eu. Mauris a diam maecenas sed enim ut sem viverra aliquet. Enim ut tellus elementum sagittis vitae et leo duis. Molestie at elementum eu facilisis sed odio morbi quis commodo. Sapien pellentesque habitant morbi tristique senectus. Quam vulputate dignissim suspendisse in est. Nulla pellentesque dignissim enim sit amet venenatis urna cursus eget.
+
+Velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Viverra mauris in aliquam sem fringilla ut morbi tincidunt augue. Tortor at auctor urna nunc id. Sit amet consectetur adipiscing elit duis tristique sollicitudin. Aliquet nibh praesent tristique magna sit amet purus. Tristique senectus et netus et malesuada fames ac turpis. Hac habitasse platea dictumst quisque. Auctor neque vitae tempus quam pellentesque nec nam aliquam. Ultrices tincidunt arcu non sodales neque sodales ut etiam. Iaculis at erat pellentesque adipiscing. Cras tincidunt lobortis feugiat vivamus. Nisi est sit amet facilisis magna etiam. Pharetra pharetra massa massa ultricies mi quis hendrerit. Vitae sapien pellentesque habitant morbi tristique senectus. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing vitae.

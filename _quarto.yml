@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  title: "NEST"
+  open-graph: true # https://quarto.org/docs/websites/website-tools.html#open-graph
+  page-footer: "Made by NEST team with ❤️"
+  navbar:
+    logo: img/NEST.png
+    right:
+      - text: Home
+        href: index.qmd
+        icon: house-door-fill
+      - text: Talks
+        href: talks/index.qmd
+        icon: calendar-event-fill
+      - text: Blogs
+        href: blog/index.qmd
+        icon: file-text-fill
+      - text: Learn
+        href: learn.qmd
+        icon: pencil-fill
+      - text: Contribute
+        href: contribute.qmd
+        icon: people-fill
+    tools:
+      - icon: github
+        href: https://github.com/insightsengineering
+
+      
+format:
+  html:
+    theme: [cosmo, assets/css/styles.scss]
+    page-layout: full
+    mainfont: "Gill Sans"

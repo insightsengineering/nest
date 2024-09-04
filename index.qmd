@@ -1,0 +1,57 @@
+---
+title: "NEST"
+subtitle: "<b>Accelerating Clinical Reporting</b>"
+image: img/nest.svg
+about: 
+  template: jolla
+  image-width: 15em
+  image-shape: rectangle
+---
+
+::: {.grid}
+
+::: {.g-col-6}
+{{< video video/promovideo.mp4>}}
+:::
+
+::: {.g-col-6}
+**NEST** is a collection of open-sourced R packages, which enables faster and more efficient insights generation under clinical research settings, for both exploratory and regulatory purposes. It provides solutions for creating tables, listing, graphs, and interactive dashboards for clinical study reporting as well as data exploration.
+
+<br>
+
+NEST was originally developed at Roche. Since open-sourced, it has attracted many collaborators through efforts such as pharmaverse. With the vision of accelerating clinical reporting, we welcome new collaborators from academia, pharmaceutical industry, and clinical research institutes.
+:::
+
+:::
+
+<br>
+
+## Packages
+
+Click on the hex logo to learn more out some key packages under the NEST project
+
+<!-- Using raw HTML code + CSS to build the hexwall -->
+<div class="hexwall">
+  <p class="hex_first_row">
+    <a href="https://insightsengineering.github.io/rtables/latest-release/" target="_blank"><img src="img/rtables.svg" alt="rtables hex sticker"></a>
+    <a href="https://insightsengineering.github.io/tern/latest-tag/" target="_blank"><img src="img/tern.svg" alt="tern hex sticker"></a>
+    <a href="https://insightsengineering.github.io/rlistings/latest-tag/" target="_blank"><img src="img/rlistings.svg" alt="rlistings hex sticker"></a>
+  </p>
+  <p class="hex_second_row">
+    <a href="https://insightsengineering.github.io/teal/latest-tag/" target="_blank"><img src="img/teal.svg" alt="teal hex sticker"></a>
+    <a href="https://insightsengineering.github.io/teal.gallery/demo.html" target="_blank"><img src="img/teal_gallery.svg" alt="teal_gallery hex sticker"></a>
+    <a href="https://insightsengineering.github.io/tlg-catalog/stable/" target="_blank"><img src="img/TLGCatalog.svg" alt="TLGCatalog hex sticker"></a>
+    <a href="https://insightsengineering.github.io/chevron/latest-tag/" target="_blank"><img src="img/chevron.svg" alt="chevron hex sticker"></a>
+  </p>
+  <p class="hex_third_row">
+    <a href="https://insightsengineering.github.io/formatters/latest-tag/" target="_blank"><img src="img/formatters.svg" alt="formatters hex sticker"></a>
+    <a href="https://insightsengineering.github.io/scda/latest-tag/" target="_blank"><img src="img/scda.svg" alt="scda hex sticker"></a>
+    <a href="https://insightsengineering.github.io/biomarker-catalog/stable/" target="_blank"><img src="img/BiomarkerCatalog.svg" alt="BiomarkerCatalog hex sticker"></a>
+  </p>
+</div>
+
+<br>
+
+## History
+
+<TODO> add a timeline here

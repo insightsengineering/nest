@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "posts/example-public-release/index.html",
+    "href": "posts/example-public-release/index.html",
+    "title": "Example public release",
+    "section": "",
+    "text": "This public post is selected by the internal edition."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "NEST (public edition)",
+    "section": "",
+    "text": "Prototype of the public NEST website. Shared theme, public posts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample public-only post\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2026\n\n\nNEST team\n\n\n\n\n\n\n\n\n\n\n\n\nExample public release\n\n\n\n\n\n\n\n\n\n\n\nNov 1, 2026\n\n\nNEST team\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/example-public-only/index.html",
+    "href": "posts/example-public-only/index.html",
+    "title": "Example public-only post",
+    "section": "",
+    "text": "This public post is excluded from the internal edition via exclude: in the internal repo. Marker: PUBLIC-ONLY-MARKER-7431"
+  }
+]

@@ -25,3 +25,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: _site # The folder the action should deploy.
+          clean-exclude: previews # keep branch previews published by quarto-pr.yml

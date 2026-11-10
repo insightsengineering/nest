@@ -5,7 +5,10 @@ on:
     branches-ignore:
       - main
 permissions:
-  contents: read
+  contents: write # needed to publish the preview to gh-pages
+concurrency:
+  group: preview-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,3 +23,25 @@ jobs:
         with:
           name: public-site
           path: _site
+      - name: Sanitize branch name for use as a URL slug
+        id: branch
+        run: |
+          SAFE=$(echo "${HEAD_REF:-$REF_NAME}" | sed 's|[^a-zA-Z0-9._-]|-|g')
+          echo "safe=${SAFE}" >> "$GITHUB_OUTPUT"
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+          REF_NAME: ${{ github.ref_name }}
+      # Preview only for branches in this repo; fork PRs have a read-only token.
+      - name: Publish preview to gh-pages
+        if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          destination_dir: previews/${{ steps.branch.outputs.safe }}
+          keep_files: true
+      - name: Show preview URL
+        if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/previews/${{ steps.branch.outputs.safe }}/"
+          echo "### Preview: ${URL}" >> "$GITHUB_STEP_SUMMARY"

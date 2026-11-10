@@ -1,0 +1,45 @@
+name: Remove PR preview
+
+# When a PR into main is closed (merged or not), delete its preview folder
+# from gh-pages. Previews are published by quarto-pr.yml.
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  delete-preview:
+    runs-on: ubuntu-latest
+    env:
+      BRANCH: ${{ github.event.pull_request.head.ref }}
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Remove preview folder
+        shell: bash
+        run: |
+          set -euo pipefail
+          SAFE=$(echo "${BRANCH}" | sed 's|[^a-zA-Z0-9._-]|-|g')
+          if [ -z "$SAFE" ]; then
+            echo "Branch name empty. Nothing to do."
+            exit 0
+          fi
+          DIR="previews/${SAFE}"
+          if [ ! -d "$DIR" ]; then
+            echo "No preview at '$DIR'. Nothing to do."
+            exit 0
+          fi
+          git rm -r -q -- "$DIR"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -q -m "ci: remove gh-pages preview for closed PR branch ${SAFE}"
+          git pull -q --rebase origin gh-pages
+          git push origin gh-pages

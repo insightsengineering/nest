@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: _site
+  # Only render the new site; ignore the legacy nest-web/ folder.
+  render:
+    - index.qmd
+    - "posts/**/*.qmd"
+
+website:
+  title: "NEST"
+  description: "NEST prototype (public edition)"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+
+format:
+  html:
+    theme: theme/nest.scss
+    toc: false

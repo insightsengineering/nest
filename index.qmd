@@ -1,0 +1,9 @@
+---
+title: "NEST (public edition)"
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+---
+
+Prototype of the public NEST website. Shared theme, public posts.

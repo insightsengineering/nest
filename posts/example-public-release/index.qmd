@@ -1,0 +1,8 @@
+---
+title: "Example public release"
+author: "NEST team"
+date: "2026-11-01"
+categories: [news]
+---
+
+This public post is selected by the internal edition.

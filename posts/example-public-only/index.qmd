@@ -1,0 +1,8 @@
+---
+title: "Example public-only post"
+author: "NEST team"
+date: "2026-11-02"
+categories: [news]
+---
+
+This public post is excluded from the internal edition via `exclude:` in the internal repo. Marker: PUBLIC-ONLY-MARKER-7431

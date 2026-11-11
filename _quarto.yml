@@ -25,8 +25,9 @@ website:
         text: Learn
       - href: about.qmd
         text: About
-      - href: https://github.com/insightsengineering
-        text: "GitHub ↗"
+      - icon: github
+        href: https://github.com/insightsengineering
+        aria-label: GitHub
   page-footer:
     border: false
     left: "NEST · Open-source tools for clinical research"

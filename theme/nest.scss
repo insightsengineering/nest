@@ -140,3 +140,15 @@ body.nav-fixed { padding-top: 88px; }
 #quarto-content > .products-band { padding-top: 38px; }
 #quarto-content > .community-band { padding-top: 28px; }
 #quarto-content .quarto-listing { margin-right: 0; padding-bottom: 0; }
+
+// ---- navbar: GitHub icon and the collapsed (burger) menu ----
+.navbar .nav-link .bi-github { font-size: 17px; }
+// Let the header grow when the burger menu opens, so it covers the page
+// instead of the menu items spilling over the hero.
+#quarto-header .navbar { height: auto; min-height: 88px; }
+@media (max-width: 991.98px) {
+  #quarto-header .navbar { padding-top: 14px; padding-bottom: 14px; }
+  .navbar-nav { gap: 14px; align-items: flex-start; padding: 14px 0 6px; }
+  .navbar-nav .nav-item:last-child .nav-link { border-left: 0; padding-left: 0 !important; }
+  #quarto-header .navbar::after { display: none; }
+}

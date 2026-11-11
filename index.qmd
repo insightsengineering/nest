@@ -18,7 +18,7 @@ listing:
 Open-source clinical reporting
 :::
 
-# Better tools.<br>[Clearer insights.]{.accent}
+# [[Better tools.]{.t}]{.line} [[Clearer insights.]{.t .sweep}]{.line .accent}
 
 Turn clinical data into meaningful results. Discover R packages built for analysis, reporting, and exploration.
 
@@ -28,6 +28,10 @@ Turn clinical data into meaningful results. Discover R packages built for analys
 
 ::: {.tagline}
 Built in the open. Shaped by the community.
+:::
+
+::: {.scroll-cue}
+[[]{.bi .bi-chevron-down}](#latest-from-nest){aria-label="Scroll to the latest news"}
 :::
 ::::
 :::::

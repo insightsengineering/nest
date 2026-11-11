@@ -1,59 +1,24 @@
 [
   {
-    "objectID": "posts/example-public-release/index.html",
-    "href": "posts/example-public-release/index.html",
-    "title": "Example public release",
+    "objectID": "posts/example-training/index.html",
+    "href": "posts/example-training/index.html",
+    "title": "Your next step with analysis results",
     "section": "",
-    "text": "This public post is selected by the internal edition."
+    "text": "Sample training announcement. Replace with real content."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "posts/example-public-only/index.html",
+    "href": "posts/example-public-only/index.html",
+    "title": "Example public-only post",
     "section": "",
-    "text": "Placeholder: project purpose, contribution routes and support channels will go here."
+    "text": "This public post is excluded from the internal edition via exclude: in the internal repo. Marker: PUBLIC-ONLY-MARKER-7431"
   },
   {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "News",
+    "objectID": "posts/example-event/index.html",
+    "href": "posts/example-event/index.html",
+    "title": "NEST at an upcoming conference",
     "section": "",
-    "text": "Example public-only post\n\n\n\n\n\n\nProject news\n\n\n\n\n\n\n\n\n\nNov 2, 2026\n\n\n\n\n\n\n\nExample public release\n\n\n\n\n\n\nProduct update\n\n\n\n\n\n\n\n\n\nNov 1, 2026\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Better tools.Clearer insights.",
-    "section": "",
-    "text": "Open-source clinical reporting\n\n\n\nR packages for clinical analysis, reporting, and interactive exploration.\nExplore the tools →\n\n\n\n\nLatest release\n\n\n\nThe main improvement, explained in one useful sentence.\nWhat’s new →"
-  },
-  {
-    "objectID": "index.html#latest",
-    "href": "index.html#latest",
-    "title": "Better tools.Clearer insights.",
-    "section": "The latest from NEST",
-    "text": "The latest from NEST\n\n\n\n\n\nExample public-only post\n\n\n\n\n\n\nProject news\n\n\n\n\n\n\n\n\n\nNov 2, 2026\n\n\n\n\n\n\n\nExample public release\n\n\n\n\n\n\nProduct update\n\n\n\n\n\n\n\n\n\nNov 1, 2026\n\n\n\n\n\n\nNo matching items\n\n\nAll news →"
-  },
-  {
-    "objectID": "index.html#what-would-you-like-to-do",
-    "href": "index.html#what-would-you-like-to-do",
-    "title": "Better tools.Clearer insights.",
-    "section": "What would you like to do?",
-    "text": "What would you like to do?\n\n\nCreate tables\nTables and listings for clinical reporting.\nFind your tools →\n\n\nAnalyze data\nReusable clinical analysis workflows.\nFind your tools →\n\n\nBuild applications\nInteractive exploration of clinical data.\nFind your tools →"
-  },
-  {
-    "objectID": "index.html#keep-up-with-nest.",
-    "href": "index.html#keep-up-with-nest.",
-    "title": "Better tools.Clearer insights.",
-    "section": "Keep up with NEST.",
-    "text": "Keep up with NEST.\nReleases, tutorials, and news worth coming back for.\nFollow updates →"
-  },
-  {
-    "objectID": "products.html",
-    "href": "products.html",
-    "title": "Products",
-    "section": "",
-    "text": "Placeholder: filterable product cards will go here."
+    "text": "Sample event announcement. Replace with real content."
   },
   {
     "objectID": "learn.html",
@@ -63,10 +28,52 @@
     "text": "Placeholder: getting started and tutorials will go here."
   },
   {
-    "objectID": "posts/example-public-only/index.html",
-    "href": "posts/example-public-only/index.html",
-    "title": "Example public-only post",
+    "objectID": "products.html",
+    "href": "products.html",
+    "title": "Products",
     "section": "",
-    "text": "This public post is excluded from the internal edition via exclude: in the internal repo. Marker: PUBLIC-ONLY-MARKER-7431"
+    "text": "Placeholder: filterable product cards will go here."
+  },
+  {
+    "objectID": "index.html#latest-from-nest",
+    "href": "index.html#latest-from-nest",
+    "title": "NEST",
+    "section": "Latest from NEST",
+    "text": "Latest from NEST"
+  },
+  {
+    "objectID": "index.html#find-your-starting-point",
+    "href": "index.html#find-your-starting-point",
+    "title": "NEST",
+    "section": "Find your starting point",
+    "text": "Find your starting point"
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "NEST at an upcoming conference\n\n\n\n\n\n\nEvent\n\n\n\nWhere to find the NEST team, with dates and useful links.\n\n\n\n\n\nNov 9, 2026\n\n\n\n\n\n\n\nFrom repeated tasks to reusable workflows\n\n\n\n\n\n\nIn practice\n\n\n\nA space for a real team’s experience and the difference NEST made.\n\n\n\n\n\nNov 8, 2026\n\n\n\n\n\n\n\nYour next step with analysis results\n\n\n\n\n\n\nTraining\n\n\n\nPractical learning resources for getting started with cards and cardx.\n\n\n\n\n\nNov 6, 2026\n\n\n\n\n\n\n\nExample public-only post\n\n\n\n\n\n\nProject news\n\n\n\nExcluded from the internal edition via exclude: in the internal repo.\n\n\n\n\n\nNov 2, 2026\n\n\n\n\n\n\n\nNew possibilities for interactive exploration\n\n\n\n\n\n\nProduct update\n\n\n\nA closer look at what is changing across the teal ecosystem.\n\n\n\n\n\nNov 1, 2026\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Placeholder: project purpose, contribution routes and support channels will go here."
+  },
+  {
+    "objectID": "posts/example-in-practice/index.html",
+    "href": "posts/example-in-practice/index.html",
+    "title": "From repeated tasks to reusable workflows",
+    "section": "",
+    "text": "Sample success story. Replace with real content."
+  },
+  {
+    "objectID": "posts/example-public-release/index.html",
+    "href": "posts/example-public-release/index.html",
+    "title": "New possibilities for interactive exploration",
+    "section": "",
+    "text": "This public post is selected by the internal edition."
   }
 ]

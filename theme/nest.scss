@@ -136,6 +136,8 @@ body.nav-fixed { padding-top: 88px; }
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-title { font: 700 15px/1.4 Manrope, Arial, sans-serif; letter-spacing: -.2px; margin: 0 0 5px; }
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-title a { font: inherit; letter-spacing: inherit; color: $ink; }
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-category { font: 700 10px/16px "DM Sans", Arial, sans-serif; text-transform: uppercase; letter-spacing: normal; color: $cat; background: none; border: 0; padding: 0; margin: 0; }
+/* A post can have several tags; the row shows only the first (the News page filters still use all). */
+.quarto-listing .list.quarto-listing-default .quarto-post .listing-category:not(:first-child) { display: none; }
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-description,
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-description a { font: 400 11px/1.6 "DM Sans", Arial, sans-serif; color: $sub; }
 

@@ -7,7 +7,7 @@ listing:
     contents: posts
     type: default
     sort: "date desc"
-    max-items: 5
+    max-items: 4
     fields: [date, categories, title, description]
     categories: false
 ---

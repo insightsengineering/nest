@@ -67,17 +67,16 @@ h1, h2, h3, h4 { font-family: Manrope, Arial, sans-serif; }
 .news-band { padding: 15px var(--gutter) 34px; }
 .news-band .eyebrow { color: $ink; }
 
-.quarto-listing-default .quarto-post { display: grid; grid-template-columns: 112px 1fr; column-gap: 18px; row-gap: 0; align-items: start; padding: 19px 0; border-top: 1px solid $line; margin: 0; }
+.quarto-listing-default .quarto-post { display: grid; grid-template-columns: 1fr; row-gap: 0; align-items: start; padding: 19px 0; border-top: 1px solid $line; margin: 0; }
 .quarto-listing-default .quarto-post:last-child { border-bottom: 1px solid $line; }
 .quarto-listing-default .quarto-post .body { display: contents; }
-.quarto-listing-default .listing-categories { grid-column: 1; grid-row: 1; margin: 0; }
-.quarto-listing-default .listing-categories .listing-category { font: 700 10px/16px "DM Sans", Arial, sans-serif; text-transform: uppercase; color: $cat; background: none; border: 0; padding: 0; }
-.quarto-listing-default .metadata { grid-column: 1; grid-row: 2; margin-top: 2px; }
+.quarto-listing-default .listing-categories { grid-column: 1; grid-row: 4; margin: 12px 0 0; }
+.quarto-listing-default .metadata { grid-column: 1; grid-row: 1; margin: 0 0 4px; }
 .quarto-listing-default .metadata, .quarto-listing-default .listing-date { font: 400 10px/16px "DM Sans", Arial, sans-serif; color: $sub; }
-.quarto-listing-default .listing-title { grid-column: 2; grid-row: 1; font: 700 15px/1.4 Manrope, Arial, sans-serif; letter-spacing: -.2px; margin: 0 0 5px; }
+.quarto-listing-default .listing-title { grid-column: 1; grid-row: 2; font: 700 15px/1.4 Manrope, Arial, sans-serif; letter-spacing: -.2px; margin: 0 0 5px; }
 .quarto-listing-default .listing-title a { color: $ink; }
 .quarto-listing-default .listing-subtitle { display: none; }
-.quarto-listing-default .listing-description { grid-column: 2; grid-row: 2; font: 400 11px/1.6 "DM Sans", Arial, sans-serif; margin: 0; }
+.quarto-listing-default .listing-description { grid-column: 1; grid-row: 3; font: 400 11px/1.6 "DM Sans", Arial, sans-serif; margin: 0; }
 .quarto-listing-default .listing-description a { color: $sub; }
 .quarto-listing-default .quarto-post a { text-decoration: none; }
 
@@ -135,9 +134,19 @@ body.nav-fixed { padding-top: 88px; }
 .quarto-listing .list.quarto-listing-default .quarto-post { margin: 0; padding: 19px 0; width: 100%; max-width: none; }
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-title { font: 700 15px/1.4 Manrope, Arial, sans-serif; letter-spacing: -.2px; margin: 0 0 5px; }
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-title a { font: inherit; letter-spacing: inherit; color: $ink; }
-.quarto-listing .list.quarto-listing-default .quarto-post .listing-category { font: 700 10px/16px "DM Sans", Arial, sans-serif; text-transform: uppercase; letter-spacing: normal; color: $cat; background: none; border: 0; padding: 0; margin: 0; }
-/* A post can have several tags; the row shows only the first (the News page filters still use all). */
-.quarto-listing .list.quarto-listing-default .quarto-post .listing-category:not(:first-child) { display: none; }
+/* Tags are labels only: shown as chips under each row on the landing page, hidden on the News page
+   (filtering there is done with the category list on the right). */
+.quarto-listing .list.quarto-listing-default .quarto-post .listing-categories { display: flex; flex-wrap: wrap; gap: 6px; }
+.quarto-listing .list.quarto-listing-default .quarto-post .listing-category { font: 600 10px/16px "DM Sans", Arial, sans-serif; letter-spacing: normal; text-transform: none; color: $cat; background: #eaf0f8; border: 0; border-radius: 5px; padding: 2px 9px; margin: 0; pointer-events: none; cursor: default; }
+#listing-listing .listing-categories { display: none; }
+
+/* Landing page: the latest news in two columns (collapses to one on narrow screens). */
+#listing-latest-news .list.quarto-listing-default { display: grid; grid-template-columns: 1fr 1fr; column-gap: 48px; }
+#listing-latest-news .list.quarto-listing-default .quarto-post { border-bottom: 0; margin-bottom: 0; }
+@media (max-width: 800px) {
+  #listing-latest-news .list.quarto-listing-default { grid-template-columns: 1fr; }
+  #listing-latest-news .list.quarto-listing-default .quarto-post:last-child { border-bottom: 1px solid $line; }
+}
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-description,
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-description a { font: 400 11px/1.6 "DM Sans", Arial, sans-serif; color: $sub; }
 

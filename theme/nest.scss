@@ -1,68 +1,140 @@
 /*-- scss:defaults --*/
-$dark: #161d2b;
-$navy: #1e2a45;
-$accent: #5b7fe3;
-$mist: #e9edf5;
-$sub: #5d6678;
-$line: #dde2ec;
+// Values taken from the design reference (nest-centered-design-reference.html).
+$dark: #171f29;
+$ink: #26384e;
+$sub: #607083;
+$line: #dfe5eb;
+$blue: #5487ee;
+$btn: #4075e4;
+$cat: #3368cc;
+$link: #315e9a;
+$h3navy: #284b76;
+$hero-ink: #eef4fb;
+$hero-sub: #b2c1d0;
+$hero-line: #39495a;
+$mist: #f2f4f7;
 
-$body-color: $navy;
-$link-color: $accent;
+$body-color: $ink;
+$link-color: $link;
+$link-decoration: none;
 $navbar-bg: $dark;
-$navbar-fg: #ffffff;
-$navbar-hl: #ffffff;
-$font-family-sans-serif: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+$navbar-fg: $hero-ink;
+$navbar-hl: $hero-ink;
+$font-family-sans-serif: "DM Sans", Arial, sans-serif;
+$headings-font-family: Manrope, Arial, sans-serif;
 
 /*-- scss:rules --*/
-.navbar { border-bottom: 1px solid #2c3750; }
-.navbar-brand { font-weight: 700; letter-spacing: 1px; }
-.navbar-brand img { height: 38px; }
+body { font-family: "DM Sans", Arial, sans-serif; }
+h1, h2, h3, h4 { font-family: Manrope, Arial, sans-serif; }
 
-// full-width bands; content sits in .wrap
-.wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+// ---- header ----
+#quarto-header .navbar { background: $dark; height: 88px; padding: 0 48px; border-bottom: 1px solid $hero-line; }
+#quarto-header .navbar > .container-fluid { padding: 0; }
+.navbar-brand { display: flex; align-items: center; gap: 10px; font: 800 26px/1 Manrope, Arial, sans-serif; letter-spacing: -1px; color: $hero-ink !important; }
+.navbar-brand img { height: 34px; max-height: 34px; margin: 0; }
+.navbar-nav { gap: 25px; align-items: center; }
+.navbar .nav-link { font: 600 12px/1.6 "DM Sans", Arial, sans-serif; color: $hero-ink !important; padding: 0 !important; }
+.navbar-nav .nav-item:last-child .nav-link { border-left: 1px solid $hero-line; padding-left: 22px !important; }
 
-.eyebrow, .eyebrow p { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; color: $navy; margin: 0 0 6px; }
+// ---- shared ----
+.eyebrow { display: flex; align-items: center; gap: 9px; font: 700 10px/16px "DM Sans", Arial, sans-serif; text-transform: uppercase; letter-spacing: 1.6px; }
+.eyebrow p { margin: 0; font: inherit; letter-spacing: inherit; color: inherit; }
+.band-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 15px; margin-bottom: 20px; }
+.band-head h2 { font: 700 25px/1.25 Manrope, Arial, sans-serif; letter-spacing: -.8px; margin: 6px 0; padding: 0; border: 0; color: $ink; }
+.band-head .more a { font: 600 12px "DM Sans", Arial, sans-serif; color: $ink; }
+.btn-nest { display: inline-flex; align-items: center; gap: 20px; background: $btn; color: #fff !important; padding: 13px 19px; border-radius: 6px; font: 600 12px "DM Sans", Arial, sans-serif; box-shadow: 0 5px 12px #142c4914; text-decoration: none; }
+.btn-nest:hover { text-decoration: none; opacity: .92; }
 
-// hero
-.hero { background: $dark; color: #fff; text-align: center; padding: 90px 0 80px; }
-.hero .eyebrow { color: #c6cfe4; }
-.hero .eyebrow p::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: $accent; margin-right: 12px; vertical-align: middle; }
-.hero h1 { font-size: 64px; line-height: 1.05; letter-spacing: -2px; font-weight: 700; margin: 24px 0; color: #fff; }
-.hero h1 .accent { color: $accent; }
-.hero p { font-size: 19px; color: #b8c2d9; max-width: 640px; margin: 0 auto 28px; }
-.hero .btn-nest { display: inline-block; background: $accent; color: #fff; padding: 16px 30px; border-radius: 6px; font-weight: 600; text-decoration: none; }
-.hero .btn-nest:hover { opacity: .9; text-decoration: none; }
-.hero .tagline { font-size: 13px; color: #8f9ab3; margin-top: 26px; }
+// ---- hero ----
+.hero { background: $dark; color: $hero-ink; text-align: center; padding: 53px 48px 51px; }
+.hero-copy { max-width: 730px; margin: 0 auto; }
+.hero .eyebrow { justify-content: center; color: $hero-ink; }
+.hero .eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: $blue; flex: none; }
+.hero h1 { font: 800 58px/1.08 Manrope, Arial, sans-serif; letter-spacing: -2px; margin: 22px 0; color: $hero-ink; }
+.hero h1 .accent { color: $blue; }
+.hero-copy > p { font-size: 16px; line-height: 1.8; color: $hero-sub; max-width: 560px; margin: 0 auto; }
+.hero .actions { display: flex; justify-content: center; margin-top: 27px; }
+.hero .tagline { margin-top: 23px; font-size: 10px; line-height: 16px; letter-spacing: .2px; color: $hero-sub; }
 
-// shared band heading
-.band { padding: 56px 0 40px; }
-.band-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 18px; }
-.band-head h2 { font-size: 34px; letter-spacing: -1px; font-weight: 700; margin: 0; border: 0; }
-.band-head a { font-weight: 600; font-size: 14px; white-space: nowrap; }
+// ---- latest news ----
+.news-band { padding: 15px 48px 34px; }
+.news-band .eyebrow { color: $ink; }
 
-// latest news rows (Quarto's default listing, restyled)
-#latest-news .quarto-listing .list { margin: 0; }
-#latest-news .quarto-post { border-top: 1px solid $line; padding: 22px 0; }
-#latest-news .quarto-post:last-child { border-bottom: 1px solid $line; }
-#latest-news .listing-title { font-size: 20px; font-weight: 600; margin: 0 0 4px; }
-#latest-news .listing-title a { color: $navy; }
-#latest-news .listing-description a, #latest-news .listing-description { color: $sub; font-size: 15px; }
-#latest-news .listing-categories .listing-category { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; color: $accent; background: none; border: 0; padding: 0; }
-#latest-news .metadata { color: $sub; font-size: 13px; }
+.quarto-listing-default .quarto-post { display: grid; grid-template-columns: 112px 1fr; column-gap: 18px; row-gap: 0; align-items: start; padding: 19px 0; border-top: 1px solid $line; margin: 0; }
+.quarto-listing-default .quarto-post:last-child { border-bottom: 1px solid $line; }
+.quarto-listing-default .quarto-post .body { display: contents; }
+.quarto-listing-default .listing-categories { grid-column: 1; grid-row: 1; margin: 0; }
+.quarto-listing-default .listing-categories .listing-category { font: 700 10px/16px "DM Sans", Arial, sans-serif; text-transform: uppercase; color: $cat; background: none; border: 0; padding: 0; }
+.quarto-listing-default .metadata { grid-column: 1; grid-row: 2; margin-top: 2px; }
+.quarto-listing-default .metadata, .quarto-listing-default .listing-date { font: 400 10px/16px "DM Sans", Arial, sans-serif; color: $sub; }
+.quarto-listing-default .listing-title { grid-column: 2; grid-row: 1; font: 700 15px/1.4 Manrope, Arial, sans-serif; letter-spacing: -.2px; margin: 0 0 5px; }
+.quarto-listing-default .listing-title a { color: $ink; }
+.quarto-listing-default .listing-subtitle { display: none; }
+.quarto-listing-default .listing-description { grid-column: 2; grid-row: 2; font: 400 11px/1.6 "DM Sans", Arial, sans-serif; margin: 0; }
+.quarto-listing-default .listing-description a { color: $sub; }
+.quarto-listing-default .quarto-post a { text-decoration: none; }
 
-// product cards
-.products-band { background: $mist; padding: 56px 0 64px; }
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 22px; }
-.card-tool { background: #fff; border: 1px solid $line; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 12px; }
-.card-tool .head { display: flex; align-items: center; gap: 16px; }
-.card-tool .head img { width: 72px; height: 72px; }
-.card-tool .name { font-size: 26px; font-weight: 700; margin: 0; }
-.card-tool .kind { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: $sub; margin: 0; }
-.card-tool .desc { color: $sub; margin: 0; flex-grow: 1; }
-.card-tool .go { font-weight: 600; }
+// ---- products ----
+.products-band { background: linear-gradient(120deg, #eef1f5 0%, #e5ecf4 65%, #dce6f3 100%); border-top: 1px solid #d7e0ec; border-bottom: 1px solid #d2ddea; padding: 38px 48px; }
+.products-band .eyebrow { color: $ink; }
+.products-band .band-head .more a { color: $link; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.card-tool { background: #ffffffc9; border: 1px solid #cbd7e5; border-radius: 9px; padding: 21px; display: flex; flex-direction: column; align-items: flex-start; }
+.card-tool .head { display: flex; align-items: center; gap: 14px; margin-bottom: 13px; }
+.card-tool .head img { width: 56px; height: 65px; object-fit: contain; margin: 0; }
+.card-tool .name, .card-tool .name p { font: 700 20px/1.4 Manrope, Arial, sans-serif; letter-spacing: -.2px; color: $h3navy; margin: 0; }
+.card-tool .kind, .card-tool .kind p { font: 400 9px/1.6 "DM Sans", Arial, sans-serif; text-transform: uppercase; color: $sub; margin: 0; }
+.card-tool .desc, .card-tool .desc p { font: 400 11px/1.6 "DM Sans", Arial, sans-serif; color: $sub; margin: 0; }
+.card-tool .desc { min-height: 53px; }
+.card-tool .go { margin-top: 14px; font: 700 11px "DM Sans", Arial, sans-serif; color: $link; }
 
-@media (max-width: 800px) {
-  .hero h1 { font-size: 42px; }
+// ---- community band ----
+.community-band { background: $mist; border-top: 1px solid #e0e5ec; padding: 28px 48px; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.community-band h3 { font: 700 19px/1.4 Manrope, Arial, sans-serif; letter-spacing: -.2px; margin: 0 0 5px; color: $ink; }
+.community-band p { font: 400 11px/1.6 "DM Sans", Arial, sans-serif; color: $sub; margin: 0; }
+
+// ---- footer ----
+footer.footer { background: $mist; border-top: 1px solid $line; padding: 0; }
+footer.footer .nav-footer { padding: 18px 48px; font: 400 10px/16px "DM Sans", Arial, sans-serif; color: $sub; }
+footer.footer a { color: $sub; }
+
+// ---- content pages (not the home page) ----
+main.content { font-family: "DM Sans", Arial, sans-serif; }
+
+@media (max-width: 650px) {
+  .hero h1 { font-size: 41px; }
+  .hero-copy > p { font-size: 14px; }
   .cards { grid-template-columns: 1fr; }
-  .band-head { flex-direction: column; align-items: flex-start; }
+  .band-head, .community-band { flex-direction: column; align-items: flex-start; }
+  #quarto-header .navbar, .hero, .news-band, .products-band, .community-band, footer.footer .nav-footer { padding-left: 23px; padding-right: 23px; }
 }
+
+// ---- fixes after comparing with the design ----
+// Quarto's fixed header assumes 64px; ours is 88px, so offset the page to match.
+body.nav-fixed { padding-top: 88px; }
+// Header line is inset by the side padding, as in the design.
+#quarto-header .navbar { border-bottom: 0; position: relative; }
+#quarto-header .navbar::after { content: ""; position: absolute; left: 48px; right: 48px; bottom: 0; border-bottom: 1px solid $hero-line; }
+
+// Pandoc wraps the hero text in a section, so target paragraphs there.
+.hero-copy section > p { font-size: 16px; line-height: 1.8; color: $hero-sub; max-width: 560px; margin: 0 auto; }
+.hero .actions p, .hero .tagline p { margin: 0; }
+.hero .tagline p { font-size: 10px; line-height: 16px; letter-spacing: .2px; color: $hero-sub; max-width: none; }
+.band-head .more p { margin: 0; }
+.news-band { padding-top: 36px; }
+
+// Quarto's listing CSS is more specific than ours, so match its specificity.
+.quarto-listing .list.quarto-listing-default { padding: 0; margin: 0; width: 100%; }
+.quarto-listing .list.quarto-listing-default .quarto-post { margin: 0; padding: 19px 0; width: 100%; max-width: none; }
+.quarto-listing .list.quarto-listing-default .quarto-post .listing-title { font: 700 15px/1.4 Manrope, Arial, sans-serif; letter-spacing: -.2px; margin: 0 0 5px; }
+.quarto-listing .list.quarto-listing-default .quarto-post .listing-title a { font: inherit; letter-spacing: inherit; color: $ink; }
+.quarto-listing .list.quarto-listing-default .quarto-post .listing-category { font: 700 10px/16px "DM Sans", Arial, sans-serif; text-transform: uppercase; letter-spacing: normal; color: $cat; background: none; border: 0; padding: 0; margin: 0; }
+.quarto-listing .list.quarto-listing-default .quarto-post .listing-description,
+.quarto-listing .list.quarto-listing-default .quarto-post .listing-description a { font: 400 11px/1.6 "DM Sans", Arial, sans-serif; color: $sub; }
+
+// Quarto sets `#quarto-content > * { padding-top: 14px }`, which beats class selectors.
+#quarto-content > .hero { padding-top: 53px; }
+#quarto-content > .news-band { padding-top: 36px; }
+#quarto-content > .products-band { padding-top: 38px; }
+#quarto-content > .community-band { padding-top: 28px; }
+#quarto-content .quarto-listing { margin-right: 0; padding-bottom: 0; }

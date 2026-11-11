@@ -13,7 +13,7 @@ listing:
 ---
 
 ::::: {.hero}
-:::: {.wrap}
+:::: {.hero-copy}
 ::: {.eyebrow}
 Open-source clinical reporting
 :::
@@ -22,7 +22,9 @@ Open-source clinical reporting
 
 Turn clinical data into meaningful results. Discover R packages built for analysis, reporting, and exploration.
 
-[Explore the tools →](products.qmd){.btn-nest}
+::: {.actions}
+[Explore the tools [→]{.arrow}](products.qmd){.btn-nest}
+:::
 
 ::: {.tagline}
 Built in the open. Shaped by the community.
@@ -30,8 +32,7 @@ Built in the open. Shaped by the community.
 ::::
 :::::
 
-::::: {.band}
-:::: {.wrap}
+::::: {.news-band}
 ::: {.band-head}
 ::: {}
 ::: {.eyebrow}
@@ -39,17 +40,16 @@ Keep up with the ecosystem
 :::
 ## Latest from NEST
 :::
-
+::: {.more}
 [All news →](news.qmd)
+:::
 :::
 
 ::: {#latest-news}
 :::
-::::
 :::::
 
 ::::: {.products-band}
-:::: {.wrap}
 ::: {.band-head}
 ::: {}
 ::: {.eyebrow}
@@ -57,8 +57,9 @@ Small tools. Shared possibilities.
 :::
 ## Find your starting point
 :::
-
+::: {.more}
 [See all products →](products.qmd)
+:::
 :::
 
 ::: {.cards}
@@ -80,7 +81,7 @@ Interactive exploration
 Bring your data into interactive applications for exploration and review.
 :::
 
-[Explore teal](https://insightsengineering.github.io/teal/){.go}
+[Explore teal ↗](https://insightsengineering.github.io/teal/){.go}
 :::
 
 ::: {.card-tool}
@@ -101,7 +102,7 @@ Analysis results
 A foundation for working with structured analysis results in R.
 :::
 
-[Explore cards](https://insightsengineering.github.io/cards/){.go}
+[Explore cards ↗](https://insightsengineering.github.io/cards/){.go}
 :::
 
 ::: {.card-tool}
@@ -122,8 +123,17 @@ Extended analysis
 Extend your analysis workflows with additional tools for results.
 :::
 
-[Explore cardx](https://insightsengineering.github.io/cardx/){.go}
+[Explore cardx ↗](https://insightsengineering.github.io/cardx/){.go}
 :::
 :::
-::::
+:::::
+
+::::: {.community-band}
+::: {}
+### Built together. Shared openly.
+
+Explore the code, ask a question, or help shape what comes next.
+:::
+
+[Join the community ↗](https://github.com/insightsengineering){.btn-nest}
 :::::

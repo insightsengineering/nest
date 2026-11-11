@@ -2,9 +2,13 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/example-event-workshop/index.html",
       "/posts/example-event/index.html",
-      "/posts/example-in-practice/index.html",
+      "/posts/example-training-online/index.html",
       "/posts/example-training/index.html",
+      "/posts/example-release-formatters/index.html",
+      "/posts/example-product-update/index.html",
+      "/posts/example-project-news/index.html",
       "/posts/example-public-only/index.html",
       "/posts/example-public-release/index.html"
     ]
@@ -12,9 +16,13 @@
   {
     "listing": "/news.html",
     "items": [
+      "/posts/example-event-workshop/index.html",
       "/posts/example-event/index.html",
-      "/posts/example-in-practice/index.html",
+      "/posts/example-training-online/index.html",
       "/posts/example-training/index.html",
+      "/posts/example-release-formatters/index.html",
+      "/posts/example-product-update/index.html",
+      "/posts/example-project-news/index.html",
       "/posts/example-public-only/index.html",
       "/posts/example-public-release/index.html"
     ]

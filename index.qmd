@@ -1,9 +1,81 @@
 ---
-title: "NEST (public edition)"
+pagetitle: "NEST"
+page-layout: full
+title-block-banner: false
 listing:
-  contents: posts
-  type: default
-  sort: "date desc"
+  - id: latest-news
+    contents: posts
+    type: default
+    sort: "date desc"
+    max-items: 3
+    fields: [categories, title, description]
+    categories: false
 ---
 
-Prototype of the public NEST website. Shared theme, public posts.
+::::: {.hero}
+::: {}
+::: {.eyebrow}
+Open-source clinical reporting
+:::
+
+# Better tools.<br>Clearer insights.
+
+R packages for clinical analysis, reporting, and interactive exploration.
+
+[Explore the tools →](products.qmd){.action .primary}
+:::
+
+::: {.release}
+::: {.eyebrow}
+Latest release
+:::
+
+### [Package name]<br>[version]
+
+The main improvement, explained in one useful sentence.
+
+[What's new →](news.qmd){.action}
+:::
+:::::
+
+::: {.band}
+## The latest from NEST {#latest}
+
+::: {#latest-news}
+:::
+
+[All news →](news.qmd){.more}
+:::
+
+::: {.band}
+## What would you like to do?
+
+::: {.cards}
+::: {.card-tool}
+### Create tables
+Tables and listings for clinical reporting.
+
+[Find your tools →](products.qmd)
+:::
+::: {.card-tool}
+### Analyze data
+Reusable clinical analysis workflows.
+
+[Find your tools →](products.qmd)
+:::
+::: {.card-tool}
+### Build applications
+Interactive exploration of clinical data.
+
+[Find your tools →](products.qmd)
+:::
+:::
+:::
+
+::: {.band}
+## Keep up with NEST.
+
+Releases, tutorials, and news worth coming back for.
+
+[Follow updates →](news.qmd){.action}
+:::

@@ -1,18 +1,28 @@
 project:
   type: website
   output-dir: _site
-  # Only render the new site; ignore the legacy nest-web/ folder.
+  # Only render the new site; ignore anything else in the repo.
   render:
     - index.qmd
+    - products.qmd
+    - news.qmd
+    - learn.qmd
+    - about.qmd
     - "posts/**/*.qmd"
 
 website:
   title: "NEST"
-  description: "NEST prototype (public edition)"
+  description: "Open-source clinical reporting"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
+    right:
+      - href: products.qmd
+        text: Products
+      - href: news.qmd
+        text: News
+      - href: learn.qmd
+        text: Learn
+      - href: about.qmd
+        text: About
 
 format:
   html:

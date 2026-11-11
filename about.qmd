@@ -1,0 +1,5 @@
+---
+title: "About"
+---
+
+Placeholder: project purpose, contribution routes and support channels will go here.

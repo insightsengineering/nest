@@ -1,3 +1,50 @@
 /*-- scss:defaults --*/
-$primary: #0b41cd;
-$font-family-sans-serif: "Helvetica Neue", Arial, sans-serif;
+$ink: #23272b;
+$sub: #5a626a;
+$line: #d6dadd;
+$soft: #f3f4f4;
+$accent: #23272b; // change this to the brand color later
+$body-color: $ink;
+$link-color: $ink;
+$navbar-bg: #ffffff;
+$navbar-fg: $ink;
+$navbar-hl: $ink;
+$font-family-sans-serif: Arial, "Helvetica Neue", sans-serif;
+
+/*-- scss:rules --*/
+.navbar { border-bottom: 1px solid $line; }
+.navbar-brand { font-weight: 700; letter-spacing: 2px; }
+
+.eyebrow { font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: $sub; font-weight: 700; }
+
+.hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 26px; align-items: center; padding: 48px 0 34px; }
+.hero h1 { font-size: 36px; line-height: 1.12; letter-spacing: -1.2px; font-weight: 600; margin: 14px 0 18px; }
+.hero p { font-size: 16px; color: $sub; max-width: 570px; }
+
+.action { display: inline-block; border: 1px solid $ink; padding: 10px 17px; border-radius: 3px; font-weight: 600; font-size: 13px; text-decoration: none; margin-top: 12px; }
+.action.primary { background: $accent; color: #fff; }
+.action:hover { text-decoration: none; opacity: .85; }
+
+.release { background: $soft; padding: 22px; border: 1px solid $line; }
+.release h3 { margin: 6px 0; font-size: 18px; font-weight: 600; }
+.release p { font-size: 14px; color: $sub; }
+
+.band { padding: 32px 0; border-top: 1px solid $line; }
+.band > h2 { font-size: 23px; letter-spacing: -.5px; font-weight: 600; margin: 0 0 6px; border: 0; }
+.band .more { font-size: 12px; font-weight: 600; }
+
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }
+.card-tool { border: 1px solid $line; padding: 17px; }
+.card-tool h3 { margin: 0 0 6px; font-size: 16px; font-weight: 600; }
+.card-tool p { font-size: 12px; color: $sub; margin: 0 0 8px; }
+.card-tool a { font-size: 12px; font-weight: 600; }
+
+#latest-news .quarto-listing .list.quarto-listing-default { margin-top: 8px; }
+#latest-news .quarto-post { border-top: 1px solid $line; padding: 16px 0; }
+#latest-news .listing-title { font-size: 18px; font-weight: 600; }
+#latest-news .listing-categories .listing-category { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: $sub; border: 0; padding: 0; }
+
+@media (max-width: 600px) {
+  .hero, .cards { grid-template-columns: 1fr; }
+  .hero { padding-top: 32px; }
+}

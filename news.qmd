@@ -1,0 +1,7 @@
+---
+title: "News"
+listing:
+  contents: posts
+  type: default
+  sort: "date desc"
+---

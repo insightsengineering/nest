@@ -51,7 +51,12 @@ h1, h2, h3, h4 { font-family: Manrope, Arial, sans-serif; }
 .hero { background: $dark; color: $hero-ink; text-align: center; padding: 53px var(--gutter) 51px; }
 .hero-copy { max-width: 730px; margin: 0 auto; }
 .hero .eyebrow { justify-content: center; color: $hero-ink; }
-.hero .eyebrow::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: $blue; flex: none; }
+.hero .eyebrow::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: #3ddc97; flex: none; animation: nest-pulse 1.8s ease-in-out infinite; }
+@keyframes nest-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 #3ddc9770; }
+  50% { opacity: .45; box-shadow: 0 0 0 9px #3ddc9700; }
+}
+@media (prefers-reduced-motion: reduce) { .hero .eyebrow::before { animation: none; } }
 .hero h1 { font: 800 58px/1.08 Manrope, Arial, sans-serif; letter-spacing: -2px; margin: 22px 0; color: $hero-ink; }
 .hero h1 .accent { color: $blue; }
 .hero-copy > p { font-size: 16px; line-height: 1.8; color: $hero-sub; max-width: 560px; margin: 0 auto; }

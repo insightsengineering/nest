@@ -78,9 +78,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-categories','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -130,7 +130,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -174,7 +174,8 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UHJvZHVjdCUyMHVwZGF0ZQ==">Product update <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHJvamVjdCUyMG5ld3M=">Project news <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -203,18 +204,18 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1793577600000" data-listing-file-modified-sort="1794366539996" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
-<div class="thumbnail">
-<p><a href="./posts/example-public-only/index.html" class="no-external"></a></p><a href="./posts/example-public-only/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/example-public-only/index.html" class="no-external"></a></p>
-</div>
+<div class="quarto-post image-right" data-index="0" data-categories="UHJvamVjdCUyMG5ld3M=" data-listing-date-sort="1793577600000" data-listing-file-modified-sort="1794370523793" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/example-public-only/index.html" class="no-external">Example public-only post</a>
 </h3>
 <div class="listing-subtitle">
 <a href="./posts/example-public-only/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('UHJvamVjdCUyMG5ld3M='); return false;">
+Project news
+</div>
 </div>
 <div class="listing-description">
 <a href="./posts/example-public-only/index.html" class="no-external">This public post is excluded from the internal edition via <code>exclude:</code> in the internal repo. Marker: PUBLIC-ONLY-MARKER-7431</a>
@@ -225,24 +226,21 @@ window.Quarto = {
 <div class="listing-date">
 Nov 2, 2026
 </div>
-<div class="listing-author">
-NEST team
-</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1793491200000" data-listing-file-modified-sort="1794366539996" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail">
-<p><a href="./posts/example-public-release/index.html" class="no-external"></a></p><a href="./posts/example-public-release/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/example-public-release/index.html" class="no-external"></a></p>
-</div>
+<div class="quarto-post image-right" data-index="1" data-categories="UHJvZHVjdCUyMHVwZGF0ZQ==" data-listing-date-sort="1793491200000" data-listing-file-modified-sort="1794370523793" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/example-public-release/index.html" class="no-external">Example public release</a>
 </h3>
 <div class="listing-subtitle">
 <a href="./posts/example-public-release/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('UHJvZHVjdCUyMHVwZGF0ZQ=='); return false;">
+Product update
+</div>
 </div>
 <div class="listing-description">
 <a href="./posts/example-public-release/index.html" class="no-external">This public post is selected by the internal edition.</a>
@@ -252,9 +250,6 @@ NEST team
 <a href="./posts/example-public-release/index.html" class="no-external">
 <div class="listing-date">
 Nov 1, 2026
-</div>
-<div class="listing-author">
-NEST team
 </div>
 </a>
 </div>

@@ -1,14 +1,13 @@
 name: Quarto PR build
+# Builds the site for every pull request and publishes a preview to
+# gh-pages under previews/<branch>/. Branches without a PR are not built.
 on:
   pull_request:
-  push:
-    branches-ignore:
-      - main
 permissions:
   contents: write # needed to publish the preview to gh-pages
   pull-requests: write # needed to comment the preview link on the PR
 concurrency:
-  group: preview-${{ github.head_ref || github.ref_name }}
+  group: preview-${{ github.head_ref }}
   cancel-in-progress: true
 jobs:
   build:
@@ -27,14 +26,13 @@ jobs:
       - name: Sanitize branch name for use as a URL slug
         id: branch
         run: |
-          SAFE=$(echo "${HEAD_REF:-$REF_NAME}" | sed 's|[^a-zA-Z0-9._-]|-|g')
+          SAFE=$(echo "${HEAD_REF}" | sed 's|[^a-zA-Z0-9._-]|-|g')
           echo "safe=${SAFE}" >> "$GITHUB_OUTPUT"
         env:
           HEAD_REF: ${{ github.head_ref }}
-          REF_NAME: ${{ github.ref_name }}
       # Preview only for branches in this repo; fork PRs have a read-only token.
       - name: Publish preview to gh-pages
-        if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+        if: github.event.pull_request.head.repo.full_name == github.repository
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -42,28 +40,15 @@ jobs:
           destination_dir: previews/${{ steps.branch.outputs.safe }}
           keep_files: true
       - name: Show preview URL
-        if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
+        if: github.event.pull_request.head.repo.full_name == github.repository
         run: |
           URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/previews/${{ steps.branch.outputs.safe }}/"
           echo "### Preview: ${URL}" >> "$GITHUB_STEP_SUMMARY"
-      # Look up the open PR by branch (not by event), so the comment is posted
-      # whichever of the push or pull_request run survives the concurrency group.
-      - name: Find open PR for this branch
-        id: pr
-        if: github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository
-        run: |
-          NUM=$(gh pr list --repo "${{ github.repository }}" --head "${HEAD_REF:-$REF_NAME}" --state open --json number --jq '.[0].number // empty')
-          echo "number=${NUM}" >> "$GITHUB_OUTPUT"
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          HEAD_REF: ${{ github.head_ref }}
-          REF_NAME: ${{ github.ref_name }}
       - name: Comment preview link on PR
-        if: steps.pr.outputs.number != ''
+        if: github.event.pull_request.head.repo.full_name == github.repository
         uses: marocchino/sticky-pull-request-comment@v2
         with:
           header: "Site preview"
-          number: ${{ steps.pr.outputs.number }}
           message: |
             :eyes: **Preview available!**
 

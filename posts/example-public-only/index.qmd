@@ -1,5 +1,6 @@
 ---
 title: "Example public-only post"
+description: "Excluded from the internal edition via exclude: in the internal repo."
 author: "NEST team"
 date: "2026-11-02"
 categories: ["Project news"]

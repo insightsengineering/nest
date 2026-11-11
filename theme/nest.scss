@@ -1,50 +1,68 @@
 /*-- scss:defaults --*/
-$ink: #23272b;
-$sub: #5a626a;
-$line: #d6dadd;
-$soft: #f3f4f4;
-$accent: #23272b; // change this to the brand color later
-$body-color: $ink;
-$link-color: $ink;
-$navbar-bg: #ffffff;
-$navbar-fg: $ink;
-$navbar-hl: $ink;
-$font-family-sans-serif: Arial, "Helvetica Neue", sans-serif;
+$dark: #161d2b;
+$navy: #1e2a45;
+$accent: #5b7fe3;
+$mist: #e9edf5;
+$sub: #5d6678;
+$line: #dde2ec;
+
+$body-color: $navy;
+$link-color: $accent;
+$navbar-bg: $dark;
+$navbar-fg: #ffffff;
+$navbar-hl: #ffffff;
+$font-family-sans-serif: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
 
 /*-- scss:rules --*/
-.navbar { border-bottom: 1px solid $line; }
-.navbar-brand { font-weight: 700; letter-spacing: 2px; }
+.navbar { border-bottom: 1px solid #2c3750; }
+.navbar-brand { font-weight: 700; letter-spacing: 1px; }
+.navbar-brand img { height: 38px; }
 
-.eyebrow { font-size: 11px; letter-spacing: 1.6px; text-transform: uppercase; color: $sub; font-weight: 700; }
+// full-width bands; content sits in .wrap
+.wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
 
-.hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 26px; align-items: center; padding: 48px 0 34px; }
-.hero h1 { font-size: 36px; line-height: 1.12; letter-spacing: -1.2px; font-weight: 600; margin: 14px 0 18px; }
-.hero p { font-size: 16px; color: $sub; max-width: 570px; }
+.eyebrow, .eyebrow p { font-size: 12px; letter-spacing: 2px; text-transform: uppercase; font-weight: 700; color: $navy; margin: 0 0 6px; }
 
-.action { display: inline-block; border: 1px solid $ink; padding: 10px 17px; border-radius: 3px; font-weight: 600; font-size: 13px; text-decoration: none; margin-top: 12px; }
-.action.primary { background: $accent; color: #fff; }
-.action:hover { text-decoration: none; opacity: .85; }
+// hero
+.hero { background: $dark; color: #fff; text-align: center; padding: 90px 0 80px; }
+.hero .eyebrow { color: #c6cfe4; }
+.hero .eyebrow p::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: $accent; margin-right: 12px; vertical-align: middle; }
+.hero h1 { font-size: 64px; line-height: 1.05; letter-spacing: -2px; font-weight: 700; margin: 24px 0; color: #fff; }
+.hero h1 .accent { color: $accent; }
+.hero p { font-size: 19px; color: #b8c2d9; max-width: 640px; margin: 0 auto 28px; }
+.hero .btn-nest { display: inline-block; background: $accent; color: #fff; padding: 16px 30px; border-radius: 6px; font-weight: 600; text-decoration: none; }
+.hero .btn-nest:hover { opacity: .9; text-decoration: none; }
+.hero .tagline { font-size: 13px; color: #8f9ab3; margin-top: 26px; }
 
-.release { background: $soft; padding: 22px; border: 1px solid $line; }
-.release h3 { margin: 6px 0; font-size: 18px; font-weight: 600; }
-.release p { font-size: 14px; color: $sub; }
+// shared band heading
+.band { padding: 56px 0 40px; }
+.band-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; margin-bottom: 18px; }
+.band-head h2 { font-size: 34px; letter-spacing: -1px; font-weight: 700; margin: 0; border: 0; }
+.band-head a { font-weight: 600; font-size: 14px; white-space: nowrap; }
 
-.band { padding: 32px 0; border-top: 1px solid $line; }
-.band > h2 { font-size: 23px; letter-spacing: -.5px; font-weight: 600; margin: 0 0 6px; border: 0; }
-.band .more { font-size: 12px; font-weight: 600; }
+// latest news rows (Quarto's default listing, restyled)
+#latest-news .quarto-listing .list { margin: 0; }
+#latest-news .quarto-post { border-top: 1px solid $line; padding: 22px 0; }
+#latest-news .quarto-post:last-child { border-bottom: 1px solid $line; }
+#latest-news .listing-title { font-size: 20px; font-weight: 600; margin: 0 0 4px; }
+#latest-news .listing-title a { color: $navy; }
+#latest-news .listing-description a, #latest-news .listing-description { color: $sub; font-size: 15px; }
+#latest-news .listing-categories .listing-category { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: 700; color: $accent; background: none; border: 0; padding: 0; }
+#latest-news .metadata { color: $sub; font-size: 13px; }
 
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 20px; }
-.card-tool { border: 1px solid $line; padding: 17px; }
-.card-tool h3 { margin: 0 0 6px; font-size: 16px; font-weight: 600; }
-.card-tool p { font-size: 12px; color: $sub; margin: 0 0 8px; }
-.card-tool a { font-size: 12px; font-weight: 600; }
+// product cards
+.products-band { background: $mist; padding: 56px 0 64px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 22px; }
+.card-tool { background: #fff; border: 1px solid $line; border-radius: 12px; padding: 26px; display: flex; flex-direction: column; gap: 12px; }
+.card-tool .head { display: flex; align-items: center; gap: 16px; }
+.card-tool .head img { width: 72px; height: 72px; }
+.card-tool .name { font-size: 26px; font-weight: 700; margin: 0; }
+.card-tool .kind { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: $sub; margin: 0; }
+.card-tool .desc { color: $sub; margin: 0; flex-grow: 1; }
+.card-tool .go { font-weight: 600; }
 
-#latest-news .quarto-listing .list.quarto-listing-default { margin-top: 8px; }
-#latest-news .quarto-post { border-top: 1px solid $line; padding: 16px 0; }
-#latest-news .listing-title { font-size: 18px; font-weight: 600; }
-#latest-news .listing-categories .listing-category { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: $sub; border: 0; padding: 0; }
-
-@media (max-width: 600px) {
-  .hero, .cards { grid-template-columns: 1fr; }
-  .hero { padding-top: 32px; }
+@media (max-width: 800px) {
+  .hero h1 { font-size: 42px; }
+  .cards { grid-template-columns: 1fr; }
+  .band-head { flex-direction: column; align-items: flex-start; }
 }

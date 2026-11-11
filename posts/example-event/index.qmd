@@ -1,0 +1,9 @@
+---
+title: "NEST at an upcoming conference"
+description: "Where to find the NEST team, with dates and useful links."
+author: "NEST team"
+date: "2026-11-09"
+categories: ["Event"]
+---
+
+Sample event announcement. Replace with real content.

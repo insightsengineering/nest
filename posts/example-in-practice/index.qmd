@@ -1,0 +1,9 @@
+---
+title: "From repeated tasks to reusable workflows"
+description: "A space for a real team's experience and the difference NEST made."
+author: "NEST team"
+date: "2026-11-08"
+categories: ["In practice"]
+---
+
+Sample success story. Replace with real content.

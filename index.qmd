@@ -1,6 +1,6 @@
 ---
 pagetitle: "NEST"
-page-layout: full
+page-layout: custom
 title-block-banner: false
 listing:
   - id: latest-news
@@ -13,69 +13,117 @@ listing:
 ---
 
 ::::: {.hero}
-::: {}
+:::: {.wrap}
 ::: {.eyebrow}
 Open-source clinical reporting
 :::
 
-# Better tools.<br>Clearer insights.
+# Better tools.<br>[Clearer insights.]{.accent}
 
-R packages for clinical analysis, reporting, and interactive exploration.
+Turn clinical data into meaningful results. Discover R packages built for analysis, reporting, and exploration.
 
-[Explore the tools →](products.qmd){.action .primary}
+[Explore the tools →](products.qmd){.btn-nest}
+
+::: {.tagline}
+Built in the open. Shaped by the community.
 :::
-
-::: {.release}
-::: {.eyebrow}
-Latest release
-:::
-
-### [Package name]<br>[version]
-
-The main improvement, explained in one useful sentence.
-
-[What's new →](news.qmd){.action}
-:::
+::::
 :::::
 
-::: {.band}
-## The latest from NEST {#latest}
+::::: {.band}
+:::: {.wrap}
+::: {.band-head}
+::: {}
+::: {.eyebrow}
+Keep up with the ecosystem
+:::
+## Latest from NEST
+:::
+
+[All news →](news.qmd)
+:::
 
 ::: {#latest-news}
 :::
+::::
+:::::
 
-[All news →](news.qmd){.more}
+::::: {.products-band}
+:::: {.wrap}
+::: {.band-head}
+::: {}
+::: {.eyebrow}
+Small tools. Shared possibilities.
+:::
+## Find your starting point
 :::
 
-::: {.band}
-## What would you like to do?
+[See all products →](products.qmd)
+:::
 
 ::: {.cards}
 ::: {.card-tool}
-### Create tables
-Tables and listings for clinical reporting.
+::: {.head}
+![](assets/logos/teal.svg)
 
-[Find your tools →](products.qmd)
+::: {}
+::: {.name}
+teal
 :::
+::: {.kind}
+Interactive exploration
+:::
+:::
+:::
+
+::: {.desc}
+Bring your data into interactive applications for exploration and review.
+:::
+
+[Explore teal](https://insightsengineering.github.io/teal/){.go}
+:::
+
 ::: {.card-tool}
-### Analyze data
-Reusable clinical analysis workflows.
+::: {.head}
+![](assets/logos/cards.svg)
 
-[Find your tools →](products.qmd)
+::: {}
+::: {.name}
+cards
 :::
+::: {.kind}
+Analysis results
+:::
+:::
+:::
+
+::: {.desc}
+A foundation for working with structured analysis results in R.
+:::
+
+[Explore cards](https://insightsengineering.github.io/cards/){.go}
+:::
+
 ::: {.card-tool}
-### Build applications
-Interactive exploration of clinical data.
+::: {.head}
+![](assets/logos/cardx.svg)
 
-[Find your tools →](products.qmd)
+::: {}
+::: {.name}
+cardx
+:::
+::: {.kind}
+Extended analysis
 :::
 :::
 :::
 
-::: {.band}
-## Keep up with NEST.
-
-Releases, tutorials, and news worth coming back for.
-
-[Follow updates →](news.qmd){.action}
+::: {.desc}
+Extend your analysis workflows with additional tools for results.
 :::
+
+[Explore cardx](https://insightsengineering.github.io/cardx/){.go}
+:::
+:::
+::::
+:::::

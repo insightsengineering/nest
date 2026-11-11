@@ -14,6 +14,7 @@ website:
   title: "NEST"
   description: "Open-source clinical reporting"
   navbar:
+    logo: assets/logos/NEST.svg
     right:
       - href: products.qmd
         text: Products
@@ -23,8 +24,12 @@ website:
         text: Learn
       - href: about.qmd
         text: About
+      - href: https://github.com/insightsengineering/nest
+        text: GitHub
 
 format:
   html:
     theme: theme/nest.scss
     toc: false
+    link-external-icon: true
+    link-external-newwindow: true

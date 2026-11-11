@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: _site
+  resources:
+    - assets/logos/*.svg
   # Only render the new site; ignore anything else in the repo.
   render:
     - index.qmd

@@ -212,3 +212,17 @@ html { scroll-behavior: smooth; scroll-padding-top: 100px; }
   html { scroll-behavior: auto; }
   .hero .scroll-cue a, .hero .scroll-cue .bi { animation: none; }
 }
+
+// ---- product row: scroll strip, three cards visible, one card per arrow click ----
+.pc { position: relative; }
+.pc-track { display: flex; gap: 15px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 1px 0; }
+.pc-track::-webkit-scrollbar { display: none; }
+.pc-track:focus-visible { outline: 2px solid $blue; outline-offset: 4px; }
+.pc-track .card-tool { flex: 0 0 calc((100% - 30px) / 3); scroll-snap-align: start; }
+.pc-btn { position: absolute; top: 50%; transform: translateY(-50%); z-index: 2; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border: 1px solid #cbd7e5; border-radius: 50%; background: #fff; color: #294b78; font-size: 16px; box-shadow: 0 6px 18px #142c4929; cursor: pointer; transition: opacity .2s, border-color .2s, transform .2s; }
+.pc-prev { left: -20px; }
+.pc-next { right: -20px; }
+.pc-btn:hover:not(:disabled) { border-color: $link; }
+.pc-btn:focus-visible { outline: 2px solid $blue; outline-offset: 2px; }
+.pc-btn:disabled { opacity: 0; pointer-events: none; }
+@media (max-width: 800px) { .pc-track .card-tool { flex-basis: 85%; } }

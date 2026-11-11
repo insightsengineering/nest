@@ -146,9 +146,14 @@ body.nav-fixed { padding-top: 88px; }
 // Let the header grow when the burger menu opens, so it covers the page
 // instead of the menu items spilling over the hero.
 #quarto-header .navbar { height: auto; min-height: 88px; }
+// Burger menu as a floating card under the button; the header keeps its height.
 @media (max-width: 991.98px) {
-  #quarto-header .navbar { padding-top: 14px; padding-bottom: 14px; }
-  .navbar-nav { gap: 14px; align-items: flex-start; padding: 14px 0 6px; }
-  .navbar-nav .nav-item:last-child .nav-link { border-left: 0; padding-left: 0 !important; }
-  #quarto-header .navbar::after { display: none; }
+  #quarto-header .navbar { height: 88px; padding-top: 0; padding-bottom: 0; }
+  .navbar .navbar-collapse { position: absolute; top: calc(100% + 4px); left: var(--gutter); width: 240px; background: #fff; border-radius: 12px; padding: 8px; box-shadow: 0 16px 40px #142c4940, 0 0 0 1px #d7e0ec; }
+  .navbar-nav { flex-direction: column; align-items: stretch; gap: 2px; padding: 0; }
+  .navbar .navbar-collapse .nav-link { color: $ink !important; font: 600 13px/1.4 "DM Sans", Arial, sans-serif; padding: 11px 14px !important; border-radius: 8px; border-left: 0; }
+  .navbar .navbar-collapse .nav-link:hover, .navbar .navbar-collapse .nav-link:focus { background: #eef1f5; color: $ink !important; }
+  .navbar .navbar-collapse .nav-link.active { color: $cat !important; }
+  .navbar-nav .nav-item:last-child .nav-link { border-left: 0; padding-left: 14px !important; border-top: 1px solid $line; border-radius: 0 0 8px 8px; margin-top: 4px; }
+  .navbar .navbar-collapse .nav-link .bi-github { font-size: 18px; }
 }

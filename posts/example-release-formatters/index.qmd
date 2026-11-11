@@ -1,0 +1,9 @@
+---
+title: "formatters 0.6.0 is out"
+description: "What is new in this release, with a short upgrade guide."
+author: "NEST team"
+date: "2026-11-05"
+categories: ["Releases"]
+---
+
+Sample post. Replace with real content.

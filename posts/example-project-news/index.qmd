@@ -1,0 +1,9 @@
+---
+title: "Welcome to the new NEST website"
+description: "A first look at the refreshed site and what is coming next."
+author: "NEST team"
+date: "2026-11-03"
+categories: ["Project news"]
+---
+
+Sample post. Replace with real content.

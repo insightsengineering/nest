@@ -3,7 +3,7 @@ title: "Your next step with analysis results"
 description: "Practical learning resources for getting started with cards and cardx."
 author: "NEST team"
 date: "2026-11-06"
-categories: ["Training"]
+categories: ["Trainings"]
 ---
 
 Sample training announcement. Replace with real content.

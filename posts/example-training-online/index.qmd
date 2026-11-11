@@ -1,0 +1,9 @@
+---
+title: "Online course: reporting with cards and cardx"
+description: "A self-paced course covering structured analysis results from start to finish."
+author: "NEST team"
+date: "2026-11-07"
+categories: ["Trainings"]
+---
+
+Sample post. Replace with real content.

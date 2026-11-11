@@ -1,0 +1,9 @@
+---
+title: "A new look for the NEST product pages"
+description: "Easier ways to find the right tool for your analysis."
+author: "NEST team"
+date: "2026-11-04"
+categories: ["Product update"]
+---
+
+Sample post. Replace with real content.

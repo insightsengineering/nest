@@ -3,7 +3,7 @@ title: "New possibilities for interactive exploration"
 description: "A closer look at what is changing across the teal ecosystem."
 author: "NEST team"
 date: "2026-11-01"
-categories: ["Product update"]
+categories: ["Releases"]
 ---
 
 This public post is selected by the internal edition.

@@ -1,0 +1,9 @@
+---
+title: "Hands-on workshop: building your first teal app"
+description: "Join us for a guided session with live coding and Q&A."
+author: "NEST team"
+date: "2026-11-10"
+categories: ["Events"]
+---
+
+Sample post. Replace with real content.

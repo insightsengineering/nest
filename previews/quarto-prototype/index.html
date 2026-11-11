@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>NEST (public edition) – NEST</title>
+<title>NEST</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4e3758cfa13e2d5741dbc62a6ba5e335.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-aff78fd36f0472ee152b75a8479c5020.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,20 +71,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-latest-news .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-categories','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-latest-news'] = new List('listing-latest-news', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -130,7 +130,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -146,10 +146,22 @@ window.Quarto = {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
-<span class="menu-text">Home</span></a>
+    <a class="nav-link" href="./products.html"> 
+<span class="menu-text">Products</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./news.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./learn.html"> 
+<span class="menu-text">Learn</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -159,45 +171,43 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">NEST (public edition)</h1>
+
+
+
+<div class="hero">
+<div>
+<div class="eyebrow">
+<p>Open-source clinical reporting</p>
 </div>
-
-
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Prototype of the public NEST website. Shared theme, public posts.</p>
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<section id="better-tools.-clearer-insights." class="level1">
+<h1>Better tools.<br>Clearer insights.</h1>
+<p>R packages for clinical analysis, reporting, and interactive exploration.</p>
+<p><a href="./products.html" class="action primary">Explore the tools →</a></p>
+</section>
+</div>
+<div class="release">
+<div class="eyebrow">
+<p>Latest release</p>
+</div>
+<section id="package-name-version" class="level3">
+<h3 class="anchored" data-anchor-id="package-name-version">[Package name]<br>[version]</h3>
+<p>The main improvement, explained in one useful sentence.</p>
+<p><a href="./news.html" class="action">What’s new →</a></p>
+</section>
+</div>
+</div>
+<section id="latest" class="level2 band">
+<h2 class="anchored" data-anchor-id="latest">The latest from NEST</h2>
+<div id="listing-latest-news" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1793577600000" data-listing-file-modified-sort="1794343979613" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
-<div class="thumbnail">
-<p><a href="./posts/example-public-only/index.html" class="no-external"></a></p><a href="./posts/example-public-only/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/example-public-only/index.html" class="no-external"></a></p>
-</div>
+<div class="quarto-post image-right" data-index="0" data-categories="bmV3cw==" data-listing-date-sort="1793577600000" data-listing-file-modified-sort="1794366539996" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="17">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/example-public-only/index.html" class="no-external">Example public-only post</a>
@@ -205,27 +215,21 @@ window.Quarto = {
 <div class="listing-subtitle">
 <a href="./posts/example-public-only/index.html" class="no-external"></a>
 </div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
+news
+</div>
+</div>
 <div class="listing-description">
 <a href="./posts/example-public-only/index.html" class="no-external">This public post is excluded from the internal edition via <code>exclude:</code> in the internal repo. Marker: PUBLIC-ONLY-MARKER-7431</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./posts/example-public-only/index.html" class="no-external">
-<div class="listing-date">
-Nov 2, 2026
-</div>
-<div class="listing-author">
-NEST team
-</div>
+<p><a href="./posts/example-public-only/index.html" class="no-external"></a></p><a href="./posts/example-public-only/index.html" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1793491200000" data-listing-file-modified-sort="1794343979613" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
-<div class="thumbnail">
-<p><a href="./posts/example-public-release/index.html" class="no-external"></a></p><a href="./posts/example-public-release/index.html" class="no-external">
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/example-public-release/index.html" class="no-external"></a></p>
-</div>
+<div class="quarto-post image-right" data-index="1" data-categories="bmV3cw==" data-listing-date-sort="1793491200000" data-listing-file-modified-sort="1794366539996" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="9">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="./posts/example-public-release/index.html" class="no-external">Example public release</a>
@@ -233,18 +237,17 @@ NEST team
 <div class="listing-subtitle">
 <a href="./posts/example-public-release/index.html" class="no-external"></a>
 </div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">
+news
+</div>
+</div>
 <div class="listing-description">
 <a href="./posts/example-public-release/index.html" class="no-external">This public post is selected by the internal edition.</a>
 </div>
 </div>
 <div class="metadata">
-<a href="./posts/example-public-release/index.html" class="no-external">
-<div class="listing-date">
-Nov 1, 2026
-</div>
-<div class="listing-author">
-NEST team
-</div>
+<p><a href="./posts/example-public-release/index.html" class="no-external"></a></p><a href="./posts/example-public-release/index.html" class="no-external">
 </a>
 </div>
 </div>
@@ -252,7 +255,39 @@ NEST team
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+<p><a href="./news.html" class="more">All news →</a></p>
+</section>
+<section id="what-would-you-like-to-do" class="level2 band">
+<h2 class="anchored" data-anchor-id="what-would-you-like-to-do">What would you like to do?</h2>
+<div class="cards">
+<section id="create-tables" class="level3 card-tool">
+<h3 class="anchored" data-anchor-id="create-tables">Create tables</h3>
+<p>Tables and listings for clinical reporting.</p>
+<p><a href="./products.html">Find your tools →</a></p>
+</section>
+<section id="analyze-data" class="level3 card-tool">
+<h3 class="anchored" data-anchor-id="analyze-data">Analyze data</h3>
+<p>Reusable clinical analysis workflows.</p>
+<p><a href="./products.html">Find your tools →</a></p>
+</section>
+<section id="build-applications" class="level3 card-tool">
+<h3 class="anchored" data-anchor-id="build-applications">Build applications</h3>
+<p>Interactive exploration of clinical data.</p>
+<p><a href="./products.html">Find your tools →</a></p>
+</section>
+</div>
+</section>
+<section id="keep-up-with-nest." class="level2 band">
+<h2 class="anchored" data-anchor-id="keep-up-with-nest.">Keep up with NEST.</h2>
+<p>Releases, tutorials, and news worth coming back for.</p>
+<p><a href="./news.html" class="action">Follow updates →</a></p>
+</section>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

@@ -1,5 +1,12 @@
 [
   {
+    "listing": "/news.html",
+    "items": [
+      "/posts/example-public-only/index.html",
+      "/posts/example-public-release/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/example-public-only/index.html",

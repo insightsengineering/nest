@@ -7,11 +7,60 @@
     "text": "This public post is selected by the internal edition."
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Placeholder: project purpose, contribution routes and support channels will go here."
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "Example public-only post\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2026\n\n\nNEST team\n\n\n\n\n\n\n\n\n\n\n\n\nExample public release\n\n\n\n\n\n\n\n\n\n\n\nNov 1, 2026\n\n\nNEST team\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "NEST (public edition)",
+    "title": "Better tools.Clearer insights.",
     "section": "",
-    "text": "Prototype of the public NEST website. Shared theme, public posts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample public-only post\n\n\n\n\n\n\n\n\n\n\n\nNov 2, 2026\n\n\nNEST team\n\n\n\n\n\n\n\n\n\n\n\n\nExample public release\n\n\n\n\n\n\n\n\n\n\n\nNov 1, 2026\n\n\nNEST team\n\n\n\n\n\n\nNo matching items"
+    "text": "Open-source clinical reporting\n\n\n\nR packages for clinical analysis, reporting, and interactive exploration.\nExplore the tools →\n\n\n\n\nLatest release\n\n\n\nThe main improvement, explained in one useful sentence.\nWhat’s new →"
+  },
+  {
+    "objectID": "index.html#latest",
+    "href": "index.html#latest",
+    "title": "Better tools.Clearer insights.",
+    "section": "The latest from NEST",
+    "text": "The latest from NEST\n\n\n\n\n\nExample public-only post\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nExample public release\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n\nAll news →"
+  },
+  {
+    "objectID": "index.html#what-would-you-like-to-do",
+    "href": "index.html#what-would-you-like-to-do",
+    "title": "Better tools.Clearer insights.",
+    "section": "What would you like to do?",
+    "text": "What would you like to do?\n\n\nCreate tables\nTables and listings for clinical reporting.\nFind your tools →\n\n\nAnalyze data\nReusable clinical analysis workflows.\nFind your tools →\n\n\nBuild applications\nInteractive exploration of clinical data.\nFind your tools →"
+  },
+  {
+    "objectID": "index.html#keep-up-with-nest.",
+    "href": "index.html#keep-up-with-nest.",
+    "title": "Better tools.Clearer insights.",
+    "section": "Keep up with NEST.",
+    "text": "Keep up with NEST.\nReleases, tutorials, and news worth coming back for.\nFollow updates →"
+  },
+  {
+    "objectID": "products.html",
+    "href": "products.html",
+    "title": "Products",
+    "section": "",
+    "text": "Placeholder: filterable product cards will go here."
+  },
+  {
+    "objectID": "learn.html",
+    "href": "learn.html",
+    "title": "Learn",
+    "section": "",
+    "text": "Placeholder: getting started and tutorials will go here."
   },
   {
     "objectID": "posts/example-public-only/index.html",

@@ -1,5 +1,9 @@
 [
   {
+    "listing": "/products.html",
+    "items": []
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/posts/example-event-workshop/index.html",

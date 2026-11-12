@@ -18,19 +18,19 @@ listing:
 ```
 :::: {.hero-copy}
 ::: {.eyebrow}
-Open-source clinical reporting
+Open-source R packages for clinical research
 :::
 
 # [[Better tools.]{.t}]{.line} [[Clearer insights.]{.t .sweep}]{.line .accent}
 
-Turn clinical data into meaningful results. Discover R packages built for analysis, reporting, and exploration.
+Discover open-source R packages for clinical data, from interactive exploration to structured analysis results.
 
 ::: {.actions}
 [Explore the tools [→]{.arrow}](products.qmd){.btn-nest}
 :::
 
 ::: {.tagline}
-Built in the open. Shaped by the community.
+Born at Roche. Built with pharmaverse.
 :::
 ::::
 :::::

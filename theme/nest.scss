@@ -233,3 +233,52 @@ body.nav-fixed { padding-top: 88px; }
 .community-band .community-art { width: 190px; height: auto; margin: 0 4px 0 0; flex: none; }
 .community-band .community-copy { flex: 1; border-left: 1px solid #d5dce6; padding-left: 28px; }
 @media (max-width: 800px) { .community-band .community-art { display: none; } .community-band .community-copy { border-left: 0; padding-left: 0; } }
+
+// ---- post header: light title banner (posts only, switched on in posts/_metadata.yml) ----
+// Quarto renders the banner (title, description, tags) and, as a separate block below it, the author/date line.
+// The whole header gets the same light gradient as the news band, tags move above the title,
+// and author and date share one line.
+:root { --gutter-vw: max(48px, calc((100vw - 1120px) / 2)); }
+@media (max-width: 650px) { :root { --gutter-vw: 23px; } }
+#title-block-header.quarto-title-block.default:has(> .quarto-title-banner) {
+  display: flex; flex-wrap: wrap; align-items: center; column-gap: 12px; margin: 0; padding: 30px max(23px, calc((100% - 760px) / 2)) 34px; color: $ink;
+  background: linear-gradient(120deg, #eef1f5 0%, #e5ecf4 65%, #dce6f3 100%); border-bottom: 1px solid #d2ddea;
+  .quarto-title-banner { display: block; background: transparent; color: inherit; margin: 0; padding: 0; }
+  .quarto-title { display: flex; flex-direction: column; align-items: flex-start; max-width: 760px; margin: 0; padding: 0; }
+  .quarto-categories { order: -1; display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; padding: 0; }
+  .quarto-category { font: 700 11px/1 "DM Sans", Arial, sans-serif; letter-spacing: .6px; text-transform: uppercase; color: $cat; background: #d6e3f8; border: 0; border-radius: 999px; padding: 7px 14px; margin: 0; }
+  .quarto-title .title { font: 800 40px/1.15 Manrope, Arial, sans-serif; letter-spacing: -1px; color: $ink; margin: 0 0 14px; }
+  .description, .description p { font: 400 16px/1.6 "DM Sans", Arial, sans-serif; color: $sub; margin: 0; }
+  .quarto-title-meta { display: flex; grid-template-columns: none; flex-wrap: wrap; align-items: center; column-gap: 12px; margin: 18px 0 0; padding: 0; max-width: 760px; font: 400 14px/1.4 "DM Sans", Arial, sans-serif; color: $ink; }
+  .quarto-title-meta > div { display: flex; align-items: center; }
+  .quarto-title-meta-heading { display: none; }
+  .quarto-title-meta p { margin: 0; color: $ink; }
+  .quarto-title-meta > div + div::before { content: "\2022"; margin-right: 12px; color: $sub; }
+  .quarto-title-meta > div:first-child .quarto-title-meta-contents { display: flex; align-items: center; }
+  .quarto-title-meta > div:first-child .quarto-title-meta-contents::before { content: ""; display: inline-block; width: 18px; height: 18px; margin-right: 10px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23607083'%3E%3Cpath d='M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4'/%3E%3C/svg%3E") center / contain no-repeat; }
+  // Structured authors (name plus affiliation or job title) render in their own block before the date block.
+  .quarto-title-banner { flex: 0 0 100%; }
+  .quarto-title-meta-author { display: flex; align-items: center; column-gap: 12px; margin: 18px 0 0; padding: 0; font: 400 14px/1.4 "DM Sans", Arial, sans-serif; color: $ink; }
+  .quarto-title-meta-author .quarto-title-meta-heading { display: none; }
+  .quarto-title-meta-author p { margin: 0; color: $ink; font: inherit; }
+  .quarto-title-meta-author .quarto-title-meta-heading + .quarto-title-meta-heading + .quarto-title-meta-contents { display: flex; align-items: center; }
+  .quarto-title-meta-author .quarto-title-meta-heading + .quarto-title-meta-heading + .quarto-title-meta-contents::before { content: ""; display: inline-block; width: 18px; height: 18px; margin-right: 10px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23607083'%3E%3Cpath d='M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4'/%3E%3C/svg%3E") center / contain no-repeat; }
+  .quarto-title-meta-author .quarto-title-meta-contents + .quarto-title-meta-contents { display: flex; }
+  .quarto-title-meta-author .quarto-title-meta-contents + .quarto-title-meta-contents::before { content: "\2022"; margin-right: 12px; color: $sub; }
+  .quarto-title-meta-author + .quarto-title-meta > div:first-child .quarto-title-meta-contents::before { content: none; }
+  .quarto-title-meta-author + .quarto-title-meta > div:first-child::before { content: "\2022"; margin-right: 12px; color: $sub; }
+}
+
+// ---- post body: comfortable reading column and check-mark bullets ----
+// Pandoc wraps the text under each heading in a <section>, so every rule covers both levels.
+main.content.quarto-banner-title-block {
+  > p, > ul, > ol, > h2, > h3, > .callout, section > p, section > ul, section > ol, section > h2, section > h3, section > .callout { max-width: 760px; }
+  > p, > ul, > ol, section > p, section > ul, section > ol { font: 400 16px/1.7 "DM Sans", Arial, sans-serif; color: $ink; }
+  > h2, > h3, section > h2, section > h3 { font-family: Manrope, Arial, sans-serif; font-weight: 800; letter-spacing: -.4px; color: $ink; margin-top: 1.8em; border-bottom: 0; padding-bottom: 0; }
+  > ul, section > ul { list-style: none; padding-left: 0; }
+  > ul > li, section > ul > li { position: relative; padding-left: 36px; margin: 10px 0; }
+  > ul > li::before, section > ul > li::before { content: ""; position: absolute; left: 0; top: .2em; width: 22px; height: 22px; border-radius: 50%; background: $btn url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 8.5l2.4 2.4 4.6-5'/%3E%3C/svg%3E") center / 14px no-repeat; }
+}
+// Start the post body at the same left edge as the header text and the logo.
+// Posts with a table of contents keep Quarto's own layout (sidebar plus body column).
+#quarto-content:not(:has(nav#TOC)) > main.content.quarto-banner-title-block { grid-column: screen-start / screen-end; padding-left: max(23px, calc((100% - 760px) / 2)); padding-right: max(23px, calc((100% - 760px) / 2)); }

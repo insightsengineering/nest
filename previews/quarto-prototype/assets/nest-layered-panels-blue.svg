@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 400">
+  <defs>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#b8d7ff"/>
+      <stop offset="100%" stop-color="#79adf5"/>
+    </linearGradient>
+    <linearGradient id="middle" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8fc0ff"/>
+      <stop offset="100%" stop-color="#438cf1"/>
+    </linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1769df"/>
+      <stop offset="100%" stop-color="#0861ee"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rear / highest layer -->
+  <path d="
+    M 365 55
+    Q 382 32 412 28
+    L 745 0
+    Q 783 -3 773 34
+    L 705 252
+    Q 697 278 668 278
+    L 275 278
+    Z"
+    fill="url(#back)" opacity="0.78"/>
+
+  <!-- Middle layer -->
+  <path d="
+    M 142 125
+    Q 155 103 184 100
+    L 565 75
+    Q 600 73 590 107
+    L 530 302
+    Q 522 328 492 328
+    L 65 328
+    Z"
+    fill="url(#middle)" opacity="0.82"/>
+
+  <!-- Front / lowest layer -->
+  <path d="
+    M 350 222
+    Q 363 199 393 194
+    L 818 124
+    Q 855 118 846 154
+    L 798 340
+    Q 791 368 760 368
+    L 255 368
+    Z"
+    fill="url(#front)" opacity="0.96"/>
+</svg>

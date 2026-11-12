@@ -8,7 +8,7 @@ title-block-banner: false
 :::: {.about-hero-copy}
 # About NEST
 
-Placeholder: who we are, what we build, and the community behind our R tools for clinical research.
+Who we are, and why we build NEST in the open.
 ::::
 
 ```{=html}
@@ -17,40 +17,33 @@ Placeholder: who we are, what we build, and the community behind our R tools for
 :::::
 
 ```{=html}
-<div class="about-story">
-  <div class="about-mission">
-    <h2>Our mission</h2>
-    <p>Placeholder: provide high-quality tools that make clinical analysis and reporting more efficient, reproducible, and accessible.</p>
+<div class="about-history">
+  <div class="about-history-lead">
+    <div class="about-eyebrow">Our story</div>
+    <h2>A shared effort for faster, more consistent clinical reporting</h2>
+    <div class="about-mission-card">
+      <svg class="about-ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle class="solid" cx="12" cy="12" r="1.8"/></svg>
+      <div><h3>Our mission</h3><p>Provide high-quality tools that make clinical analysis and reporting more efficient, reproducible, and accessible.</p></div>
+    </div>
   </div>
+  <div class="about-history-copy">
+    <p>NEST began as an internal project at Roche, started by a small team of data scientists who wanted clinical reporting to be faster and more consistent.</p>
+    <p>We soon saw strong interest from others facing the same problems, which is why we opened it up, and why we now build it alongside collaborators through efforts such as pharmaverse.</p>
+    <p>Our reason is simple: better tools, shared widely, help bring new medicines to patients sooner. R is free, and we build with it every day, so we give back to the community that makes it possible. Working in the open also lets us be clearer about how results are computed, build shared standards and validation approaches, and give teams the flexibility to adapt the tools to their needs.</p>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="about-story">
   <div class="about-pair">
     <div class="about-row">
-      <div class="about-tile"><svg class="about-ico" viewBox="0 0 24 24" aria-hidden="true"><circle class="solid soft" cx="9" cy="8" r="3.4"/><path class="solid soft" d="M2.8 20c0-3.5 2.8-6.2 6.2-6.2s6.2 2.7 6.2 6.2z"/><circle class="solid soft" cx="17.4" cy="9" r="2.5"/><path class="solid soft" d="M16.9 14.3c2.5.3 4.4 2.3 4.4 4.9V20h-4c0-2.3-.3-4.2-.9-5.7z"/></svg></div>
-      <div><h3>Our community</h3><p>Placeholder: a collaborative, cross-functional community of developers, statisticians, and data scientists who build, share, and improve tools together.</p></div>
+      <img class="about-hex" src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/pharmaverse.svg" alt="pharmaverse hex sticker">
+      <div><h3>Our community</h3><p>Many NEST packages now live in <a href="https://pharmaverse.org" target="_blank" rel="noopener">pharmaverse</a>, where we work with other pharma and biotech companies to build, improve, and adopt open-source tools for clinical reporting together.</p></div>
     </div>
     <div class="about-row">
       <div class="about-tile"><svg class="about-ico" viewBox="0 0 24 24" aria-hidden="true"><rect class="solid" x="3.5" y="13" width="4.5" height="7.5" rx="1.2"/><rect class="solid" x="9.75" y="8.5" width="4.5" height="12" rx="1.2"/><rect class="solid" x="16" y="3.5" width="4.5" height="17" rx="1.2"/></svg></div>
-      <div><h3>Our impact</h3><p>Placeholder: powering analyses and reports across studies and therapeutic areas, enabling faster insights and greater consistency in clinical reporting.</p></div>
-    </div>
-  </div>
-</div>
-
-<div class="about-approach">
-  <div class="about-panel">
-    <div class="about-intro">
-      <h2>Our approach</h2>
-      <p>Open, modular, and practical tools for real clinical research needs.</p>
-    </div>
-    <div class="about-item">
-      <svg class="about-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
-      <h4>Open by design</h4><p>Built in the open, where we can, with a focus on transparency and collaboration.</p>
-    </div>
-    <div class="about-item">
-      <svg class="about-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/><path d="M3 17.5l9 5 9-5"/></svg>
-      <h4>Modular and reusable</h4><p>Interoperable tools that fit together across the analysis lifecycle.</p>
-    </div>
-    <div class="about-item">
-      <svg class="about-ico" viewBox="0 0 24 24" aria-hidden="true"><path class="solid soft" d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg>
-      <h4>Practical and scalable</h4><p>Designed for real clinical research needs, from exploration to reporting.</p>
+      <div><h3>Our impact</h3><p>Our regulatory reporting packages are validated for regulatory use at Roche and supported Roche's first R-based submission to the FDA. Interactive tools like teal help teams explore and review the data along the way.</p></div>
     </div>
   </div>
 </div>

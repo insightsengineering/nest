@@ -21,9 +21,9 @@ listing:
 Open-source R packages for clinical research
 :::
 
-# [[Better tools.]{.t}]{.line} [[Clearer insights.]{.t .sweep}]{.line .accent}
+# [[Faster Reporting]{.t}]{.line} [[Clearer Insights]{.t .sweep}]{.line .accent}
 
-Discover open-source R packages for clinical data, from interactive exploration to structured analysis results.
+Discover open-source R packages for clinical data, from interactive exploration to structured analysis results
 
 ::: {.actions}
 [Explore the tools [→]{.arrow}](products.qmd){.btn-nest}

@@ -57,27 +57,27 @@ Choose the right tool for your use case, from interactive exploration to structu
 <button class="pc-btn pc-prev" type="button" aria-label="Previous product"><span class="bi bi-chevron-left"></span></button>
 <div class="pc-track" tabindex="0">
 <div class="card-tool">
-<div class="head"><img src="assets/logos/teal.svg" alt="teal hex sticker"><div><div class="name">teal</div><div class="kind">Interactive exploration</div></div></div>
+<div class="head"><img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/teal.svg" alt="teal hex sticker"><div><div class="name">teal</div><div class="kind">Interactive exploration</div></div></div>
 <div class="desc">Bring your data into interactive applications for exploration and review.</div>
 <a class="go" href="https://pharmaverse.github.io/teal/" target="_blank" rel="noopener">Explore teal ↗</a>
 </div>
 <div class="card-tool">
-<div class="head"><img src="assets/logos/cards.svg" alt="cards hex sticker"><div><div class="name">cards</div><div class="kind">Analysis results</div></div></div>
+<div class="head"><img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/cards.svg" alt="cards hex sticker"><div><div class="name">cards</div><div class="kind">Analysis results</div></div></div>
 <div class="desc">A foundation for working with structured analysis results in R.</div>
 <a class="go" href="https://pharmaverse.github.io/cards/" target="_blank" rel="noopener">Explore cards ↗</a>
 </div>
 <div class="card-tool">
-<div class="head"><img src="assets/logos/cardx.svg" alt="cardx hex sticker"><div><div class="name">cardx</div><div class="kind">Extended analysis</div></div></div>
+<div class="head"><img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/cardx.svg" alt="cardx hex sticker"><div><div class="name">cardx</div><div class="kind">Extended analysis</div></div></div>
 <div class="desc">Extend your analysis workflows with additional tools for results.</div>
 <a class="go" href="https://pharmaverse.github.io/cardx/" target="_blank" rel="noopener">Explore cardx ↗</a>
 </div>
 <div class="card-tool">
-<div class="head"><img src="assets/logos/crane.svg" alt="crane hex sticker"><div><div class="name">crane</div><div class="kind">Lorem ipsum</div></div></div>
+<div class="head"><img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/crane.svg" alt="crane hex sticker"><div><div class="name">crane</div><div class="kind">Lorem ipsum</div></div></div>
 <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
 <a class="go" href="https://pharmaverse.github.io/crane/" target="_blank" rel="noopener">Explore crane ↗</a>
 </div>
 <div class="card-tool">
-<div class="head"><img src="assets/logos/formatters.svg" alt="formatters hex sticker"><div><div class="name">formatters</div><div class="kind">Lorem ipsum</div></div></div>
+<div class="head"><img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/formatters.svg" alt="formatters hex sticker"><div><div class="name">formatters</div><div class="kind">Lorem ipsum</div></div></div>
 <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</div>
 <a class="go" href="https://pharmaverse.github.io/formatters/" target="_blank" rel="noopener">Explore formatters ↗</a>
 </div>

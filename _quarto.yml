@@ -4,7 +4,6 @@ project:
   resources:
     - assets/*.svg
     - assets/*.png
-    - assets/logos/*.svg
   # Only render the new site; ignore anything else in the repo.
   render:
     - index.qmd
@@ -19,7 +18,7 @@ website:
   description: "Open-source clinical reporting"
   search: false
   navbar:
-    logo: assets/logos/NEST.svg
+    logo: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/NEST.svg
     right:
       - href: products.qmd
         text: Products

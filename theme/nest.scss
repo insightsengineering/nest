@@ -311,3 +311,50 @@ main.content.quarto-banner-title-block {
 
 // ---- news page: start the Categories list level with the top border of the news panel ----
 #quarto-margin-sidebar .quarto-listing-category-title { margin-top: 72px; }
+
+// ---- about page: compact dark header with the green panels, open columns, then the approach row ----
+.about-hero { background: $dark; color: $hero-ink; padding: 40px var(--gutter) 44px; display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+#quarto-content > .about-hero { padding-top: 40px; }
+.about-hero h1 { font: 800 52px/1.1 Manrope, Arial, sans-serif; letter-spacing: -1.8px; margin: 0 0 14px; color: $hero-ink; }
+.about-hero-copy p { font-size: 16px; line-height: 1.75; color: $hero-sub; max-width: 520px; margin: 0; }
+.about-hero .about-art { width: 560px; max-width: 50%; height: auto; flex: none; margin: 0; }
+
+.about-ico { width: 34px; height: 34px; fill: none; stroke: $cat; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.about-ico .solid { fill: $cat; stroke: none; }
+.about-ico .solid.soft { stroke: $cat; stroke-width: 1.4; }
+
+// mission on the left, community and impact stacked on the right
+.about-story { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); padding: 52px var(--gutter) 44px; }
+#quarto-content > .about-story { padding-top: 52px; }
+.about-mission { padding-right: 56px; border-right: 1px solid $line; align-self: stretch; display: flex; flex-direction: column; justify-content: center; }
+.about-mission h2 { font: 800 40px/1.15 Manrope, Arial, sans-serif; letter-spacing: -1.4px; margin: 0 0 24px; padding: 0; border: 0; color: $dark; }
+.about-mission h2::after { content: ""; display: block; width: 48px; height: 4px; border-radius: 2px; background: $cat; margin-top: 18px; }
+.about-mission p { font: 400 17px/1.7 "DM Sans", Arial, sans-serif; color: $ink; margin: 0; }
+.about-pair { display: flex; flex-direction: column; gap: 30px; padding-left: 56px; justify-content: center; }
+.about-row { display: flex; gap: 22px; align-items: flex-start; }
+.about-tile { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 14px; background: #e4ecfb; flex: none; }
+.about-tile .about-ico { width: 28px; height: 28px; }
+.about-row h3 { font: 800 22px/1.25 Manrope, Arial, sans-serif; letter-spacing: -.5px; margin: 0 0 6px; padding: 0; border: 0; color: $dark; }
+.about-row p { font: 400 14px/1.7 "DM Sans", Arial, sans-serif; color: $sub; margin: 0; }
+
+// approach: one soft panel, intro on the left, three items with dividers
+.about-approach { padding: 8px var(--gutter) 56px; }
+#quarto-content > .about-approach { padding-top: 8px; }
+.about-panel { display: grid; grid-template-columns: 1.1fr repeat(3, 1fr); background: #f2f6fd; border: 1px solid #e1e9f6; border-radius: 20px; padding: 34px 8px 34px 36px; }
+.about-intro { padding-right: 32px; }
+.about-intro h2 { font: 800 28px/1.2 Manrope, Arial, sans-serif; letter-spacing: -.9px; margin: 0 0 10px; padding: 0; border: 0; color: $dark; }
+.about-intro p { font: 400 14px/1.7 "DM Sans", Arial, sans-serif; color: $sub; margin: 0; }
+.about-item { border-left: 1px solid #d9e3f3; padding: 2px 28px; }
+.about-item h4 { font: 800 16px/1.3 Manrope, Arial, sans-serif; letter-spacing: -.2px; margin: 12px 0 6px; color: $dark; }
+.about-item p { font: 400 13px/1.7 "DM Sans", Arial, sans-serif; color: $sub; margin: 0; }
+@media (max-width: 800px) {
+  .about-hero { flex-direction: column; align-items: flex-start; padding-bottom: 32px; }
+  .about-hero h1 { font-size: 38px; letter-spacing: -1.2px; }
+  .about-hero .about-art { width: 280px; max-width: 80%; }
+  .about-story { grid-template-columns: 1fr; }
+  .about-mission { padding-right: 0; border-right: 0; padding-bottom: 28px; border-bottom: 1px solid $line; }
+  .about-pair { padding-left: 0; padding-top: 28px; }
+  .about-panel { grid-template-columns: 1fr; padding: 28px 24px; }
+  .about-intro { padding: 0 0 20px; }
+  .about-item { border-left: 0; border-top: 1px solid #d9e3f3; padding: 18px 0 4px; margin-top: 18px; }
+}

@@ -2,6 +2,8 @@ project:
   type: website
   output-dir: _site
   resources:
+    - assets/*.svg
+    - assets/*.png
     - assets/logos/*.svg
   # Only render the new site; ignore anything else in the repo.
   render:

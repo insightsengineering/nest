@@ -13,6 +13,9 @@ listing:
 ---
 
 ::::: {.hero}
+```{=html}
+<img class="hero-waves" src="assets/hero-waves.svg" alt="" aria-hidden="true">
+```
 :::: {.hero-copy}
 ::: {.eyebrow}
 Open-source clinical reporting
@@ -29,28 +32,7 @@ Turn clinical data into meaningful results. Discover R packages built for analys
 ::: {.tagline}
 Built in the open. Shaped by the community.
 :::
-
-::: {.scroll-cue}
-[[]{.bi .bi-chevron-down}](#latest-from-nest){aria-label="Scroll to the latest news"}
-:::
 ::::
-:::::
-
-::::: {.news-band}
-::: {.band-head}
-::: {}
-::: {.eyebrow}
-Keep up with the ecosystem
-:::
-## Latest from NEST
-:::
-::: {.more}
-[All news →](news.qmd)
-:::
-:::
-
-::: {#latest-news}
-:::
 :::::
 
 ::::: {.products-band}
@@ -60,6 +42,10 @@ Keep up with the ecosystem
 Small tools. Shared possibilities.
 :::
 ## Find your starting point
+
+::: {.band-intro}
+Choose the right tool for your use case, from interactive exploration to structured analysis results and extended workflows.
+:::
 :::
 ::: {.more}
 [See all products →](products.qmd)
@@ -128,8 +114,29 @@ Small tools. Shared possibilities.
 ```
 :::::
 
-::::: {.community-band}
+::::: {.news-band}
+::: {.band-head}
 ::: {}
+::: {.eyebrow}
+Keep up with the ecosystem
+:::
+## Latest from NEST
+:::
+::: {.more}
+[All news →](news.qmd)
+:::
+:::
+
+::: {#latest-news}
+:::
+:::::
+
+::::: {.community-band}
+```{=html}
+<img class="community-art" src="assets/community.png" alt="" aria-hidden="true">
+```
+
+::: {.community-copy}
 ### Built together. Shared openly.
 
 Explore the code, ask a question, or help shape what comes next.

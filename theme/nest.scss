@@ -126,7 +126,7 @@ body.nav-fixed { padding-top: 88px; }
 #quarto-content .quarto-listing { margin-right: 0; padding-bottom: 0; }
 
 // ---- navbar: GitHub icon and the collapsed (burger) menu ----
-.navbar .nav-link .bi-github { font-size: 17px; }
+.navbar .nav-link .nav-icon { display: block; width: 17px; height: 17px; }
 // Let the header grow when the burger menu opens, so it covers the page
 // instead of the menu items spilling over the hero.
 #quarto-header .navbar { height: auto; min-height: 88px; }
@@ -139,7 +139,7 @@ body.nav-fixed { padding-top: 88px; }
   .navbar .navbar-collapse .nav-link:hover, .navbar .navbar-collapse .nav-link:focus { background: #eef1f5; color: $ink !important; }
   .navbar .navbar-collapse .nav-link.active { color: $cat !important; }
   .navbar-nav .nav-item:last-child .nav-link { border-left: 0; padding-left: 14px !important; border-top: 1px solid $line; border-radius: 0 0 8px 8px; margin-top: 4px; }
-  .navbar .navbar-collapse .nav-link .bi-github { font-size: 18px; }
+  .navbar .navbar-collapse .nav-link .nav-icon { width: 18px; height: 18px; }
 }
 
 // ---- hero entrance ----

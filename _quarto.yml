@@ -28,7 +28,7 @@ website:
         text: Learn
       - href: about.qmd
         text: About
-      - icon: github
+      - text: '<img class="nav-icon nav-icon-github" src="/assets/github.svg" alt="GitHub">'
         href: https://github.com/insightsengineering
         aria-label: GitHub
   page-footer:

@@ -1,0 +1,59 @@
+name: Quarto PR build
+# Builds the site for every pull request and publishes a preview to
+# gh-pages under previews/<branch>/. Branches without a PR are not built.
+on:
+  pull_request:
+permissions:
+  contents: write # needed to publish the preview to gh-pages
+  pull-requests: write # needed to comment the preview link on the PR
+concurrency:
+  group: preview-${{ github.head_ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.11.9
+      - name: Render
+        run: quarto render
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-site
+          path: _site
+      - name: Sanitize branch name for use as a URL slug
+        id: branch
+        run: |
+          SAFE=$(echo "${HEAD_REF}" | sed 's|[^a-zA-Z0-9._-]|-|g')
+          echo "safe=${SAFE}" >> "$GITHUB_OUTPUT"
+        env:
+          HEAD_REF: ${{ github.head_ref }}
+      # Preview only for branches in this repo; fork PRs have a read-only token.
+      - name: Publish preview to gh-pages
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          destination_dir: previews/${{ steps.branch.outputs.safe }}
+          keep_files: true
+      - name: Show preview URL
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/previews/${{ steps.branch.outputs.safe }}/"
+          echo "### Preview: ${URL}" >> "$GITHUB_STEP_SUMMARY"
+      - name: Comment preview link on PR
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          header: "Site preview"
+          message: |
+            :eyes: **Preview available!**
+
+            https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/previews/${{ steps.branch.outputs.safe }}/
+
+            _Updated on every push to this branch. Removed when the PR is closed._
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

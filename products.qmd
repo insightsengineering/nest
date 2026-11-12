@@ -1,0 +1,14 @@
+---
+title: "Products"
+page-layout: full
+listing:
+  - id: product-list
+    contents: "products/*.yml"
+    type: default
+    sort: false
+    fields: [image, title, description, categories]
+    categories: false
+---
+
+::: {#product-list}
+:::

@@ -1,0 +1,26 @@
+# One entry per product. The Products page draws these as rows; each row links to the product's own site.
+- title: teal
+  description: Bring your data into interactive applications for exploration and review.
+  image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/teal.svg
+  path: https://pharmaverse.github.io/teal/
+  categories: ["Interactive exploration"]
+- title: cards
+  description: A foundation for working with structured analysis results in R.
+  image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/cards.svg
+  path: https://pharmaverse.github.io/cards/
+  categories: ["Analysis results"]
+- title: cardx
+  description: Extend your analysis workflows with additional tools for results.
+  image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/cardx.svg
+  path: https://pharmaverse.github.io/cardx/
+  categories: ["Extended analysis"]
+- title: crane
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+  image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/crane.svg
+  path: https://pharmaverse.github.io/crane/
+  categories: ["Lorem ipsum"]
+- title: formatters
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+  image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/formatters.svg
+  path: https://pharmaverse.github.io/formatters/
+  categories: ["Lorem ipsum"]

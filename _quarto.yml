@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - assets/*.svg
+    - assets/*.png
+  # Only render the new site; ignore anything else in the repo.
+  render:
+    - index.qmd
+    - products.qmd
+    - news.qmd
+    - learn.qmd
+    - about.qmd
+    - "posts/**/*.qmd"
+
+website:
+  title: "NEST"
+  description: "Open-source clinical reporting"
+  search: false
+  navbar:
+    logo: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/NEST.svg
+    right:
+      - href: products.qmd
+        text: Products
+      - href: news.qmd
+        text: News
+      - href: learn.qmd
+        text: Learn
+      - href: about.qmd
+        text: About
+      - text: '<img class="nav-icon nav-icon-github" src="/assets/github.svg" alt="GitHub">'
+        href: https://github.com/insightsengineering
+        aria-label: GitHub
+  page-footer:
+    border: false
+    left: "NEST · Open-source tools for clinical research"
+    right: "[Open source on GitHub ↗](https://github.com/insightsengineering)"
+
+format:
+  html:
+    theme: theme/nest.scss
+    toc: false
+    link-external-newwindow: true
+    include-in-header:
+      - text: |
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">

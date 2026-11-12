@@ -1,0 +1,107 @@
+---
+title: "formatters 0.6.0 is out"
+description: "What is new in this release, with a short upgrade guide."
+author: "NEST team"
+date: "2026-11-05"
+categories: ["Releases"]
+toc: true
+toc-location: left
+toc-title: "On this page"
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor tortor ac rhoncus pellentesque. Phasellus elementum eleifend elementum. Vestibulum eu porta quam. Phasellus congue et augue sit amet facilisis. Nulla lacus sapien, tristique at suscipit id, tincidunt ac dolor. Ut commodo, eros quis accumsan malesuada, orci odio venenatis dolor, ac euismod libero eros sed sapien. Aliquam aliquam tincidunt leo quis egestas. Quisque porttitor dolor sed tellus vestibulum vestibulum. Aenean pretium diam et magna vestibulum, non pharetra quam tempor. Proin in ligula purus. Nulla nec felis sed leo molestie dapibus sed ut augue. Aliquam at magna finibus, consectetur orci vel, sodales velit. Quisque viverra lacus id diam volutpat tempor.
+
+Nam viverra ultricies enim, vitae faucibus orci. Quisque aliquam condimentum elit, in rhoncus diam placerat vitae. Donec condimentum dapibus magna, quis lacinia lacus consequat vitae. Aenean ac vehicula nibh. Etiam volutpat accumsan accumsan. Nullam in justo fringilla, ullamcorper quam at, accumsan est. Donec mattis dolor nec risus ultrices, sed sagittis velit pulvinar. Ut urna lorem, maximus et molestie tristique, gravida et orci. Aliquam vulputate semper ultrices.
+
+## Highlights
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.[^1] Mauris tempor tortor ac rhoncus pellentesque, with a short list of what changed:
+
+- Faster formatting of large tables
+- New helper for rounding to significant digits
+- Better error messages when a format is not found
+
+[^1]: Footnotes appear at the bottom of the page and link back to the text.
+
+> "Small tools, shared possibilities." A blockquote works well for a short quote from a user or a maintainer.
+
+::: {.callout-note}
+## Note
+Callouts draw attention to a short remark. This is the note style.
+:::
+
+::: {.callout-tip}
+## Tip
+Use a tip for advice that saves the reader time.
+:::
+
+::: {.callout-warning}
+## Breaking change
+Use a warning for anything that can break existing code.
+:::
+
+::: {.callout-important collapse="true"}
+## Click to expand
+Collapsible callouts keep long details out of the way until the reader asks for them.
+:::
+
+## Upgrade guide
+
+Code blocks get syntax highlighting and a copy button:
+
+```r
+install.packages("formatters")
+library(formatters)
+format_value(3.14159, "xx.xx")
+```
+
+Tabsets let readers pick the variant that fits them:
+
+::: {.panel-tabset}
+## CRAN
+```r
+install.packages("formatters")
+```
+
+## GitHub
+```r
+pak::pak("insightsengineering/formatters")
+```
+:::
+
+A collapsible code block hides the details until needed:
+
+```{.r code-fold="true" code-summary="Show the full example"}
+x <- c(1.234, 22.5, 333)
+format_value(x, "xx.x")
+```
+
+## Comparison
+
+| Version | Release date | Highlights          |
+|---------|--------------|---------------------|
+| 0.5.0   | 2026-03      | Rounding helpers    |
+| 0.6.0   | 2026-11      | Faster large tables |
+
+: Recent releases {.striped}
+
+## Diagram
+
+```{mermaid}
+flowchart LR
+  A[Data] --> B[formatters]
+  B --> C[Tables]
+  B --> D[Listings]
+```
+
+## Math and margin notes
+
+Inline math such as $\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i$ and display math both work:
+
+$$
+s^2 = \frac{1}{n-1}\sum_{i=1}^{n}(x_i - \bar{x})^2
+$$
+
+## Where to go next
+
+See the [package site](https://pharmaverse.github.io/formatters/) for the full changelog.

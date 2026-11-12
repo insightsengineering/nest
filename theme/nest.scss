@@ -179,7 +179,13 @@ body.nav-fixed { padding-top: 88px; }
 
 // ---- hero background: soft wave lines (decorative image) ----
 .hero { position: relative; overflow: hidden; }
-.hero .hero-waves { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; margin: 0; pointer-events: none; }
+.hero .hero-waves { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; margin: 0; pointer-events: none; animation: nest-waves 1.6s cubic-bezier(.22, .61, .36, 1) .15s both; }
+// The waves open from the center out to both edges while fading in and rising slightly.
+@keyframes nest-waves {
+  from { clip-path: inset(0 50% 0 50%); opacity: 0; transform: translateY(24px); }
+  to { clip-path: inset(0 0 0 0); opacity: 1; transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { .hero .hero-waves { animation: none; } }
 .hero-copy { position: relative; z-index: 1; }
 
 // ---- product row: scroll strip, three cards visible, one card per arrow click ----

@@ -1,5 +1,6 @@
 ---
 title: "News"
+page-layout: full
 listing:
   contents: posts
   type: default

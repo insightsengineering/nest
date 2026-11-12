@@ -288,3 +288,26 @@ main.content.quarto-banner-title-block {
 // Start the post body at the same left edge as the header text and the logo.
 // Posts with a table of contents keep Quarto's own layout (sidebar plus body column).
 #quarto-content:not(:has(nav#TOC)) > main.content.quarto-banner-title-block { grid-column: screen-start / screen-end; padding-left: max(23px, calc((100% - 760px) / 2)); padding-right: max(23px, calc((100% - 760px) / 2)); }
+
+// ---- products page: one row per product, drawn from products.yml ----
+// Same panel and hover as the news rows; the first column holds the logo instead of a date.
+#listing-product-list .quarto-post { grid-template-columns: 48px minmax(0, 1fr) 200px 28px; column-gap: 24px; padding: 18px 26px; }
+#listing-product-list .quarto-post .metadata { display: none; }
+#listing-product-list .quarto-post .thumbnail { grid-column: 1; grid-row: 1 / span 2; width: 48px; height: 48px; margin: 0; padding: 0; align-self: center; }
+#listing-product-list .quarto-post .thumbnail a { display: block; }
+#listing-product-list .quarto-post .thumbnail-image { display: block; width: 48px; height: 48px; object-fit: contain; margin: 0; border-radius: 0; }
+#listing-product-list .quarto-post .listing-title { font: 800 17px/1.3 Manrope, Arial, sans-serif; letter-spacing: -.3px; margin: 0 0 3px; }
+#listing-product-list .quarto-post .listing-description { font: 400 12px/1.6 "DM Sans", Arial, sans-serif; }
+#listing-product-list .quarto-post .listing-categories { justify-content: flex-start; align-self: stretch; align-items: center; border-left: 1px solid $line; padding-left: 24px; }
+#listing-product-list .quarto-post::after { content: "\2197"; }
+@media (max-width: 800px) {
+  #listing-product-list .quarto-post { grid-template-columns: 48px minmax(0, 1fr) 28px; column-gap: 16px; row-gap: 2px; }
+  #listing-product-list .quarto-post .thumbnail { grid-row: 1 / span 3; align-self: start; }
+  #listing-product-list .quarto-post .listing-title { grid-column: 2; grid-row: 1; }
+  #listing-product-list .quarto-post .listing-description { grid-column: 2; grid-row: 2; }
+  #listing-product-list .quarto-post .listing-categories { grid-column: 2; grid-row: 3; border-left: 0; padding-left: 0; margin-top: 8px; }
+  #listing-product-list .quarto-post::after { grid-column: 3; grid-row: 1 / span 3; }
+}
+
+// ---- news page: start the Categories list level with the top border of the news panel ----
+#quarto-margin-sidebar .quarto-listing-category-title { margin-top: 72px; }

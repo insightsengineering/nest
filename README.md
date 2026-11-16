@@ -49,9 +49,7 @@ Previews are only built for branches in this repository. If you do not have writ
    title: "Hands-on workshop: building your first teal app"
    description: "One or two sentences shown in the news list."
    author:
-     - name: "Your Name"
-       affiliation:
-         - name: "Your role, Company"
+     - name: "Your Name (Company)"
    date: "2026-11-10"
    categories: ["Events"]
    ---

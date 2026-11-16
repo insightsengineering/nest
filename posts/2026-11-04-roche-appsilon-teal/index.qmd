@@ -1,12 +1,9 @@
 ---
 title: "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development"
 author:
-  - name: Dony Unardi
-    affiliation: Roche
-  - name: André Veríssimo
-    affiliation: Appsilon
-  - name: Oriol Senan
-    affiliation: Appsilon
+  - name: Dony Unardi (Roche)
+  - name: André Veríssimo (Appsilon)
+  - name: Oriol Senan (Appsilon)
 description: "Following teal’s move to pharmaverse, Appsilon’s recognition as a core contributor and copyright holder marks the next step in an established partnership."
 date: "2026-11-04"
 categories: ["Announcements"]

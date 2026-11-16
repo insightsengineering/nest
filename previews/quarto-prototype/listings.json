@@ -26,9 +26,5 @@
       "/posts/example-public-only/index.html",
       "/posts/example-public-release/index.html"
     ]
-  },
-  {
-    "listing": "/products.html",
-    "items": []
   }
 ]

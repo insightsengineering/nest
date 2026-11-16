@@ -69,17 +69,25 @@ Details worth knowing:
 
 ## Add or edit a product
 
-Products live in `products/*.yml`. Add an entry to `01-public.yml`:
+The Products page is drawn from `products/*.yml`. Each file is a list of sections, and each section is either a group of cards or a row of pill links. Cards group related packages into a family, with one link per package.
 
 ```yaml
-- title: teal
-  description: One sentence about what the package does.
-  image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/teal.svg
-  path: https://pharmaverse.github.io/teal/
-  categories: ["Interactive exploration"]
+- category: Interactive exploration
+  description: Tools for interactive clinical data exploration and visualization.
+  families:
+    - title: teal
+      description: One sentence about the family.
+      image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/teal.svg
+      links:
+        - { text: teal, url: "https://pharmaverse.github.io/teal/" }
+        - { text: teal.modules.clinical, url: "https://insightsengineering.github.io/teal.modules.clinical/" }
 ```
 
-Hex stickers come from the [hex-stickers](https://github.com/insightsengineering/hex-stickers) repository, so reference them from there instead of copying files into this repo.
+- To add a package to an existing family, add one line under its `links`.
+- To add a family, add a block under `families`. Keep each section to four cards so the grid stays even, and keep a card to about four links.
+- To add a row of pills (for catalogs and examples), use `links:` directly under the section instead of `families:`.
+- `image` is optional. A card without one gets a placeholder hexagon with its first letter. Hex stickers come from the [hex-stickers](https://github.com/insightsengineering/hex-stickers) repository, so reference them from there instead of copying files into this repo.
+- Check that every link opens before you submit.
 
 ## Pull requests
 

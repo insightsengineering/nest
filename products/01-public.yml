@@ -1,26 +1,72 @@
-# One entry per product. The Products page draws these as rows; each row links to the product's own site.
-- title: teal
-  description: Bring your data into interactive applications for exploration and review.
-  image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/teal.svg
-  path: https://pharmaverse.github.io/teal/
-  categories: ["Interactive exploration"]
-- title: cards
-  description: A foundation for working with structured analysis results in R.
-  image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/cards.svg
-  path: https://pharmaverse.github.io/cards/
-  categories: ["Analysis results"]
-- title: cardx
-  description: Extend your analysis workflows with additional tools for results.
-  image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/cardx.svg
-  path: https://pharmaverse.github.io/cardx/
-  categories: ["Extended analysis"]
-- title: crane
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-  image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/crane.svg
-  path: https://pharmaverse.github.io/crane/
-  categories: ["Lorem ipsum"]
-- title: formatters
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-  image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/formatters.svg
-  path: https://pharmaverse.github.io/formatters/
-  categories: ["Lorem ipsum"]
+# The Products page is drawn from the files in this folder (products/*.yml).
+#
+# A file is a list of sections. A section has a `category` name and either
+#   families: cards, each with a title, description, optional image, and a list of links
+#   links:    a row of pill links (use for catalogs and examples)
+# A card without an `image` gets a placeholder hex with its first letter.
+# Sections with the same `category` in different files are merged, and so are cards with the same `title`
+# (their links are joined); file names set the order.
+- category: Interactive exploration
+  description: Tools for interactive clinical data exploration and visualization.
+  families:
+    - title: teal
+      description: Interactive analysis applications built from composable packages for data, filtering, and reporting.
+      image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/teal.svg
+      links:
+        - { text: teal, url: "https://pharmaverse.github.io/teal/" }
+    - title: teal modules
+      description: Ready-to-use modules for clinical and general data exploration.
+      links:
+        - { text: teal.modules.clinical, url: "https://insightsengineering.github.io/teal.modules.clinical/" }
+        - { text: teal.modules.general, url: "https://insightsengineering.github.io/teal.modules.general/" }
+    - title: goshawk
+      description: Biomarker analysis and visualization.
+      links:
+        - { text: goshawk, url: "https://insightsengineering.github.io/goshawk/" }
+        - { text: teal.goshawk, url: "https://insightsengineering.github.io/teal.goshawk/" }
+    - title: osprey
+      description: Specialized analysis and TLG modules.
+      links:
+        - { text: osprey, url: "https://insightsengineering.github.io/osprey/" }
+        - { text: teal.osprey, url: "https://insightsengineering.github.io/teal.osprey/" }
+    - title: hermes
+      description: RNA-seq analysis and exploration.
+      image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/hermes.svg
+      links:
+        - { text: hermes, url: "https://insightsengineering.github.io/hermes/" }
+        - { text: teal.modules.hermes, url: "https://insightsengineering.github.io/teal.modules.hermes/" }
+
+- category: Regulatory reporting
+  description: Tools for analysis, tables, listings, figures, and clinical trial reporting.
+  families:
+    - title: crane
+      description: Clinical trial tables and summaries, extending the gtsummary package.
+      image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/crane.svg
+      links:
+        - { text: crane, url: "https://insightsengineering.github.io/crane/" }
+    - title: cards
+      description: Analysis results data (ARDs) in the CDISC standard, with tools to extend them.
+      image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/cards.svg
+      links:
+        - { text: cards, url: "https://pharmaverse.github.io/cards/" }
+        - { text: cardx, url: "https://pharmaverse.github.io/cardx/" }
+    - title: rtables
+      description: Build and format reporting tables with R.
+      image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/rtables.svg
+      links:
+        - { text: rtables, url: "https://pharmaverse.github.io/rtables/" }
+        - { text: formatters, url: "https://pharmaverse.github.io/formatters/" }
+    - title: tern
+      description: Table, listing, and graph (TLG) library for common clinical trial outputs.
+      image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/tern.svg
+      links:
+        - { text: tern, url: "https://pharmaverse.github.io/tern/" }
+        - { text: tern.mmrm, url: "https://insightsengineering.github.io/tern.mmrm/" }
+
+- category: Catalogs and examples
+  description: Ready-to-use examples and showcases across the NEST ecosystem.
+  links:
+    - { text: tlg-catalog, url: "https://insightsengineering.github.io/tlg-catalog/" }
+    - { text: biomarker-catalog, url: "https://insightsengineering.github.io/biomarker-catalog/" }
+    - { text: ard-catalog, url: "https://insightsengineering.github.io/ard-catalog/" }
+    - { text: teal.gallery, url: "https://insightsengineering.github.io/teal.gallery/" }

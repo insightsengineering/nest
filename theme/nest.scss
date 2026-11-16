@@ -219,10 +219,9 @@ body.nav-fixed { padding-top: 88px; }
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-description { grid-column: 2; grid-row: 2; align-self: start; font: 400 14px/1.6 "DM Sans", Arial, sans-serif; color: $sub; margin: 0; }
 .quarto-listing .list.quarto-listing-default .quarto-post::after { content: "\2192"; grid-column: 4; grid-row: 1 / span 2; justify-self: end; font: 400 18px/1 "DM Sans", Arial, sans-serif; color: $ink; transition: transform .2s ease; }
 .quarto-listing .list.quarto-listing-default .quarto-post:hover::after { transform: translateX(3px); }
-/* Tags are labels only (shown on the landing page, hidden on the News page, where the category list filters). */
+/* Tags are text labels only (shown on the landing page and the News page; the News sidebar does the filtering). */
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-categories { grid-column: 3; grid-row: 1 / span 2; margin: 0; display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px; }
 .quarto-listing .list.quarto-listing-default .quarto-post .listing-category { font: 600 10px/16px "DM Sans", Arial, sans-serif; letter-spacing: normal; text-transform: none; color: $cat; background: #e3ecf9; border: 0; border-radius: 5px; padding: 2px 9px; margin: 0; pointer-events: none; cursor: default; }
-#listing-listing .listing-categories { display: none; }
 @media (prefers-reduced-motion: reduce) { .quarto-listing .list.quarto-listing-default .quarto-post::after { transition: none; } }
 @media (max-width: 800px) {
   .quarto-listing .list.quarto-listing-default .quarto-post { grid-template-columns: minmax(0, 1fr) 28px; row-gap: 2px; }

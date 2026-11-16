@@ -41,7 +41,7 @@ Previews are only built for branches in this repository. If you do not have writ
 
 ## Add a news post
 
-1. Create a folder under `posts/` with a short, lowercase name, for example `posts/teal-workshop-2026`. The folder name becomes the post's ID and part of its URL.
+1. Create a folder under `posts/` named with the post's date and a short, lowercase title, for example `posts/2026-11-10-teal-workshop`. The date keeps folders in order and easy to find, and the whole name becomes the post's ID and part of its URL, so choose it carefully and keep it in step with the `date:` in the post.
 2. Inside it, create `index.qmd` starting with this header:
 
    ```yaml
@@ -53,7 +53,7 @@ Previews are only built for branches in this repository. If you do not have writ
        affiliation:
          - name: "Your role, Company"
    date: "2026-11-10"
-   categories: ["Events", "Trainings"]
+   categories: ["Events"]
    ---
    ```
 
@@ -63,9 +63,9 @@ Previews are only built for branches in this repository. If you do not have writ
 Details worth knowing:
 
 - **Date** controls the order. The newest post is listed first, and the landing page shows the latest four.
-- **Categories** are free text. The existing ones are `Events`, `Trainings`, `Releases`, `Product update`, and `Project news`. Reuse them where you can so filtering stays tidy.
+- **Categories** show as tags on the News page and the landing page. Use one, and two at the most, so the list stays easy to scan. The existing ones are `Announcements`, `Events`, `Trainings`, and `Releases`. Reuse them where you can so filtering stays tidy.
 - **Description** is what readers see in the list, so keep it short.
-- The `posts/example-*` folders are samples. Copy one as a starting point and replace the content.
+- Any existing post under `posts/` makes a good starting point. Copy its folder, rename it, and replace the content.
 
 ## Add or edit a product
 

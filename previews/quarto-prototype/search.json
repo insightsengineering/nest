@@ -1,115 +1,66 @@
 [
   {
-    "objectID": "posts/example-training/index.html",
-    "href": "posts/example-training/index.html",
-    "title": "Your next step with analysis results",
+    "objectID": "posts/2026-11-04-roche-appsilon-teal/index.html",
+    "href": "posts/2026-11-04-roche-appsilon-teal/index.html",
+    "title": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development",
     "section": "",
-    "text": "Sample training announcement. Replace with real content.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor tortor ac rhoncus pellentesque. Phasellus elementum eleifend elementum. Vestibulum eu porta quam. Phasellus congue et augue sit amet facilisis. Nulla lacus sapien, tristique at suscipit id, tincidunt ac dolor. Ut commodo, eros quis accumsan malesuada, orci odio venenatis dolor, ac euismod libero eros sed sapien. Aliquam aliquam tincidunt leo quis egestas. Quisque porttitor dolor sed tellus vestibulum vestibulum. Aenean pretium diam et magna vestibulum, non pharetra quam tempor. Proin in ligula purus. Nulla nec felis sed leo molestie dapibus sed ut augue. Aliquam at magna finibus, consectetur orci vel, sodales velit. Quisque viverra lacus id diam volutpat tempor.\nNam viverra ultricies enim, vitae faucibus orci. Quisque aliquam condimentum elit, in rhoncus diam placerat vitae. Donec condimentum dapibus magna, quis lacinia lacus consequat vitae. Aenean ac vehicula nibh. Etiam volutpat accumsan accumsan. Nullam in justo fringilla, ullamcorper quam at, accumsan est. Donec mattis dolor nec risus ultrices, sed sagittis velit pulvinar. Ut urna lorem, maximus et molestie tristique, gravida et orci. Aliquam vulputate semper ultrices.\nQuisque nec lacinia odio, non malesuada eros. Integer id condimentum lorem. Duis laoreet pulvinar mollis. Nunc lacinia molestie ultricies. Pellentesque interdum elit efficitur sodales consequat. Nunc id ex ut ante sodales fermentum vitae sagittis mauris. Sed facilisis consectetur libero facilisis lobortis. Ut pretium, tortor et varius ornare, elit leo porta tortor, lobortis porttitor felis lorem eu ex. Vivamus consectetur justo quis est fermentum rutrum. Mauris interdum quam vel metus tristique, vel finibus nibh ultrices. Phasellus maximus metus quis augue bibendum cursus. Sed convallis odio ac faucibus facilisis. Praesent sodales tempor tortor vel gravida. Curabitur ornare nunc risus, ut congue dolor volutpat ac."
+    "text": "Originally published on the pharmaverse blog.\nFollowing the recent migration of the teal framework to pharmaverse, Roche and Appsilon are building on their existing collaboration to support its continued development. Appsilon will continue contributing developer expertise and will be recognized as a core contributor and copyright holder alongside Roche.\nteal helps developers build Shiny applications for exploring clinical trial data. If you’ve worked with it, you’ll know its modular approach: combining data, filters, and analysis modules into interactive applications.\nAppsilon has been working with Roche on {teal} development and has been a core contributor to the open-source library. For example, it has co-implemented the new teal design, teal.reporter, and teal.picks, changes that have improved the quality and capabilities of the framework. Formal recognition as a core contributor is a new step forward that formalizes Appsilon’s role in the project, alongside Roche and the wider community."
   },
   {
-    "objectID": "posts/example-release-formatters/index.html",
-    "href": "posts/example-release-formatters/index.html",
-    "title": "formatters 0.6.0 is out",
+    "objectID": "posts/2026-11-04-roche-appsilon-teal/index.html#what-changes-for-users-and-contributors",
+    "href": "posts/2026-11-04-roche-appsilon-teal/index.html#what-changes-for-users-and-contributors",
+    "title": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development",
+    "section": "What Changes for Users and Contributors?",
+    "text": "What Changes for Users and Contributors?\nThe teal framework packages are now hosted in the pharmaverse GitHub organization, as described in the earlier migration announcement. Users of existing released versions do not need to change their R code as a result of the move. For development versions installed directly from GitHub, we recommend updating package references to their new pharmaverse locations.\nAppsilon will continue co-leading the maintenance and development of the teal framework alongside Roche, with input and contributions from the wider community. This continued collaboration supports the framework’s ongoing development while welcoming other companies and individual contributors to help shape its direction.\nUsers and contributors can continue reporting issues, proposing features, and submitting pull requests in the package repositories. Community feedback and contributions remain an important part of teal’s development."
+  },
+  {
+    "objectID": "posts/2026-11-04-roche-appsilon-teal/index.html#whats-next-for-teal",
+    "href": "posts/2026-11-04-roche-appsilon-teal/index.html#whats-next-for-teal",
+    "title": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development",
+    "section": "What’s Next for teal?",
+    "text": "What’s Next for teal?\nFuture development will focus on making teal easier to contribute to and strengthening its use in validated environments. Work includes expanding guidance for AI-assisted development across the core and module packages, alongside improvements to testing and dependency management. Roche and Appsilon will continue working with the wider community to shape priorities and guide the framework’s development."
+  },
+  {
+    "objectID": "posts/2026-11-04-roche-appsilon-teal/index.html#building-on-the-communitys-work",
+    "href": "posts/2026-11-04-roche-appsilon-teal/index.html#building-on-the-communitys-work",
+    "title": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development",
+    "section": "Building on the Community’s Work",
+    "text": "Building on the Community’s Work\nteal was created at Roche and has grown through the work of developers and users contributing code, modules, documentation, bug reports, and feedback. Appsilon has been a vital part of the teal community and is taking on a greater role in its continued development alongside Roche and other contributors.\nThank you to each author of teal: Dony Unardi, Dawid Kałędkowski, Pawel Rucki, Aleksander Chlebowski, Andre Verissimo, Kartikeya Kirar, Vedha Viyash, Marcin Kosinski, Adrian Waddell, Nikolas Burkoff, Mahmoud Hallal, Maciej Nasinski, Konrad Pagacz, Junlue Zhao, Tadeusz Lewandowski, Lluis Revilla and everyone else who has helped develop and maintain the project. We look forward to continuing to work with you and welcoming new contributors.\n\nIt’s been rewarding to see teal grow and support colleagues across the biotech and pharmaceutical community. Moving to pharmaverse opens a new chapter in that journey, and I’m excited to build on our longstanding collaboration with Appsilon through a shared commitment to open-source development. Together with the wider community, we look forward to shaping teal’s future and expanding what it can help users achieve.\n— Dony Unardi, Roche (teal Product Owner and NEST Chief Engineer)\n\n\nWe are excited to welcome Appsilon as a partner for teal. Open source ecosystems like pharmaverse thrive when dedicated communities and forward-thinking organizations step up together as one - enabling powerful frameworks like teal to flourish and drive real impact. We hope this move to the pharmaverse org also encourages further contribution from across the industry, so this continues to prosper.\n— Ross Farrugia, Roche (pharmaverse co-founder)\n\n\nteal is a great example of the unique value of open-source software and the power of an active community. Having co-developed teal over the past two years, we are excited to begin this new chapter as copyright holders. We look forward to engaging even more closely with the community as teal moves to the Pharmaverse GitHub organization.\n— Oriol Senan, R/Shiny developer at Appsilon, contributor to teal\n\nIf you use teal, your feedback helps shape it. Report an issue, suggest an improvement, contribute a module, or join the conversation in the Pharmaverse Slack’s #teal channel.\nExplore the repository · Read the documentation · Read the contribution guide"
+  },
+  {
+    "objectID": "posts/2026-10-13-teal-modules-releases/index.html",
+    "href": "posts/2026-10-13-teal-modules-releases/index.html",
+    "title": "New releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0",
     "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor tortor ac rhoncus pellentesque. Phasellus elementum eleifend elementum. Vestibulum eu porta quam. Phasellus congue et augue sit amet facilisis. Nulla lacus sapien, tristique at suscipit id, tincidunt ac dolor. Ut commodo, eros quis accumsan malesuada, orci odio venenatis dolor, ac euismod libero eros sed sapien. Aliquam aliquam tincidunt leo quis egestas. Quisque porttitor dolor sed tellus vestibulum vestibulum. Aenean pretium diam et magna vestibulum, non pharetra quam tempor. Proin in ligula purus. Nulla nec felis sed leo molestie dapibus sed ut augue. Aliquam at magna finibus, consectetur orci vel, sodales velit. Quisque viverra lacus id diam volutpat tempor.\nNam viverra ultricies enim, vitae faucibus orci. Quisque aliquam condimentum elit, in rhoncus diam placerat vitae. Donec condimentum dapibus magna, quis lacinia lacus consequat vitae. Aenean ac vehicula nibh. Etiam volutpat accumsan accumsan. Nullam in justo fringilla, ullamcorper quam at, accumsan est. Donec mattis dolor nec risus ultrices, sed sagittis velit pulvinar. Ut urna lorem, maximus et molestie tristique, gravida et orci. Aliquam vulputate semper ultrices."
+    "text": "We are happy to share two new releases for the teal modules this month:\nTogether they cover the modules most teal apps are built from: the standard clinical trial outputs, and the general-purpose modules for exploring any dataset."
   },
   {
-    "objectID": "posts/example-release-formatters/index.html#highlights",
-    "href": "posts/example-release-formatters/index.html#highlights",
-    "title": "formatters 0.6.0 is out",
-    "section": "Highlights",
-    "text": "Highlights\nLorem ipsum dolor sit amet, consectetur adipiscing elit.1 Mauris tempor tortor ac rhoncus pellentesque, with a short list of what changed:\n\nFaster formatting of large tables\nNew helper for rounding to significant digits\nBetter error messages when a format is not found\n\n\n“Small tools, shared possibilities.” A blockquote works well for a short quote from a user or a maintainer.\n\n\n\n\n\n\n\nNoteNote\n\n\n\nCallouts draw attention to a short remark. This is the note style.\n\n\n\n\n\n\n\n\nTipTip\n\n\n\nUse a tip for advice that saves the reader time.\n\n\n\n\n\n\n\n\nWarningBreaking change\n\n\n\nUse a warning for anything that can break existing code.\n\n\n\n\n\n\n\n\nImportantClick to expand\n\n\n\n\n\nCollapsible callouts keep long details out of the way until the reader asks for them."
+    "objectID": "posts/2026-10-13-teal-modules-releases/index.html#teal.modules.clinical-0.14.0",
+    "href": "posts/2026-10-13-teal-modules-releases/index.html#teal.modules.clinical-0.14.0",
+    "title": "New releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0",
+    "section": "teal.modules.clinical 0.14.0",
+    "text": "teal.modules.clinical 0.14.0\nThe headline change is a new way to choose what a module works on. The package now uses teal.picks as the primary method for selecting datasets, variables, and values. The package vignettes have been updated to use it as well, so the examples you read match how the modules now work."
   },
   {
-    "objectID": "posts/example-release-formatters/index.html#upgrade-guide",
-    "href": "posts/example-release-formatters/index.html#upgrade-guide",
-    "title": "formatters 0.6.0 is out",
-    "section": "Upgrade guide",
-    "text": "Upgrade guide\nCode blocks get syntax highlighting and a copy button:\ninstall.packages(\"formatters\")\nlibrary(formatters)\nformat_value(3.14159, \"xx.xx\")\nTabsets let readers pick the variant that fits them:\n\nCRANGitHub\n\n\ninstall.packages(\"formatters\")\n\n\npak::pak(\"insightsengineering/formatters\")\n\n\n\nA collapsible code block hides the details until needed:\nx &lt;- c(1.234, 22.5, 333)\nformat_value(x, \"xx.x\")"
+    "objectID": "posts/2026-10-13-teal-modules-releases/index.html#teal.modules.general-0.9.0",
+    "href": "posts/2026-10-13-teal-modules-releases/index.html#teal.modules.general-0.9.0",
+    "title": "New releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0",
+    "section": "teal.modules.general 0.9.0",
+    "text": "teal.modules.general 0.9.0\nThis release is mostly about making the modules you already use behave better:\n\nMissing data. tm_missing_data no longer fails with dplyr 1.1.0 or later when grouping by subject.\nVariable browser. In tm_variable_browser, the “rotate x labels” and “ggplot2 theme” plot settings now actually change the summary plot. Date variables also get proper plot ticks.\nTests. The integration tests are fixed, which helps keep future releases steady.\n\nA special welcome to @wangben718, who made a first contribution to the project in this release. Thank you!"
   },
   {
-    "objectID": "posts/example-release-formatters/index.html#comparison",
-    "href": "posts/example-release-formatters/index.html#comparison",
-    "title": "formatters 0.6.0 is out",
-    "section": "Comparison",
-    "text": "Comparison\n\nRecent releases\n\n\nVersion\nRelease date\nHighlights\n\n\n\n\n0.5.0\n2026-03\nRounding helpers\n\n\n0.6.0\n2026-11\nFaster large tables"
-  },
-  {
-    "objectID": "posts/example-release-formatters/index.html#diagram",
-    "href": "posts/example-release-formatters/index.html#diagram",
-    "title": "formatters 0.6.0 is out",
-    "section": "Diagram",
-    "text": "Diagram\n\n\n\n\n\n\nflowchart LR\n  A[Data] --&gt; B[formatters]\n  B --&gt; C[Tables]\n  B --&gt; D[Listings]"
-  },
-  {
-    "objectID": "posts/example-release-formatters/index.html#math-and-margin-notes",
-    "href": "posts/example-release-formatters/index.html#math-and-margin-notes",
-    "title": "formatters 0.6.0 is out",
-    "section": "Math and margin notes",
-    "text": "Math and margin notes\nInline math such as \\(\\bar{x} = \\frac{1}{n}\\sum_{i=1}^{n} x_i\\) and display math both work:\n\\[\ns^2 = \\frac{1}{n-1}\\sum_{i=1}^{n}(x_i - \\bar{x})^2\n\\]"
-  },
-  {
-    "objectID": "posts/example-release-formatters/index.html#where-to-go-next",
-    "href": "posts/example-release-formatters/index.html#where-to-go-next",
-    "title": "formatters 0.6.0 is out",
-    "section": "Where to go next",
-    "text": "Where to go next\nSee the package site for the full changelog."
-  },
-  {
-    "objectID": "posts/example-release-formatters/index.html#footnotes",
-    "href": "posts/example-release-formatters/index.html#footnotes",
-    "title": "formatters 0.6.0 is out",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nFootnotes appear at the bottom of the page and link back to the text.↩︎"
-  },
-  {
-    "objectID": "posts/example-public-only/index.html",
-    "href": "posts/example-public-only/index.html",
-    "title": "Example public-only post",
-    "section": "",
-    "text": "This public post is excluded from the internal edition via exclude: in the internal repo. Marker: PUBLIC-ONLY-MARKER-7431\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor tortor ac rhoncus pellentesque. Phasellus elementum eleifend elementum. Vestibulum eu porta quam. Phasellus congue et augue sit amet facilisis. Nulla lacus sapien, tristique at suscipit id, tincidunt ac dolor. Ut commodo, eros quis accumsan malesuada, orci odio venenatis dolor, ac euismod libero eros sed sapien. Aliquam aliquam tincidunt leo quis egestas. Quisque porttitor dolor sed tellus vestibulum vestibulum. Aenean pretium diam et magna vestibulum, non pharetra quam tempor. Proin in ligula purus. Nulla nec felis sed leo molestie dapibus sed ut augue. Aliquam at magna finibus, consectetur orci vel, sodales velit. Quisque viverra lacus id diam volutpat tempor.\nNam viverra ultricies enim, vitae faucibus orci. Quisque aliquam condimentum elit, in rhoncus diam placerat vitae. Donec condimentum dapibus magna, quis lacinia lacus consequat vitae. Aenean ac vehicula nibh. Etiam volutpat accumsan accumsan. Nullam in justo fringilla, ullamcorper quam at, accumsan est. Donec mattis dolor nec risus ultrices, sed sagittis velit pulvinar. Ut urna lorem, maximus et molestie tristique, gravida et orci. Aliquam vulputate semper ultrices.\nQuisque nec lacinia odio, non malesuada eros. Integer id condimentum lorem. Duis laoreet pulvinar mollis. Nunc lacinia molestie ultricies. Pellentesque interdum elit efficitur sodales consequat. Nunc id ex ut ante sodales fermentum vitae sagittis mauris. Sed facilisis consectetur libero facilisis lobortis. Ut pretium, tortor et varius ornare, elit leo porta tortor, lobortis porttitor felis lorem eu ex. Vivamus consectetur justo quis est fermentum rutrum. Mauris interdum quam vel metus tristique, vel finibus nibh ultrices. Phasellus maximus metus quis augue bibendum cursus. Sed convallis odio ac faucibus facilisis. Praesent sodales tempor tortor vel gravida. Curabitur ornare nunc risus, ut congue dolor volutpat ac."
-  },
-  {
-    "objectID": "posts/example-product-update/index.html",
-    "href": "posts/example-product-update/index.html",
-    "title": "A new look for the NEST product pages",
-    "section": "",
-    "text": "Sample post. Replace with real content.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor tortor ac rhoncus pellentesque. Phasellus elementum eleifend elementum. Vestibulum eu porta quam. Phasellus congue et augue sit amet facilisis. Nulla lacus sapien, tristique at suscipit id, tincidunt ac dolor. Ut commodo, eros quis accumsan malesuada, orci odio venenatis dolor, ac euismod libero eros sed sapien. Aliquam aliquam tincidunt leo quis egestas. Quisque porttitor dolor sed tellus vestibulum vestibulum. Aenean pretium diam et magna vestibulum, non pharetra quam tempor. Proin in ligula purus. Nulla nec felis sed leo molestie dapibus sed ut augue. Aliquam at magna finibus, consectetur orci vel, sodales velit. Quisque viverra lacus id diam volutpat tempor.\nNam viverra ultricies enim, vitae faucibus orci. Quisque aliquam condimentum elit, in rhoncus diam placerat vitae. Donec condimentum dapibus magna, quis lacinia lacus consequat vitae. Aenean ac vehicula nibh. Etiam volutpat accumsan accumsan. Nullam in justo fringilla, ullamcorper quam at, accumsan est. Donec mattis dolor nec risus ultrices, sed sagittis velit pulvinar. Ut urna lorem, maximus et molestie tristique, gravida et orci. Aliquam vulputate semper ultrices.\nQuisque nec lacinia odio, non malesuada eros. Integer id condimentum lorem. Duis laoreet pulvinar mollis. Nunc lacinia molestie ultricies. Pellentesque interdum elit efficitur sodales consequat. Nunc id ex ut ante sodales fermentum vitae sagittis mauris. Sed facilisis consectetur libero facilisis lobortis. Ut pretium, tortor et varius ornare, elit leo porta tortor, lobortis porttitor felis lorem eu ex. Vivamus consectetur justo quis est fermentum rutrum. Mauris interdum quam vel metus tristique, vel finibus nibh ultrices. Phasellus maximus metus quis augue bibendum cursus. Sed convallis odio ac faucibus facilisis. Praesent sodales tempor tortor vel gravida. Curabitur ornare nunc risus, ut congue dolor volutpat ac."
-  },
-  {
-    "objectID": "posts/example-event-workshop/index.html",
-    "href": "posts/example-event-workshop/index.html",
-    "title": "Hands-on workshop: building your first teal app",
-    "section": "",
-    "text": "Sample post. Replace with real content."
-  },
-  {
-    "objectID": "posts/example-event-workshop/index.html#what-you-will-learn",
-    "href": "posts/example-event-workshop/index.html#what-you-will-learn",
-    "title": "Hands-on workshop: building your first teal app",
-    "section": "What you will learn",
-    "text": "What you will learn\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor tortor ac rhoncus pellentesque. Phasellus elementum eleifend elementum. Vestibulum eu porta quam. Phasellus congue et augue sit amet facilisis. Nulla lacus sapien, tristique at suscipit id, tincidunt ac dolor. Ut commodo, eros quis accumsan malesuada, orci odio venenatis dolor, ac euismod libero eros sed sapien. Aliquam aliquam tincidunt leo quis egestas. Quisque porttitor dolor sed tellus vestibulum vestibulum. Aenean pretium diam et magna vestibulum, non pharetra quam tempor. Proin in ligula purus. Nulla nec felis sed leo molestie dapibus sed ut augue. Aliquam at magna finibus, consectetur orci vel, sodales velit. Quisque viverra lacus id diam volutpat tempor."
-  },
-  {
-    "objectID": "posts/example-event-workshop/index.html#who-should-attend",
-    "href": "posts/example-event-workshop/index.html#who-should-attend",
-    "title": "Hands-on workshop: building your first teal app",
-    "section": "Who should attend",
-    "text": "Who should attend\nNam viverra ultricies enim, vitae faucibus orci. Quisque aliquam condimentum elit, in rhoncus diam placerat vitae. Donec condimentum dapibus magna, quis lacinia lacus consequat vitae. Aenean ac vehicula nibh. Etiam volutpat accumsan accumsan. Nullam in justo fringilla, ullamcorper quam at, accumsan est. Donec mattis dolor nec risus ultrices, sed sagittis velit pulvinar. Ut urna lorem, maximus et molestie tristique, gravida et orci. Aliquam vulputate semper ultrices."
-  },
-  {
-    "objectID": "posts/example-event-workshop/index.html#how-to-register",
-    "href": "posts/example-event-workshop/index.html#how-to-register",
-    "title": "Hands-on workshop: building your first teal app",
-    "section": "How to register",
-    "text": "How to register\nQuisque nec lacinia odio, non malesuada eros. Integer id condimentum lorem. Duis laoreet pulvinar mollis. Nunc lacinia molestie ultricies. Pellentesque interdum elit efficitur sodales consequat. Nunc id ex ut ante sodales fermentum vitae sagittis mauris. Sed facilisis consectetur libero facilisis lobortis. Ut pretium, tortor et varius ornare, elit leo porta tortor, lobortis porttitor felis lorem eu ex. Vivamus consectetur justo quis est fermentum rutrum. Mauris interdum quam vel metus tristique, vel finibus nibh ultrices. Phasellus maximus metus quis augue bibendum cursus. Sed convallis odio ac faucibus facilisis. Praesent sodales tempor tortor vel gravida. Curabitur ornare nunc risus, ut congue dolor volutpat ac."
+    "objectID": "posts/2026-10-13-teal-modules-releases/index.html#try-them",
+    "href": "posts/2026-10-13-teal-modules-releases/index.html#try-them",
+    "title": "New releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0",
+    "section": "Try them",
+    "text": "Try them\nInstall the new versions from GitHub:\npak::pkg_install(\"insightsengineering/teal.modules.clinical@v0.14.0\")\npak::pkg_install(\"insightsengineering/teal.modules.general@v0.9.0\")\nFor the full list of changes, see the release pages:\n\nteal.modules.clinical v0.14.0\nteal.modules.general v0.9.0\n\nThe documentation sites have been updated too: teal.modules.clinical and teal.modules.general.\nIf you run into a problem or have an idea for a module, please open an issue in the package repository. Feedback from people using teal in real studies is what shapes these releases."
   },
   {
     "objectID": "news.html",
     "href": "news.html",
     "title": "News",
     "section": "",
-    "text": "Hands-on workshop: building your first teal app\n\n\n\nEvents\n\nTrainings\n\n\n\n\nJoin us for a guided session with live coding and Q&A.\n\n\n\n\n\n\nNov 10, 2026\n\n\n\n\n\n\n\nNEST at an upcoming conference\n\n\n\nEvents\n\n\n\n\nWhere to find the NEST team, with dates and useful links.\n\n\n\n\n\n\nNov 9, 2026\n\n\n\n\n\n\n\nOnline course: reporting with cards and cardx\n\n\n\nTrainings\n\n\n\n\nA self-paced course covering structured analysis results from start to finish.\n\n\n\n\n\n\nNov 7, 2026\n\n\n\n\n\n\n\nYour next step with analysis results\n\n\n\nTrainings\n\n\n\n\nPractical learning resources for getting started with cards and cardx.\n\n\n\n\n\n\nNov 6, 2026\n\n\n\n\n\n\n\nformatters 0.6.0 is out\n\n\n\nReleases\n\n\n\n\nWhat is new in this release, with a short upgrade guide.\n\n\n\n\n\n\nNov 5, 2026\n\n\n\n\n\n\n\nA new look for the NEST product pages\n\n\n\nProduct update\n\n\n\n\nEasier ways to find the right tool for your analysis.\n\n\n\n\n\n\nNov 4, 2026\n\n\n\n\n\n\n\nWelcome to the new NEST website\n\n\n\nProject news\n\n\n\n\nA first look at the refreshed site and what is coming next.\n\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\nExample public-only post\n\n\n\nProject news\n\n\n\n\nExcluded from the internal edition via exclude: in the internal repo.\n\n\n\n\n\n\nNov 2, 2026\n\n\n\n\n\n\n\nNew possibilities for interactive exploration\n\n\n\nReleases\n\n\n\n\nA closer look at what is changing across the teal ecosystem.\n\n\n\n\n\n\nNov 1, 2026\n\n\n\n\n\nNo matching items"
+    "text": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development\n\n\n\nAnnouncements\n\n\n\n\nFollowing teal’s move to pharmaverse, Appsilon’s recognition as a core contributor and copyright holder marks the next step in an established partnership.\n\n\n\n\n\n\nNov 4, 2026\n\n\n\n\n\n\n\nRoche Open-Source TLG Packages Move to pharmaverse\n\n\n\nAnnouncements\n\n\n\n\nKey clinical reporting and exploration packages, including {rtables}, {tern} and the {teal} framework, have moved from insightsengineering to the pharmaverse GitHub organization. Here is why, and what it means for you.\n\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\nNew releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0\n\n\n\nReleases\n\n\n\n\nTwo teal module packages have new versions. teal.modules.clinical moves to teal.picks for selecting data, and teal.modules.general fixes several plotting and data issues.\n\n\n\n\n\n\nOct 13, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#find-your-starting-point",
@@ -133,31 +84,38 @@
     "text": "Interactive explorationTools for interactive clinical data exploration and visualization.tealInteractive analysis applications built from composable packages for data, filtering, and reporting.teal↗Tteal modulesReady-to-use modules for clinical and general data exploration.teal.modules.clinical↗teal.modules.general↗GgoshawkBiomarker analysis and visualization.goshawk↗teal.goshawk↗OospreySpecialized analysis and TLG modules.osprey↗teal.osprey↗hermesRNA-seq analysis and exploration.hermes↗teal.modules.hermes↗\nRegulatory reportingTools for analysis, tables, listings, figures, and clinical trial reporting.craneClinical trial tables and summaries, extending the gtsummary package.crane↗cardsAnalysis results data (ARDs) in the CDISC standard, with tools to extend them.cards↗cardx↗rtablesBuild and format reporting tables with R.rtables↗formatters↗ternTable, listing, and graph (TLG) library for common clinical trial outputs.tern↗tern.mmrm↗\nCatalogs and examplesReady-to-use examples and showcases across the NEST ecosystem.tlg-catalog↗biomarker-catalog↗ard-catalog↗teal.gallery↗"
   },
   {
-    "objectID": "posts/example-event/index.html",
-    "href": "posts/example-event/index.html",
-    "title": "NEST at an upcoming conference",
+    "objectID": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html",
+    "href": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html",
+    "title": "Roche Open-Source TLG Packages Move to pharmaverse",
     "section": "",
-    "text": "Sample event announcement. Replace with real content.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor tortor ac rhoncus pellentesque. Phasellus elementum eleifend elementum. Vestibulum eu porta quam. Phasellus congue et augue sit amet facilisis. Nulla lacus sapien, tristique at suscipit id, tincidunt ac dolor. Ut commodo, eros quis accumsan malesuada, orci odio venenatis dolor, ac euismod libero eros sed sapien. Aliquam aliquam tincidunt leo quis egestas. Quisque porttitor dolor sed tellus vestibulum vestibulum. Aenean pretium diam et magna vestibulum, non pharetra quam tempor. Proin in ligula purus. Nulla nec felis sed leo molestie dapibus sed ut augue. Aliquam at magna finibus, consectetur orci vel, sodales velit. Quisque viverra lacus id diam volutpat tempor.\nNam viverra ultricies enim, vitae faucibus orci. Quisque aliquam condimentum elit, in rhoncus diam placerat vitae. Donec condimentum dapibus magna, quis lacinia lacus consequat vitae. Aenean ac vehicula nibh. Etiam volutpat accumsan accumsan. Nullam in justo fringilla, ullamcorper quam at, accumsan est. Donec mattis dolor nec risus ultrices, sed sagittis velit pulvinar. Ut urna lorem, maximus et molestie tristique, gravida et orci. Aliquam vulputate semper ultrices.\nQuisque nec lacinia odio, non malesuada eros. Integer id condimentum lorem. Duis laoreet pulvinar mollis. Nunc lacinia molestie ultricies. Pellentesque interdum elit efficitur sodales consequat. Nunc id ex ut ante sodales fermentum vitae sagittis mauris. Sed facilisis consectetur libero facilisis lobortis. Ut pretium, tortor et varius ornare, elit leo porta tortor, lobortis porttitor felis lorem eu ex. Vivamus consectetur justo quis est fermentum rutrum. Mauris interdum quam vel metus tristique, vel finibus nibh ultrices. Phasellus maximus metus quis augue bibendum cursus. Sed convallis odio ac faucibus facilisis. Praesent sodales tempor tortor vel gravida. Curabitur ornare nunc risus, ut congue dolor volutpat ac."
+    "text": "Originally published on the pharmaverse blog.\nWritten on behalf of the NEST team.\nOver the past few months, we have reached an important milestone in our open-source journey: transitioning key clinical reporting and exploratory analysis R packages from the insightsengineering GitHub organization into the pharmaverse.\nThe recent migration of the {teal} framework marks another step in this transition, bringing these framework packages under pharmaverse governance."
   },
   {
-    "objectID": "posts/example-project-news/index.html",
-    "href": "posts/example-project-news/index.html",
-    "title": "Welcome to the new NEST website",
-    "section": "",
-    "text": "Sample post. Replace with real content.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor tortor ac rhoncus pellentesque. Phasellus elementum eleifend elementum. Vestibulum eu porta quam. Phasellus congue et augue sit amet facilisis. Nulla lacus sapien, tristique at suscipit id, tincidunt ac dolor. Ut commodo, eros quis accumsan malesuada, orci odio venenatis dolor, ac euismod libero eros sed sapien. Aliquam aliquam tincidunt leo quis egestas. Quisque porttitor dolor sed tellus vestibulum vestibulum. Aenean pretium diam et magna vestibulum, non pharetra quam tempor. Proin in ligula purus. Nulla nec felis sed leo molestie dapibus sed ut augue. Aliquam at magna finibus, consectetur orci vel, sodales velit. Quisque viverra lacus id diam volutpat tempor.\nNam viverra ultricies enim, vitae faucibus orci. Quisque aliquam condimentum elit, in rhoncus diam placerat vitae. Donec condimentum dapibus magna, quis lacinia lacus consequat vitae. Aenean ac vehicula nibh. Etiam volutpat accumsan accumsan. Nullam in justo fringilla, ullamcorper quam at, accumsan est. Donec mattis dolor nec risus ultrices, sed sagittis velit pulvinar. Ut urna lorem, maximus et molestie tristique, gravida et orci. Aliquam vulputate semper ultrices.\nQuisque nec lacinia odio, non malesuada eros. Integer id condimentum lorem. Duis laoreet pulvinar mollis. Nunc lacinia molestie ultricies. Pellentesque interdum elit efficitur sodales consequat. Nunc id ex ut ante sodales fermentum vitae sagittis mauris. Sed facilisis consectetur libero facilisis lobortis. Ut pretium, tortor et varius ornare, elit leo porta tortor, lobortis porttitor felis lorem eu ex. Vivamus consectetur justo quis est fermentum rutrum. Mauris interdum quam vel metus tristique, vel finibus nibh ultrices. Phasellus maximus metus quis augue bibendum cursus. Sed convallis odio ac faucibus facilisis. Praesent sodales tempor tortor vel gravida. Curabitur ornare nunc risus, ut congue dolor volutpat ac."
+    "objectID": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#why-the-move-to-pharmaverse",
+    "href": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#why-the-move-to-pharmaverse",
+    "title": "Roche Open-Source TLG Packages Move to pharmaverse",
+    "section": "Why the Move to pharmaverse?",
+    "text": "Why the Move to pharmaverse?\nWhen we initially incubated these packages under insightsengineering, our primary goal was to modernize clinical reporting workflows and pioneer reproducible, interactive data exploration. However, open source in the pharmaceutical industry is at its most powerful when built with the community, not just for it.\nMoving these packages directly under the pharmaverse organization:\n\nBreaks Down Barriers to Collaboration: Moving beyond decision-making led by a single organization allows other companies and community contributors to help shape priorities, roadmaps, and development.\nHarmonizes the Ecosystem: Consolidating standard clinical data manipulation, table creation, and exploration tools into a unified organization makes it easier for teams across industry sponsors and CROs to adopt, contribute to, and integrate tools.\nFosters Long-Term Sustainability: It paves the way for joint ownership, core co-maintainership, and broader industry governance across life-science data science stacks."
   },
   {
-    "objectID": "posts/example-public-release/index.html",
-    "href": "posts/example-public-release/index.html",
-    "title": "New possibilities for interactive exploration",
-    "section": "",
-    "text": "This public post is selected by the internal edition.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor tortor ac rhoncus pellentesque. Phasellus elementum eleifend elementum. Vestibulum eu porta quam. Phasellus congue et augue sit amet facilisis. Nulla lacus sapien, tristique at suscipit id, tincidunt ac dolor. Ut commodo, eros quis accumsan malesuada, orci odio venenatis dolor, ac euismod libero eros sed sapien. Aliquam aliquam tincidunt leo quis egestas. Quisque porttitor dolor sed tellus vestibulum vestibulum. Aenean pretium diam et magna vestibulum, non pharetra quam tempor. Proin in ligula purus. Nulla nec felis sed leo molestie dapibus sed ut augue. Aliquam at magna finibus, consectetur orci vel, sodales velit. Quisque viverra lacus id diam volutpat tempor.\nNam viverra ultricies enim, vitae faucibus orci. Quisque aliquam condimentum elit, in rhoncus diam placerat vitae. Donec condimentum dapibus magna, quis lacinia lacus consequat vitae. Aenean ac vehicula nibh. Etiam volutpat accumsan accumsan. Nullam in justo fringilla, ullamcorper quam at, accumsan est. Donec mattis dolor nec risus ultrices, sed sagittis velit pulvinar. Ut urna lorem, maximus et molestie tristique, gravida et orci. Aliquam vulputate semper ultrices.\nQuisque nec lacinia odio, non malesuada eros. Integer id condimentum lorem. Duis laoreet pulvinar mollis. Nunc lacinia molestie ultricies. Pellentesque interdum elit efficitur sodales consequat. Nunc id ex ut ante sodales fermentum vitae sagittis mauris. Sed facilisis consectetur libero facilisis lobortis. Ut pretium, tortor et varius ornare, elit leo porta tortor, lobortis porttitor felis lorem eu ex. Vivamus consectetur justo quis est fermentum rutrum. Mauris interdum quam vel metus tristique, vel finibus nibh ultrices. Phasellus maximus metus quis augue bibendum cursus. Sed convallis odio ac faucibus facilisis. Praesent sodales tempor tortor vel gravida. Curabitur ornare nunc risus, ut congue dolor volutpat ac."
+    "objectID": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#what-packages-have-migrated",
+    "href": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#what-packages-have-migrated",
+    "title": "Roche Open-Source TLG Packages Move to pharmaverse",
+    "section": "What Packages Have Migrated?",
+    "text": "What Packages Have Migrated?\nThe transition has taken place gradually over the past several months and includes foundational packages spanning tabular reporting, clinical analysis modules, and interactive exploration:\n\nReporting & Tabulation Foundation:\n\nformatters — Core rendering engine for ASCII and rich-text table layouts.\nrtables — Tabular summaries and complex multi-level layout generation.\nrlistings — Clinical listings supporting pagination and display formatting.\ncards & cardx — Analysis results datasets (ARDs) creation and statistical helper utilities.\n\nAnalysis & Automation Modules:\n\ntern — Standard clinical trial summary tables, figures, and listings (TLGs).\nautoslider.core — Automated presentation/slide generation engines.\n\nInteractive Exploration ({teal} ecosystem):\n\nThe entire suite of {teal} framework core packages (including teal, teal.code, teal.data, teal.widgets, teal.reporter, teal.slice, teal.logger, teal.picks)."
   },
   {
-    "objectID": "posts/example-training-online/index.html",
-    "href": "posts/example-training-online/index.html",
-    "title": "Online course: reporting with cards and cardx",
-    "section": "",
-    "text": "Sample post. Replace with real content.\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempor tortor ac rhoncus pellentesque. Phasellus elementum eleifend elementum. Vestibulum eu porta quam. Phasellus congue et augue sit amet facilisis. Nulla lacus sapien, tristique at suscipit id, tincidunt ac dolor. Ut commodo, eros quis accumsan malesuada, orci odio venenatis dolor, ac euismod libero eros sed sapien. Aliquam aliquam tincidunt leo quis egestas. Quisque porttitor dolor sed tellus vestibulum vestibulum. Aenean pretium diam et magna vestibulum, non pharetra quam tempor. Proin in ligula purus. Nulla nec felis sed leo molestie dapibus sed ut augue. Aliquam at magna finibus, consectetur orci vel, sodales velit. Quisque viverra lacus id diam volutpat tempor.\nNam viverra ultricies enim, vitae faucibus orci. Quisque aliquam condimentum elit, in rhoncus diam placerat vitae. Donec condimentum dapibus magna, quis lacinia lacus consequat vitae. Aenean ac vehicula nibh. Etiam volutpat accumsan accumsan. Nullam in justo fringilla, ullamcorper quam at, accumsan est. Donec mattis dolor nec risus ultrices, sed sagittis velit pulvinar. Ut urna lorem, maximus et molestie tristique, gravida et orci. Aliquam vulputate semper ultrices.\nQuisque nec lacinia odio, non malesuada eros. Integer id condimentum lorem. Duis laoreet pulvinar mollis. Nunc lacinia molestie ultricies. Pellentesque interdum elit efficitur sodales consequat. Nunc id ex ut ante sodales fermentum vitae sagittis mauris. Sed facilisis consectetur libero facilisis lobortis. Ut pretium, tortor et varius ornare, elit leo porta tortor, lobortis porttitor felis lorem eu ex. Vivamus consectetur justo quis est fermentum rutrum. Mauris interdum quam vel metus tristique, vel finibus nibh ultrices. Phasellus maximus metus quis augue bibendum cursus. Sed convallis odio ac faucibus facilisis. Praesent sodales tempor tortor vel gravida. Curabitur ornare nunc risus, ut congue dolor volutpat ac."
+    "objectID": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#what-changes-for-users-and-developers",
+    "href": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#what-changes-for-users-and-developers",
+    "title": "Roche Open-Source TLG Packages Move to pharmaverse",
+    "section": "What Changes for Users and Developers?",
+    "text": "What Changes for Users and Developers?\n\nCRAN / Release Users: Zero breaking changes. The repository move does not change existing released package versions. If you install these versions via CRAN or an internal mirror, no changes to your R code are required as a result of the move.\nGitHub Remotes & Dev Versions: GitHub automatically handles redirection for repository moves, but we recommend updating your development remotes and remotes::install_github() / pak::pkg_install() references from insightsengineering/&lt;pkg&gt; to pharmaverse/&lt;pkg&gt;:\n\npak::pkg_install(\"pharmaverse/teal\")\npak::pkg_install(\"pharmaverse/rtables\")\n\nContributing & Issue Tracking: For the migrated packages, all active issue trackers, feature requests, and discussions are now centralized under pharmaverse/&lt;repo&gt;. You are welcome to submit PRs, suggest features, or report bugs directly there."
+  },
+  {
+    "objectID": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#looking-ahead",
+    "href": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#looking-ahead",
+    "title": "Roche Open-Source TLG Packages Move to pharmaverse",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nAs these packages become part of pharmaverse, we look forward to broader participation and shared stewardship across the community. We welcome contributions from companies and individuals to help shape their direction and support their continued development."
   }
 ]

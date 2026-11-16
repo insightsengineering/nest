@@ -18,8 +18,15 @@ local function read_sections(path)
   return doc.meta.sections or {}
 end
 
+local LOCK = '<svg class="pf-lock" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 11V7.5a4.5 4.5 0 0 1 9 0V11" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/><rect x="4" y="10.5" width="16" height="11.5" rx="2.5" fill="currentColor"/><circle cx="12" cy="15.4" r="1.8" fill="#fff"/><rect x="11.1" y="15.8" width="1.8" height="3.4" rx=".9" fill="#fff"/></svg>'
+
 local function link(l)
-  return string.format('<a href="%s" target="_blank" rel="noopener">%s<span class="pf-arrow" aria-hidden="true">&#8599;</span></a>', esc(l.url), esc(l.text))
+  local lock, title = "", ""
+  if l.internal then
+    lock = LOCK
+    title = ' title="Roche only"'
+  end
+  return string.format('<a href="%s" target="_blank" rel="noopener"%s>%s%s<span class="pf-arrow" aria-hidden="true">&#8599;</span></a>', esc(l.url), title, lock, esc(l.text))
 end
 
 local function card(fam)
@@ -47,8 +54,17 @@ function Div(el)
   table.sort(names)
 
   local order, byname = {}, {}
+  local any_internal = false
   for _, n in ipairs(names) do
+    local from_internal = n:lower():find("internal", 1, true) ~= nil
     for _, sec in ipairs(read_sections(dir .. "/" .. n)) do
+      -- Every link in a file with "internal" in its name is marked Roche only.
+      if from_internal then
+        for _, fam in ipairs(sec.families or {}) do
+          for _, l in ipairs(fam.links or {}) do l.internal = true; any_internal = true end
+        end
+        for _, l in ipairs(sec.links or {}) do l.internal = true; any_internal = true end
+      end
       local key = str(sec.category)
       if not byname[key] then
         byname[key] = { category = key, description = sec.description and str(sec.description) or "", families = {}, links = {} }
@@ -73,6 +89,9 @@ function Div(el)
   end
 
   local out = {}
+  if any_internal then
+    out[#out + 1] = pandoc.RawBlock("html", '<p class="pf-legend">' .. LOCK .. 'Roche only: not part of the open-source release.</p>')
+  end
   for _, key in ipairs(order) do
     local s = byname[key]
     local html = {}

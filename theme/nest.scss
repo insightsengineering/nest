@@ -307,6 +307,9 @@ main.content.quarto-banner-title-block {
 .pf-links { display: flex; flex-wrap: wrap; align-content: flex-start; gap: 6px 18px; margin-top: 16px; padding-top: 14px; min-height: 80px; border-top: 1px solid $line; }
 .pf-links a, .pf-pills a { font: 500 14px/1.5 "DM Sans", Arial, sans-serif; color: $link; text-decoration: none; }
 .pf-links a:hover { text-decoration: underline; text-underline-offset: 2px; }
+.pf-lock { width: 14px; height: 14px; margin-right: 5px; vertical-align: -2px; }
+.pf-legend { display: flex; align-items: center; gap: 6px; margin: 4px 0 0; font: 400 14px/1.5 "DM Sans", Arial, sans-serif; color: $sub; }
+.pf-legend .pf-lock { margin: 0; color: $link; }
 .pf-arrow { margin-left: 4px; font-size: 12px; }
 .pf-pills { display: flex; flex-wrap: wrap; gap: 12px; }
 .pf-pills a { display: inline-flex; align-items: center; padding: 10px 18px; background: #eef4fd; border: 1px solid #d6e3f6; border-radius: 999px; transition: background .15s; }

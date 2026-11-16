@@ -142,5 +142,5 @@ Keep up with the ecosystem
 Explore the code, ask a question, or help shape what comes next.
 :::
 
-[Join the community ↗](https://github.com/insightsengineering){.btn-nest}
+[Join the community ↗](https://github.com/pharmaverse){.btn-nest}
 :::::

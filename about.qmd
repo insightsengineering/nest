@@ -12,7 +12,7 @@ Who we are, and why we build NEST in the open.
 ::::
 
 ```{=html}
-<img class="about-art" src="assets/nest-layered-panels-blue.svg" alt="" aria-hidden="true">
+<div class="about-art-wrap"><img class="about-art" src="assets/nest-layered-panels-blue.svg" alt="" aria-hidden="true"><img class="about-hex-logo" src="assets/nest-hex-rounded.svg" alt="NEST hex sticker"></div>
 ```
 :::::
 

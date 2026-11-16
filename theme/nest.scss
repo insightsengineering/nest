@@ -318,7 +318,9 @@ main.content.quarto-banner-title-block {
 #quarto-content > .about-hero { padding-top: 40px; }
 .about-hero h1 { font: 800 52px/1.1 Manrope, Arial, sans-serif; letter-spacing: -1.8px; margin: 0 0 14px; color: $hero-ink; }
 .about-hero-copy p { font-size: 16px; line-height: 1.75; color: $hero-sub; max-width: 520px; margin: 0; }
-.about-hero .about-art { width: 560px; max-width: 50%; height: auto; flex: none; margin: 0; }
+.about-hero .about-art-wrap { position: relative; width: 560px; max-width: 50%; flex: none; margin: 0; }
+.about-hero .about-art { display: block; width: 100%; height: auto; margin: 0; }
+.about-hero .about-hex-logo { position: absolute; left: 50%; top: 50%; width: 31%; height: auto; transform: translate(-50%, -50%); filter: drop-shadow(0 14px 22px rgba(10, 30, 80, .35)); margin: 0; }
 
 .about-ico { width: 34px; height: 34px; fill: none; stroke: $cat; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
 .about-ico .solid { fill: $cat; stroke: none; }
@@ -354,7 +356,7 @@ main.content.quarto-banner-title-block {
 @media (max-width: 800px) {
   .about-hero { flex-direction: column; align-items: flex-start; padding-bottom: 32px; }
   .about-hero h1 { font-size: 38px; letter-spacing: -1.2px; }
-  .about-hero .about-art { width: 280px; max-width: 80%; }
+  .about-hero .about-art-wrap { width: 280px; max-width: 80%; }
   .about-history { grid-template-columns: 1fr; }
   .about-history-lead { padding-right: 0; border-right: 0; padding-bottom: 28px; border-bottom: 1px solid $line; }
   .about-history-copy { padding-left: 0; padding-top: 28px; }

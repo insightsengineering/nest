@@ -22,9 +22,10 @@
     Q 783 -3 773 34
     L 705 252
     Q 697 278 668 278
-    L 275 278
+    L 305 278
+    Q 275 278 286.2 250.2
     Z"
-    fill="url(#back)" opacity="0.78"/>
+    fill="url(#back)" opacity="0.55"/>
 
   <!-- Middle layer -->
   <path d="
@@ -34,9 +35,10 @@
     Q 600 73 590 107
     L 530 302
     Q 522 328 492 328
-    L 65 328
+    L 95 328
+    Q 65 328 75.6 300.0
     Z"
-    fill="url(#middle)" opacity="0.82"/>
+    fill="url(#middle)" opacity="0.6"/>
 
   <!-- Front / lowest layer -->
   <path d="
@@ -44,9 +46,10 @@
     Q 363 199 393 194
     L 818 124
     Q 855 118 846 154
-    L 798 340
-    Q 791 368 760 368
-    L 255 368
+    L 792.3 362
+    Q 785 390 755 390
+    L 270.7 390
+    Q 240.7 390 257.1 364.9
     Z"
-    fill="url(#front)" opacity="0.96"/>
+    fill="url(#front)" opacity="0.8"/>
 </svg>

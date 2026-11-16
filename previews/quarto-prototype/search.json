@@ -105,18 +105,11 @@
     "text": "How to register\nQuisque nec lacinia odio, non malesuada eros. Integer id condimentum lorem. Duis laoreet pulvinar mollis. Nunc lacinia molestie ultricies. Pellentesque interdum elit efficitur sodales consequat. Nunc id ex ut ante sodales fermentum vitae sagittis mauris. Sed facilisis consectetur libero facilisis lobortis. Ut pretium, tortor et varius ornare, elit leo porta tortor, lobortis porttitor felis lorem eu ex. Vivamus consectetur justo quis est fermentum rutrum. Mauris interdum quam vel metus tristique, vel finibus nibh ultrices. Phasellus maximus metus quis augue bibendum cursus. Sed convallis odio ac faucibus facilisis. Praesent sodales tempor tortor vel gravida. Curabitur ornare nunc risus, ut congue dolor volutpat ac."
   },
   {
-    "objectID": "learn.html",
-    "href": "learn.html",
-    "title": "Learn",
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
     "section": "",
-    "text": "Placeholder: getting started and tutorials will go here."
-  },
-  {
-    "objectID": "products.html",
-    "href": "products.html",
-    "title": "Products",
-    "section": "",
-    "text": "teal\n\n\n\nInteractive exploration\n\n\n\n\nBring your data into interactive applications for exploration and review.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncards\n\n\n\nAnalysis results\n\n\n\n\nA foundation for working with structured analysis results in R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncardx\n\n\n\nExtended analysis\n\n\n\n\nExtend your analysis workflows with additional tools for results.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncrane\n\n\n\nLorem ipsum\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nformatters\n\n\n\nLorem ipsum\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Hands-on workshop: building your first teal app\n\n\n\nEvents\n\nTrainings\n\n\n\n\nJoin us for a guided session with live coding and Q&A.\n\n\n\n\n\n\nNov 10, 2026\n\n\n\n\n\n\n\nNEST at an upcoming conference\n\n\n\nEvents\n\n\n\n\nWhere to find the NEST team, with dates and useful links.\n\n\n\n\n\n\nNov 9, 2026\n\n\n\n\n\n\n\nOnline course: reporting with cards and cardx\n\n\n\nTrainings\n\n\n\n\nA self-paced course covering structured analysis results from start to finish.\n\n\n\n\n\n\nNov 7, 2026\n\n\n\n\n\n\n\nYour next step with analysis results\n\n\n\nTrainings\n\n\n\n\nPractical learning resources for getting started with cards and cardx.\n\n\n\n\n\n\nNov 6, 2026\n\n\n\n\n\n\n\nformatters 0.6.0 is out\n\n\n\nReleases\n\n\n\n\nWhat is new in this release, with a short upgrade guide.\n\n\n\n\n\n\nNov 5, 2026\n\n\n\n\n\n\n\nA new look for the NEST product pages\n\n\n\nProduct update\n\n\n\n\nEasier ways to find the right tool for your analysis.\n\n\n\n\n\n\nNov 4, 2026\n\n\n\n\n\n\n\nWelcome to the new NEST website\n\n\n\nProject news\n\n\n\n\nA first look at the refreshed site and what is coming next.\n\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\nExample public-only post\n\n\n\nProject news\n\n\n\n\nExcluded from the internal edition via exclude: in the internal repo.\n\n\n\n\n\n\nNov 2, 2026\n\n\n\n\n\n\n\nNew possibilities for interactive exploration\n\n\n\nReleases\n\n\n\n\nA closer look at what is changing across the teal ecosystem.\n\n\n\n\n\n\nNov 1, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#find-your-starting-point",
@@ -133,11 +126,11 @@
     "text": "Latest from NEST"
   },
   {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "News",
+    "objectID": "products.html",
+    "href": "products.html",
+    "title": "Products",
     "section": "",
-    "text": "Hands-on workshop: building your first teal app\n\n\n\nEvents\n\nTrainings\n\n\n\n\nJoin us for a guided session with live coding and Q&A.\n\n\n\n\n\n\nNov 10, 2026\n\n\n\n\n\n\n\nNEST at an upcoming conference\n\n\n\nEvents\n\n\n\n\nWhere to find the NEST team, with dates and useful links.\n\n\n\n\n\n\nNov 9, 2026\n\n\n\n\n\n\n\nOnline course: reporting with cards and cardx\n\n\n\nTrainings\n\n\n\n\nA self-paced course covering structured analysis results from start to finish.\n\n\n\n\n\n\nNov 7, 2026\n\n\n\n\n\n\n\nYour next step with analysis results\n\n\n\nTrainings\n\n\n\n\nPractical learning resources for getting started with cards and cardx.\n\n\n\n\n\n\nNov 6, 2026\n\n\n\n\n\n\n\nformatters 0.6.0 is out\n\n\n\nReleases\n\n\n\n\nWhat is new in this release, with a short upgrade guide.\n\n\n\n\n\n\nNov 5, 2026\n\n\n\n\n\n\n\nA new look for the NEST product pages\n\n\n\nProduct update\n\n\n\n\nEasier ways to find the right tool for your analysis.\n\n\n\n\n\n\nNov 4, 2026\n\n\n\n\n\n\n\nWelcome to the new NEST website\n\n\n\nProject news\n\n\n\n\nA first look at the refreshed site and what is coming next.\n\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\nExample public-only post\n\n\n\nProject news\n\n\n\n\nExcluded from the internal edition via exclude: in the internal repo.\n\n\n\n\n\n\nNov 2, 2026\n\n\n\n\n\n\n\nNew possibilities for interactive exploration\n\n\n\nReleases\n\n\n\n\nA closer look at what is changing across the teal ecosystem.\n\n\n\n\n\n\nNov 1, 2026\n\n\n\n\n\nNo matching items"
+    "text": "teal\n\n\n\nInteractive exploration\n\n\n\n\nBring your data into interactive applications for exploration and review.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncards\n\n\n\nAnalysis results\n\n\n\n\nA foundation for working with structured analysis results in R.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncardx\n\n\n\nExtended analysis\n\n\n\n\nExtend your analysis workflows with additional tools for results.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncrane\n\n\n\nLorem ipsum\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nformatters\n\n\n\nLorem ipsum\n\n\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/example-event/index.html",

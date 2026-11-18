@@ -56,7 +56,7 @@
       links:
         - { text: rtables, url: "https://pharmaverse.github.io/rtables/" }
         - { text: formatters, url: "https://pharmaverse.github.io/formatters/" }
-        - { text: rlistings, url: "pharmaverse.github.io/rlistings/" }
+        - { text: rlistings, url: "https://pharmaverse.github.io/rlistings/" }
     - title: tern
       description: Table, listing, and graph (TLG) library for common clinical trial outputs.
       image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/tern.svg

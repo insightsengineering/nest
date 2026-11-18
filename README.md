@@ -73,7 +73,7 @@ By default, code in a post is shown in a plain code block (` ```r `) and is not 
 2. Install R and the packages the code uses, then render the post once on your computer: `quarto render posts/<post-id>/index.qmd`. This runs the code and saves the results in the `_freeze/` folder.
 3. Commit the new files in `_freeze/` together with the post, and include them in your pull request.
 
-If you use `quarto preview` instead, open the post in your browser so it renders, because preview only renders a page when you visit it. Check that the post has a folder under `_freeze/` before you commit.
+Render the post first with `quarto render`, then run `quarto preview` to check how it looks. Preview alone only renders a page when you open it, so it can leave `_freeze/` empty. Check that the post has a folder under `_freeze/` before you commit.
 
 The build on GitHub has no R, so it reads the saved results from `_freeze/`. Without those files the build fails. If you change the code or text of such a post later, render it again and commit the updated `_freeze/` files.
 

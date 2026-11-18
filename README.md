@@ -17,7 +17,7 @@ NEST is a set of open-source R packages for clinical research, born at Roche and
 
 ## Contributing
 
-You do not need to install any NEST packages or R. Pick whichever route suits you.
+You do not need to install any NEST packages or R, unless your post runs R code (see [Show R output in a post](#show-r-output-in-a-post)). Pick whichever route suits you.
 
 ### Option 1: edit on GitHub, no setup
 
@@ -65,6 +65,18 @@ Details worth knowing:
 - **Description** is what readers see in the list, so keep it short.
 - Any existing post under `posts/` makes a good starting point. Copy its folder, rename it, and replace the content.
 
+### Show R output in a post
+
+By default, code in a post is shown in a plain code block (` ```r `) and is not run, so the site builds without R. If a post needs to show real results such as tables or plots:
+
+1. Write the code as `{r}` chunks and add `freeze: true` to the post header.
+2. Install R and the packages the code uses, then render the post once on your computer: `quarto render posts/<post-id>/index.qmd`. This runs the code and saves the results in the `_freeze/` folder.
+3. Commit the new files in `_freeze/` together with the post, and include them in your pull request.
+
+If you use `quarto preview` instead, open the post in your browser so it renders, because preview only renders a page when you visit it. Check that the post has a folder under `_freeze/` before you commit.
+
+The build on GitHub has no R, so it reads the saved results from `_freeze/`. Without those files the build fails. If you change the code or text of such a post later, render it again and commit the updated `_freeze/` files.
+
 ## Add or edit a product
 
 The Products page is drawn from `products/*.yml`. Each file is a list of sections, and each section is either a group of cards or a row of pill links. Cards group related packages into a family, with one link per package.
@@ -91,7 +103,7 @@ The Products page is drawn from `products/*.yml`. Each file is a list of section
 
 - Keep each pull request focused on one change.
 - Include a screenshot or the preview link when you change how a page looks.
-- Do not commit the `_site/` or `.quarto/` folders.
+- Do not commit the `_site/` or `.quarto/` folders. Do commit the `_freeze/` folder when a post runs R code.
 
 ## Publishing
 

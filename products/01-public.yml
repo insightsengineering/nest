@@ -56,12 +56,15 @@
       links:
         - { text: rtables, url: "https://pharmaverse.github.io/rtables/" }
         - { text: formatters, url: "https://pharmaverse.github.io/formatters/" }
+        - { text: rlistings, url: "pharmaverse.github.io/rlistings/" }
     - title: tern
       description: Table, listing, and graph (TLG) library for common clinical trial outputs.
       image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/tern.svg
       links:
         - { text: tern, url: "https://pharmaverse.github.io/tern/" }
         - { text: tern.mmrm, url: "https://insightsengineering.github.io/tern.mmrm/" }
+        - { text: tern.rbmi, url: "https://insightsengineering.github.io/tern.rbmi/" }
+        - { text: tern.gee, url: "https://insightsengineering.github.io/tern.gee/" }
 
 - category: Catalogs and examples
   description: Ready-to-use examples and showcases across the NEST ecosystem.

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 460" preserveAspectRatio="none">
+  <defs>
+    <!-- Broad left wave -->
+    <linearGradient id="leftWave" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#24518c" stop-opacity="0.56"/>
+      <stop offset="58%" stop-color="#183a68" stop-opacity="0.27"/>
+      <stop offset="100%" stop-color="#122a4c" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Lower right wave -->
+    <linearGradient id="rightLow" x1="0.15" y1="0" x2="0.65" y2="1">
+      <stop offset="0%" stop-color="#255aa4" stop-opacity="0.52"/>
+      <stop offset="52%" stop-color="#1d477f" stop-opacity="0.27"/>
+      <stop offset="100%" stop-color="#17345e" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Steeper overlapping right wave -->
+    <linearGradient id="rightHigh" x1="0.3" y1="0" x2="0.7" y2="1">
+      <stop offset="0%" stop-color="#3979d1" stop-opacity="0.62"/>
+      <stop offset="38%" stop-color="#285fa9" stop-opacity="0.38"/>
+      <stop offset="78%" stop-color="#1b4075" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#17345e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Left: one shallow wave -->
+  <path d="M0 330
+           C125 288 225 278 330 302
+           C455 332 555 392 690 421
+           C790 442 875 443 955 430
+           L955 460 L0 460 Z"
+        fill="url(#leftWave)"/>
+
+  <!-- Right: lower wave moving horizontally -->
+  <path d="M650 460
+           C770 420 865 365 985 338
+           C1100 312 1210 314 1310 340
+           C1360 353 1405 367 1440 380
+           L1440 460 Z"
+        fill="url(#rightLow)"/>
+
+  <!-- Right: second wave crosses the lower one at a different angle,
+       then fades into the background toward the bottom -->
+  <path d="M790 460
+           C910 420 1020 382 1110 326
+           C1190 276 1242 208 1305 142
+           C1355 90 1400 60 1440 45
+           L1440 460 Z"
+        fill="url(#rightHigh)"/>
+</svg>

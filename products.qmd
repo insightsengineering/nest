@@ -1,0 +1,9 @@
+---
+title: "Products"
+page-layout: full
+filters:
+  - filters/products.lua
+---
+
+::: {#product-grid}
+:::

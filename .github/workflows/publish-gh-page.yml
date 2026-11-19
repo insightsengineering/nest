@@ -13,7 +13,16 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
+      - name: Setup Quarto 📦
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.11.9
+
+      - name: Render site 🏗️
+        run: quarto render
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: nest-web # The folder the action should deploy.
+          folder: _site # The folder the action should deploy.
+          clean-exclude: previews # keep branch previews published by quarto-pr.yml

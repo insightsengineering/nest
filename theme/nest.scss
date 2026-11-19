@@ -334,10 +334,6 @@ main.content.quarto-banner-title-block {
 .about-hero .about-art { display: block; width: 100%; height: auto; margin: 0; }
 .about-hero .about-hex-logo { position: absolute; left: 50%; top: 50%; width: 31%; height: auto; transform: translate(-50%, -50%); filter: drop-shadow(0 14px 22px rgba(10, 30, 80, .35)); margin: 0; }
 
-.about-ico { width: 34px; height: 34px; fill: none; stroke: $cat; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
-.about-ico .solid { fill: $cat; stroke: none; }
-.about-ico .solid.soft { stroke: $cat; stroke-width: 1.4; }
-
 // story section: label, headline and mission card on the left, the story on the right
 .about-history { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); padding: 56px var(--gutter) 40px; }
 #quarto-content > .about-history { padding-top: 56px; }
@@ -346,8 +342,8 @@ main.content.quarto-banner-title-block {
 .about-eyebrow::after { content: ""; width: 48px; height: 2px; background: $cat; }
 .about-history h2 { font: 800 38px/1.2 Manrope, Arial, sans-serif; letter-spacing: -1.2px; margin: 0 0 32px; padding: 0; border: 0; color: $dark; }
 .about-mission-card { display: flex; gap: 18px; align-items: flex-start; padding: 22px 24px; background: #f2f6fd; border: 1px solid #cfdcf2; border-radius: 16px; }
-.about-mission-card .about-ico { width: 34px; height: 34px; flex: none; margin-top: 2px; stroke-width: 2; }
 .about-mission-card h3 { font: 800 22px/1.25 Manrope, Arial, sans-serif; letter-spacing: -.5px; margin: 0 0 6px; padding: 0; border: 0; color: $dark; }
+.about-mission-card::before { content: ""; width: 34px; height: 34px; flex: none; margin-top: 2px; background: center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233368cc' stroke-width='2'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Ccircle cx='12' cy='12' r='5'/%3E%3Ccircle cx='12' cy='12' r='1.8' fill='%233368cc' stroke='none'/%3E%3C/svg%3E"); }
 .about-mission-card p { font: 400 15px/1.7 "DM Sans", Arial, sans-serif; color: $sub; margin: 0; }
 .about-history-copy { padding-left: 56px; align-self: center; }
 .about-history-copy p { font: 400 17px/1.7 "DM Sans", Arial, sans-serif; color: $ink; margin: 0 0 22px; }
@@ -357,12 +353,18 @@ main.content.quarto-banner-title-block {
 #quarto-content > .about-story { padding-top: 24px; }
 .about-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; padding: 32px 0 0; border-top: 1px solid $line; }
 .about-row { display: flex; gap: 22px; align-items: flex-start; }
-.about-tile { display: flex; align-items: center; justify-content: center; width: 56px; height: 56px; border-radius: 14px; background: #e4ecfb; flex: none; }
-.about-tile .about-ico { width: 28px; height: 28px; }
+.about-row-impact::before { content: ""; width: 56px; height: 56px; flex: none; border-radius: 14px; background: #e4ecfb center / 28px no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%233368cc'%3E%3Crect x='3.5' y='13' width='4.5' height='7.5' rx='1.2'/%3E%3Crect x='9.75' y='8.5' width='4.5' height='12' rx='1.2'/%3E%3Crect x='16' y='3.5' width='4.5' height='17' rx='1.2'/%3E%3C/svg%3E"); }
 .about-hex { width: 56px; height: 56px; flex: none; object-fit: contain; }
 .about-row p a { color: $link; text-decoration: underline; text-underline-offset: 2px; }
 .about-row h3 { font: 800 22px/1.25 Manrope, Arial, sans-serif; letter-spacing: -.5px; margin: 0 0 6px; padding: 0; border: 0; color: $dark; }
 .about-row p { font: 400 14px/1.7 "DM Sans", Arial, sans-serif; color: $sub; margin: 0; }
+
+// Markdown wraps text and images in paragraphs; keep the layout free of their margins.
+.about-art-wrap p, .about-row > p, .about-eyebrow p { margin: 0; }
+.about-row > p { flex: none; width: 56px; line-height: 0; }
+.about-eyebrow p { display: contents; }
+.about-hero .about-art-wrap p { line-height: 0; }
+.about-mission-text, .about-row-text { min-width: 0; }
 
 // approach: one soft panel, intro on the left, three items with dividers
 @media (max-width: 800px) {

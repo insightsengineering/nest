@@ -97,6 +97,7 @@ The Products page is drawn from `products/*.yml`. Each file is a list of section
 - To add a family, add a block under `families`. Keep each section to four cards so the grid stays even, and keep a card to about four links.
 - To add a row of pills (for catalogs and examples), use `links:` directly under the section instead of `families:`.
 - `image` is optional. A card without one gets a placeholder hexagon with its first letter. Hex stickers come from the [hex-stickers](https://github.com/insightsengineering/hex-stickers) repository, so reference them from there instead of copying files into this repo.
+- To also show a family on the landing page, add `featured: true` to it. The landing page draws one card for each featured family, using its description and first link, so keep the description meaningful. Four to six featured families work well.
 - Check that every link opens before you submit.
 
 ## Pull requests

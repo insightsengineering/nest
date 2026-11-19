@@ -1,4 +1,5 @@
--- Draws the Products page from products/*.yml (see the comment at the top of products/01-public.yml).
+-- Draws the Products page (#product-grid) and the landing-page cards (#featured-products) from products/*.yml
+-- (see the comment at the top of products/01-public.yml).
 -- Every file is a list of sections; sections with the same `category` are merged across files.
 local str = pandoc.utils.stringify
 
@@ -43,8 +44,27 @@ local function card(fam)
     icon, (esc(fam.title):gsub("%.", ".<wbr>")), esc(fam.description or ""), table.concat(links))
 end
 
-function Div(el)
-  if el.identifier ~= "product-grid" then return nil end
+-- One card of the landing-page carousel: a family marked `featured: true`, linking to its first public link.
+local function featured_card(category, fam)
+  local href
+  for _, l in ipairs(fam.links or {}) do
+    if not l.internal then href = str(l.url) break end
+  end
+  local img = ""
+  if fam.image then
+    img = string.format('<img src="%s" alt="%s hex sticker">', esc(fam.image), esc(fam.title))
+  end
+  local go = ""
+  if href then
+    go = string.format('<a class="go" href="%s" target="_blank" rel="noopener">Explore %s &#8599;</a>', esc(href), esc(fam.title))
+  end
+  return string.format(
+    '<div class="card-tool"><div class="head">%s<div><div class="name">%s</div><div class="kind">%s</div></div></div><div class="desc">%s</div>%s</div>',
+    img, esc(fam.title), esc(category), esc(fam.description or ""), go)
+end
+
+-- Reads every products/*.yml and merges them: sections by `category`, cards by `title`.
+local function load_sections()
   local root = (quarto and quarto.project and quarto.project.directory) or "."
   local dir = root .. "/products"
   local names = {}
@@ -87,6 +107,22 @@ function Div(el)
       for _, l in ipairs(sec.links or {}) do s.links[#s.links + 1] = l end
     end
   end
+  return order, byname, any_internal
+end
+
+function Div(el)
+  if el.identifier == "featured-products" then
+    local order, byname = load_sections()
+    local html = {}
+    for _, key in ipairs(order) do
+      for _, f in ipairs(byname[key].families) do
+        if f.featured == true then html[#html + 1] = featured_card(key, f) end
+      end
+    end
+    return pandoc.RawBlock("html", table.concat(html, "\n"))
+  end
+  if el.identifier ~= "product-grid" then return nil end
+  local order, byname, any_internal = load_sections()
 
   local out = {}
   if any_internal then

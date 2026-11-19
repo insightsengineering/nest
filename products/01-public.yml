@@ -4,12 +4,14 @@
 #   families: cards, each with a title, description, optional image, and a list of links
 #   links:    a row of pill links (use for catalogs and examples)
 # A card without an `image` gets a placeholder hex with its first letter.
+# Add `featured: true` to a card to also show it on the landing page (its description and first link are used).
 # Sections with the same `category` in different files are merged, and so are cards with the same `title`
 # (their links are joined); file names set the order.
 - category: Interactive exploration
   description: Tools for interactive clinical data exploration and visualization.
   families:
     - title: teal
+      featured: true
       description: Interactive analysis applications built from composable packages for data, filtering, and reporting.
       image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/teal.svg
       links:
@@ -40,17 +42,20 @@
   description: Tools for analysis, tables, listings, figures, and clinical trial reporting.
   families:
     - title: crane
+      featured: true
       description: Clinical trial tables and summaries, extending the gtsummary package.
       image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/crane.svg
       links:
         - { text: crane, url: "https://insightsengineering.github.io/crane/" }
     - title: cards
+      featured: true
       description: Analysis results data (ARDs) in the CDISC standard, with tools to extend them.
       image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/cards.svg
       links:
         - { text: cards, url: "https://pharmaverse.github.io/cards/" }
         - { text: cardx, url: "https://pharmaverse.github.io/cardx/" }
     - title: rtables
+      featured: true
       description: Build and format reporting tables with R.
       image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/rtables.svg
       links:
@@ -58,6 +63,7 @@
         - { text: formatters, url: "https://pharmaverse.github.io/formatters/" }
         - { text: rlistings, url: "https://pharmaverse.github.io/rlistings/" }
     - title: tern
+      featured: true
       description: Table, listing, and graph (TLG) library for common clinical trial outputs.
       image: https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/tern.svg
       links:

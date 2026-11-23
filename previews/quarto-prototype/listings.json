@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/news.html",
     "items": [
       "/posts/2026-11-04-roche-appsilon-teal/index.html",
       "/posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html",
@@ -9,7 +9,7 @@
     ]
   },
   {
-    "listing": "/news.html",
+    "listing": "/index.html",
     "items": [
       "/posts/2026-11-04-roche-appsilon-teal/index.html",
       "/posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html",

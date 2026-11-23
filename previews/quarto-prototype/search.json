@@ -63,11 +63,11 @@
     "text": "A shared effort for faster, more consistent clinical reporting\n\n\nOur mission\nProvide high-quality tools that make clinical analysis and reporting more efficient, reproducible, and accessible."
   },
   {
-    "objectID": "products.html",
-    "href": "products.html",
-    "title": "Products",
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
     "section": "",
-    "text": "Interactive explorationTools for interactive clinical data exploration and visualization.tealInteractive analysis applications built from composable packages for data, filtering, and reporting.teal↗Tteal modulesReady-to-use modules for clinical and general data exploration.teal.modules.clinical↗teal.modules.general↗GgoshawkBiomarker analysis and visualization.goshawk↗teal.goshawk↗OospreySpecialized analysis and TLG modules.osprey↗teal.osprey↗hermesRNA-seq analysis and exploration.hermes↗teal.modules.hermes↗\nRegulatory reportingTools for analysis, tables, listings, figures, and clinical trial reporting.craneClinical trial tables and summaries, extending the gtsummary package.crane↗cardsAnalysis results data (ARDs) in the CDISC standard, with tools to extend them.cards↗cardx↗rtablesBuild and format reporting tables with R.rtables↗formatters↗rlistings↗ternTable, listing, and graph (TLG) library for common clinical trial outputs.tern↗tern.mmrm↗tern.rbmi↗tern.gee↗\nCatalogs and examplesReady-to-use examples and showcases across the NEST ecosystem.tlg-catalog↗biomarker-catalog↗ard-catalog↗teal.gallery↗"
+    "text": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development\n\n\n\nAnnouncements\n\n\n\n\nFollowing teal’s move to pharmaverse, Appsilon’s recognition as a core contributor and copyright holder marks the next step in an established partnership.\n\n\n\n\n\n\nNov 4, 2026\n\n\n\n\n\n\n\nRoche Open-Source TLG Packages Move to pharmaverse\n\n\n\nAnnouncements\n\n\n\n\nKey clinical reporting and exploration packages, including {rtables}, {tern} and the {teal} framework, have moved from insightsengineering to the pharmaverse GitHub organization. Here is why, and what it means for you.\n\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\nNew releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0\n\n\n\nReleases\n\n\n\n\nTwo teal module packages have new versions. teal.modules.clinical moves to teal.picks for selecting data, and teal.modules.general fixes several plotting and data issues.\n\n\n\n\n\n\nOct 13, 2026\n\n\n\n\n\n\n\nA collaborative triumph: Re-using test data between the NEST and admiral teams\n\n\n\nAnnouncements\n\n\n\n\nThis post describes one of the first joint efforts between the NEST and admiral teams, where test data from the pharmaverseadam package was used within the NEST framework.\n\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html#find-your-starting-point",
@@ -84,11 +84,32 @@
     "text": "Latest from NEST"
   },
   {
-    "objectID": "news.html",
-    "href": "news.html",
-    "title": "News",
+    "objectID": "products.html",
+    "href": "products.html",
+    "title": "Products",
     "section": "",
-    "text": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development\n\n\n\nAnnouncements\n\n\n\n\nFollowing teal’s move to pharmaverse, Appsilon’s recognition as a core contributor and copyright holder marks the next step in an established partnership.\n\n\n\n\n\n\nNov 4, 2026\n\n\n\n\n\n\n\nRoche Open-Source TLG Packages Move to pharmaverse\n\n\n\nAnnouncements\n\n\n\n\nKey clinical reporting and exploration packages, including {rtables}, {tern} and the {teal} framework, have moved from insightsengineering to the pharmaverse GitHub organization. Here is why, and what it means for you.\n\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\nNew releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0\n\n\n\nReleases\n\n\n\n\nTwo teal module packages have new versions. teal.modules.clinical moves to teal.picks for selecting data, and teal.modules.general fixes several plotting and data issues.\n\n\n\n\n\n\nOct 13, 2026\n\n\n\n\n\n\n\nA collaborative triumph: Re-using test data between the NEST and admiral teams\n\n\n\nAnnouncements\n\n\n\n\nThis post describes one of the first joint efforts between the NEST and admiral teams, where test data from the pharmaverseadam package was used within the NEST framework.\n\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Interactive explorationTools for interactive clinical data exploration and visualization.tealInteractive analysis applications built from composable packages for data, filtering, and reporting.teal↗Tteal modulesReady-to-use modules for clinical and general data exploration.teal.modules.clinical↗teal.modules.general↗GgoshawkBiomarker analysis and visualization.goshawk↗teal.goshawk↗OospreySpecialized analysis and TLG modules.osprey↗teal.osprey↗hermesRNA-seq analysis and exploration.hermes↗teal.modules.hermes↗\nRegulatory reportingTools for analysis, tables, listings, figures, and clinical trial reporting.craneClinical trial tables and summaries, extending the gtsummary package.crane↗cardsAnalysis results data (ARDs) in the CDISC standard, with tools to extend them.cards↗cardx↗rtablesBuild and format reporting tables with R.rtables↗formatters↗rlistings↗ternTable, listing, and graph (TLG) library for common clinical trial outputs.tern↗tern.mmrm↗tern.rbmi↗tern.gee↗\nCatalogs and examplesReady-to-use examples and showcases across the NEST ecosystem.tlg-catalog↗biomarker-catalog↗ard-catalog↗teal.gallery↗"
+  },
+  {
+    "objectID": "community.html",
+    "href": "community.html",
+    "title": "Community",
+    "section": "",
+    "text": "Ask a question, share what you are building, or follow the discussion.\n\n\n\n\nThe home for discussion, questions, and collaboration across the NEST and pharmaverse ecosystem.\n\nJoin Slack ↗"
+  },
+  {
+    "objectID": "community.html#join-the-conversation",
+    "href": "community.html#join-the-conversation",
+    "title": "Community",
+    "section": "",
+    "text": "Ask a question, share what you are building, or follow the discussion.\n\n\n\n\nThe home for discussion, questions, and collaboration across the NEST and pharmaverse ecosystem.\n\nJoin Slack ↗"
+  },
+  {
+    "objectID": "community.html#working-groups",
+    "href": "community.html#working-groups",
+    "title": "Community",
+    "section": "Working groups",
+    "text": "Working groups\nCollaborative groups that shape product direction and share plans.\n\n\n\nteal Working Group\nTeal Enhancements for Cross-Industry Adoption (DVOST), coordinated through PHUSE. Discuss the roadmap and development of the teal framework and its modules.\n\nLearn more ↗"
   },
   {
     "objectID": "posts/2025-01-15-nest-admiral-test-data/index.html",

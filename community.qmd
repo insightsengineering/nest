@@ -1,0 +1,51 @@
+---
+title: "Community"
+description: "Connect with the people building and using NEST."
+page-layout: full
+---
+
+::::: {.cm-section}
+## Join the conversation {.unnumbered}
+
+Ask a question, share what you are building, or follow the discussion.
+
+:::: {.cm-card .cm-slack}
+![](https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/pharmaverse.svg){.cm-icon fig-alt="pharmaverse hex sticker"}
+
+::: {.cm-text}
+### Pharmaverse Slack {.unnumbered}
+
+The home for discussion, questions, and collaboration across the NEST and pharmaverse ecosystem.
+:::
+
+[Join Slack ↗](https://pharmaverse.slack.com/){.btn-nest}
+::::
+:::::
+
+::::: {.cm-section}
+## Working groups {.unnumbered}
+
+Collaborative groups that shape product direction and share plans.
+
+:::: {.cm-card .cm-group}
+![](https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/teal.svg){.cm-icon fig-alt="teal hex sticker"}
+
+::: {.cm-text}
+### teal Working Group {.unnumbered}
+
+Teal Enhancements for Cross-Industry Adoption (DVOST), coordinated through PHUSE. Discuss the roadmap and development of the teal framework and its modules.
+:::
+
+[Learn more ↗](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/30441473/Teal+Enhancements+for+Cross-Industry+Adoption){.btn-nest}
+::::
+:::::
+
+::::: {.cm-section}
+::: {.cm-contact}
+::: {.cm-text}
+### Collaborate with us {.unnumbered}
+
+Is your company interested in contributing to NEST, joining a working group, or getting involved in another way? Reach out to [Dony Unardi](mailto:unardi.dony@gene.com) or [Joe Zhu](mailto:joe.zhu@roche.com) and we will be happy to help.
+:::
+:::
+:::::

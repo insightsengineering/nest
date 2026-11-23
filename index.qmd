@@ -124,5 +124,5 @@ Keep up with the ecosystem
 Explore the code, ask a question, or help shape what comes next.
 :::
 
-[Join the community ↗](https://pharmaverse.org/){.btn-nest}
+[Join the community](community.qmd){.btn-nest}
 :::::

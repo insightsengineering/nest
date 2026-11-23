@@ -9,6 +9,7 @@ project:
     - index.qmd
     - products.qmd
     - news.qmd
+    - community.qmd
     - about.qmd
     - "posts/**/*.qmd"
 
@@ -23,6 +24,8 @@ website:
         text: Products
       - href: news.qmd
         text: News
+      - href: community.qmd
+        text: Community
       - href: about.qmd
         text: About
       - text: '<img class="nav-icon nav-icon-github" src="/assets/github.svg" alt="GitHub">'

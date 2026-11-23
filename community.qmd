@@ -25,15 +25,15 @@ The home for discussion, questions, and collaboration across the NEST and pharma
 ::::: {.cm-section}
 ## Working groups {.unnumbered}
 
-Collaborative groups that shape product direction and share plans.
+Cross-industry groups where companies work on NEST tools together.
 
 :::: {.cm-card .cm-group}
 ![](https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/teal.svg){.cm-icon fig-alt="teal hex sticker"}
 
 ::: {.cm-text}
-### teal Working Group {.unnumbered}
+### Teal Enhancements for Cross-Industry Adoption {.unnumbered}
 
-Teal Enhancements for Cross-Industry Adoption (DVOST), coordinated through PHUSE. Discuss the roadmap and development of the teal framework and its modules.
+A PHUSE working group that helps enhance the teal framework by increasing its flexibility for use across pharmaceutical companies.
 :::
 
 [Learn more ↗](https://advance.hub.phuse.global/wiki/spaces/WEL/pages/30441473/Teal+Enhancements+for+Cross-Industry+Adoption){.btn-nest}

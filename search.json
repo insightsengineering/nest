@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "posts/2026-11-04-roche-appsilon-teal/index.html",
+    "href": "posts/2026-11-04-roche-appsilon-teal/index.html",
+    "title": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development",
+    "section": "",
+    "text": "Originally published on the pharmaverse blog.\nFollowing the recent migration of the teal framework to pharmaverse, Roche and Appsilon are building on their existing collaboration to support its continued development. Appsilon will continue contributing developer expertise and will be recognized as a core contributor and copyright holder alongside Roche.\nteal helps developers build Shiny applications for exploring clinical trial data. If you’ve worked with it, you’ll know its modular approach: combining data, filters, and analysis modules into interactive applications.\nAppsilon has been working with Roche on {teal} development and has been a core contributor to the open-source library. For example, it has co-implemented the new teal design, teal.reporter, and teal.picks, changes that have improved the quality and capabilities of the framework. Formal recognition as a core contributor is a new step forward that formalizes Appsilon’s role in the project, alongside Roche and the wider community."
+  },
+  {
+    "objectID": "posts/2026-11-04-roche-appsilon-teal/index.html#what-changes-for-users-and-contributors",
+    "href": "posts/2026-11-04-roche-appsilon-teal/index.html#what-changes-for-users-and-contributors",
+    "title": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development",
+    "section": "What Changes for Users and Contributors?",
+    "text": "What Changes for Users and Contributors?\nThe teal framework packages are now hosted in the pharmaverse GitHub organization, as described in the earlier migration announcement. Users of existing released versions do not need to change their R code as a result of the move. For development versions installed directly from GitHub, we recommend updating package references to their new pharmaverse locations.\nAppsilon will continue co-leading the maintenance and development of the teal framework alongside Roche, with input and contributions from the wider community. This continued collaboration supports the framework’s ongoing development while welcoming other companies and individual contributors to help shape its direction.\nUsers and contributors can continue reporting issues, proposing features, and submitting pull requests in the package repositories. Community feedback and contributions remain an important part of teal’s development."
+  },
+  {
+    "objectID": "posts/2026-11-04-roche-appsilon-teal/index.html#whats-next-for-teal",
+    "href": "posts/2026-11-04-roche-appsilon-teal/index.html#whats-next-for-teal",
+    "title": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development",
+    "section": "What’s Next for teal?",
+    "text": "What’s Next for teal?\nFuture development will focus on making teal easier to contribute to and strengthening its use in validated environments. Work includes expanding guidance for AI-assisted development across the core and module packages, alongside improvements to testing and dependency management. Roche and Appsilon will continue working with the wider community to shape priorities and guide the framework’s development."
+  },
+  {
+    "objectID": "posts/2026-11-04-roche-appsilon-teal/index.html#building-on-the-communitys-work",
+    "href": "posts/2026-11-04-roche-appsilon-teal/index.html#building-on-the-communitys-work",
+    "title": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development",
+    "section": "Building on the Community’s Work",
+    "text": "Building on the Community’s Work\nteal was created at Roche and has grown through the work of developers and users contributing code, modules, documentation, bug reports, and feedback. Appsilon has been a vital part of the teal community and is taking on a greater role in its continued development alongside Roche and other contributors.\nThank you to each author of teal: Dony Unardi, Dawid Kałędkowski, Pawel Rucki, Aleksander Chlebowski, Andre Verissimo, Kartikeya Kirar, Vedha Viyash, Marcin Kosinski, Adrian Waddell, Nikolas Burkoff, Mahmoud Hallal, Maciej Nasinski, Konrad Pagacz, Junlue Zhao, Tadeusz Lewandowski, Lluis Revilla and everyone else who has helped develop and maintain the project. We look forward to continuing to work with you and welcoming new contributors.\n\nIt’s been rewarding to see teal grow and support colleagues across the biotech and pharmaceutical community. Moving to pharmaverse opens a new chapter in that journey, and I’m excited to build on our longstanding collaboration with Appsilon through a shared commitment to open-source development. Together with the wider community, we look forward to shaping teal’s future and expanding what it can help users achieve.\n— Dony Unardi, Roche (teal Product Owner and NEST Chief Engineer)\n\n\nWe are excited to welcome Appsilon as a partner for teal. Open source ecosystems like pharmaverse thrive when dedicated communities and forward-thinking organizations step up together as one - enabling powerful frameworks like teal to flourish and drive real impact. We hope this move to the pharmaverse org also encourages further contribution from across the industry, so this continues to prosper.\n— Ross Farrugia, Roche (pharmaverse co-founder)\n\n\nteal is a great example of the unique value of open-source software and the power of an active community. Having co-developed teal over the past two years, we are excited to begin this new chapter as copyright holders. We look forward to engaging even more closely with the community as teal moves to the Pharmaverse GitHub organization.\n— Oriol Senan, R/Shiny developer at Appsilon, contributor to teal\n\nIf you use teal, your feedback helps shape it. Report an issue, suggest an improvement, contribute a module, or join the conversation in the Pharmaverse Slack’s #teal channel.\nExplore the repository · Read the documentation · Read the contribution guide"
+  },
+  {
+    "objectID": "posts/2026-10-13-teal-modules-releases/index.html",
+    "href": "posts/2026-10-13-teal-modules-releases/index.html",
+    "title": "New releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0",
+    "section": "",
+    "text": "We are happy to share two new releases for the teal modules this month:\nTogether they cover the modules most teal apps are built from: the standard clinical trial outputs, and the general-purpose modules for exploring any dataset."
+  },
+  {
+    "objectID": "posts/2026-10-13-teal-modules-releases/index.html#teal.modules.clinical-0.14.0",
+    "href": "posts/2026-10-13-teal-modules-releases/index.html#teal.modules.clinical-0.14.0",
+    "title": "New releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0",
+    "section": "teal.modules.clinical 0.14.0",
+    "text": "teal.modules.clinical 0.14.0\nThe headline change is a new way to choose what a module works on. The package now uses teal.picks as the primary method for selecting datasets, variables, and values. The package vignettes have been updated to use it as well, so the examples you read match how the modules now work."
+  },
+  {
+    "objectID": "posts/2026-10-13-teal-modules-releases/index.html#teal.modules.general-0.9.0",
+    "href": "posts/2026-10-13-teal-modules-releases/index.html#teal.modules.general-0.9.0",
+    "title": "New releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0",
+    "section": "teal.modules.general 0.9.0",
+    "text": "teal.modules.general 0.9.0\nThis release is mostly about making the modules you already use behave better:\n\nMissing data. tm_missing_data no longer fails with dplyr 1.1.0 or later when grouping by subject.\nVariable browser. In tm_variable_browser, the “rotate x labels” and “ggplot2 theme” plot settings now actually change the summary plot. Date variables also get proper plot ticks.\nTests. The integration tests are fixed, which helps keep future releases steady.\n\nA special welcome to @wangben718, who made a first contribution to the project in this release. Thank you!"
+  },
+  {
+    "objectID": "posts/2026-10-13-teal-modules-releases/index.html#try-them",
+    "href": "posts/2026-10-13-teal-modules-releases/index.html#try-them",
+    "title": "New releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0",
+    "section": "Try them",
+    "text": "Try them\nInstall the new versions from GitHub:\npak::pkg_install(\"insightsengineering/teal.modules.clinical@v0.14.0\")\npak::pkg_install(\"insightsengineering/teal.modules.general@v0.9.0\")\nFor the full list of changes, see the release pages:\n\nteal.modules.clinical v0.14.0\nteal.modules.general v0.9.0\n\nThe documentation sites have been updated too: teal.modules.clinical and teal.modules.general.\nIf you run into a problem or have an idea for a module, please open an issue in the package repository. Feedback from people using teal in real studies is what shapes these releases."
+  },
+  {
+    "objectID": "about.html#a-shared-effort-for-faster-more-consistent-clinical-reporting",
+    "href": "about.html#a-shared-effort-for-faster-more-consistent-clinical-reporting",
+    "title": "NEST",
+    "section": "A shared effort for faster, more consistent clinical reporting",
+    "text": "A shared effort for faster, more consistent clinical reporting\n\n\nOur mission\nProvide high-quality tools that make clinical analysis and reporting more efficient, reproducible, and accessible."
+  },
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News",
+    "section": "",
+    "text": "Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development\n\n\n\nAnnouncements\n\n\n\n\nFollowing teal’s move to pharmaverse, Appsilon’s recognition as a core contributor and copyright holder marks the next step in an established partnership.\n\n\n\n\n\n\nNov 4, 2026\n\n\n\n\n\n\n\nRoche Open-Source TLG Packages Move to pharmaverse\n\n\n\nAnnouncements\n\n\n\n\nKey clinical reporting and exploration packages, including {rtables}, {tern} and the {teal} framework, have moved from insightsengineering to the pharmaverse GitHub organization. Here is why, and what it means for you.\n\n\n\n\n\n\nNov 3, 2026\n\n\n\n\n\n\n\nNew releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0\n\n\n\nReleases\n\n\n\n\nTwo teal module packages have new versions. teal.modules.clinical moves to teal.picks for selecting data, and teal.modules.general fixes several plotting and data issues.\n\n\n\n\n\n\nOct 13, 2026\n\n\n\n\n\n\n\nA collaborative triumph: Re-using test data between the NEST and admiral teams\n\n\n\nAnnouncements\n\n\n\n\nThis post describes one of the first joint efforts between the NEST and admiral teams, where test data from the pharmaverseadam package was used within the NEST framework.\n\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#find-your-starting-point",
+    "href": "index.html#find-your-starting-point",
+    "title": "NEST",
+    "section": "Find your starting point",
+    "text": "Find your starting point\n\nChoose the right tool for your use case, from interactive exploration to structured analysis results and extended workflows."
+  },
+  {
+    "objectID": "index.html#latest-from-nest",
+    "href": "index.html#latest-from-nest",
+    "title": "NEST",
+    "section": "Latest from NEST",
+    "text": "Latest from NEST"
+  },
+  {
+    "objectID": "products.html",
+    "href": "products.html",
+    "title": "Products",
+    "section": "",
+    "text": "Interactive explorationTools for interactive clinical data exploration and visualization.tealInteractive analysis applications built from composable packages for data, filtering, and reporting.teal↗Tteal modulesReady-to-use modules for clinical and general data exploration.teal.modules.clinical↗teal.modules.general↗GgoshawkBiomarker analysis and visualization.goshawk↗teal.goshawk↗OospreySpecialized analysis and TLG modules.osprey↗teal.osprey↗hermesRNA-seq analysis and exploration.hermes↗teal.modules.hermes↗\nRegulatory reportingTools for analysis, tables, listings, figures, and clinical trial reporting.craneClinical trial tables and summaries, extending the gtsummary package.crane↗cardsAnalysis results data (ARDs) in the CDISC standard, with tools to extend them.cards↗cardx↗rtablesBuild and format reporting tables with R.rtables↗formatters↗rlistings↗ternTable, listing, and graph (TLG) library for common clinical trial outputs.tern↗tern.mmrm↗tern.rbmi↗tern.gee↗\nCatalogs and examplesReady-to-use examples and showcases across the NEST ecosystem.tlg-catalog↗biomarker-catalog↗ard-catalog↗teal.gallery↗"
+  },
+  {
+    "objectID": "community.html",
+    "href": "community.html",
+    "title": "Community",
+    "section": "",
+    "text": "Ask a question, share what you are building, or follow the discussion.\n\n\n\n\nThe home for discussion, questions, and collaboration across the NEST and pharmaverse ecosystem.\n\nJoin Slack ↗"
+  },
+  {
+    "objectID": "community.html#join-the-conversation",
+    "href": "community.html#join-the-conversation",
+    "title": "Community",
+    "section": "",
+    "text": "Ask a question, share what you are building, or follow the discussion.\n\n\n\n\nThe home for discussion, questions, and collaboration across the NEST and pharmaverse ecosystem.\n\nJoin Slack ↗"
+  },
+  {
+    "objectID": "community.html#working-groups",
+    "href": "community.html#working-groups",
+    "title": "Community",
+    "section": "Working groups",
+    "text": "Working groups\nCross-industry groups where companies work on NEST tools together.\n\n\n\nTeal Enhancements for Cross-Industry Adoption\nA PHUSE working group that helps enhance the teal framework by increasing its flexibility for use across pharmaceutical companies.\n\nLearn more ↗"
+  },
+  {
+    "objectID": "posts/2025-01-15-nest-admiral-test-data/index.html",
+    "href": "posts/2025-01-15-nest-admiral-test-data/index.html",
+    "title": "A collaborative triumph: Re-using test data between the NEST and admiral teams",
+    "section": "",
+    "text": "Originally published on the pharmaverse blog."
+  },
+  {
+    "objectID": "posts/2025-01-15-nest-admiral-test-data/index.html#introduction",
+    "href": "posts/2025-01-15-nest-admiral-test-data/index.html#introduction",
+    "title": "A collaborative triumph: Re-using test data between the NEST and admiral teams",
+    "section": "Introduction",
+    "text": "Introduction\nIn the dynamic world of clinical research, innovation and collaboration are key drivers of success. The NEST and {admiral} teams exemplify this through their groundbreaking packages. By leveraging open-source tools and fostering a community-driven approach, they have significantly advanced data integration and reporting methodologies in the clinical research setting. This story celebrates one of the first occasions in which the NEST and {admiral} were able to join forces and collaborate."
+  },
+  {
+    "objectID": "posts/2025-01-15-nest-admiral-test-data/index.html#who-are-the-nest-team",
+    "href": "posts/2025-01-15-nest-admiral-test-data/index.html#who-are-the-nest-team",
+    "title": "A collaborative triumph: Re-using test data between the NEST and admiral teams",
+    "section": "Who are the NEST Team?",
+    "text": "Who are the NEST Team?\nThe NEST team, an acronym for Next-Generation Exploratory and Standardized Tools, has pioneered a collection of open-sourced R packages designed to expedite insight generation under clinical research settings. Originating at Roche, NEST has attracted a diverse array of collaborators from academia, the pharmaceutical industry, and clinical research institutes, largely due to efforts like pharmaverse. Their mission is to accelerate clinical reporting and welcome contributions from the broader scientific community."
+  },
+  {
+    "objectID": "posts/2025-01-15-nest-admiral-test-data/index.html#who-are-the-admiral-team",
+    "href": "posts/2025-01-15-nest-admiral-test-data/index.html#who-are-the-admiral-team",
+    "title": "A collaborative triumph: Re-using test data between the NEST and admiral teams",
+    "section": "Who are the admiral team?",
+    "text": "Who are the admiral team?\nFocused on a complementary goal, the {admiral} team is dedicated to providing an open-source, modularized toolbox for creating ADaM datasets in R. Their approach is transparent and collaborative, empowering users to co-create and refine a harmonized methodology for ADaM development across the pharmaceutical industry. The {admiral} team designs their tools to be user-friendly and versatile, capable of addressing a wide range of data requirements."
+  },
+  {
+    "objectID": "posts/2025-01-15-nest-admiral-test-data/index.html#setting-the-stage-for-collaboration",
+    "href": "posts/2025-01-15-nest-admiral-test-data/index.html#setting-the-stage-for-collaboration",
+    "title": "A collaborative triumph: Re-using test data between the NEST and admiral teams",
+    "section": "Setting the Stage for Collaboration",
+    "text": "Setting the Stage for Collaboration\nOver a year ago, an opportunity for collaboration was identified within NEST and {admiral}. Indeed, the NEST team was reliant on simulated data for integration testing and powering of its TLG Catalog, which often lacked realism and failed to cover edge cases or expose software limitations. Through conversations within the pharmaverse, it was realized that some of these challenges could be addressed by switching to using the more realistic test data offered by the {pharmaverseadam} package (maintained by the {admiral} team). The source of the data within {pharmaverseadam} is the is real SDTM data published through the CDISC Test Data pilot, converted into ADaM by running the {admiral} template programs on it.\nThis potential pivot would beneficial for both teams. For one thing, it would allow the NEST team to achieve more realistic and comprehensive testing, thus enhancing the robustness of their development work. Simultaneously, it would mean that the {admiral} team would receive feedback from NEST about the robustness of both the {pharmaverseadam} datasets and the templates used to generate them."
+  },
+  {
+    "objectID": "posts/2025-01-15-nest-admiral-test-data/index.html#key-achievements",
+    "href": "posts/2025-01-15-nest-admiral-test-data/index.html#key-achievements",
+    "title": "A collaborative triumph: Re-using test data between the NEST and admiral teams",
+    "section": "Key Achievements",
+    "text": "Key Achievements\nThe following months were a period of collaboration for the two teams as this switch was enacted. Numerous achievements were identified:\n\nRealistic Data Integration: Transitioning from simulated to more realistic data provided the NEST team with more accurate and relevant testing conditions. This change was crucial in identifying and rectifying potential software limitations.\nScope and Dependency Management: Both teams agreed to avoid creating strong interdependencies that could extend release cycles. NEST packages maintained minimal data for documentation purposes, while {admiral} preserved extensive datasets separately.\nCI Integration and Automation: On the NEST side, new CI integration tests ensured that template updates were automatically verified against stored {pharmaverseadam} datasets. This maintained consistency and allowed developers to identify intended changes promptly.\nStrategic Pipelines: A pipeline was established in {pharmaverseadam} so that any updates to the {pharmaversesdtm} source datasets and/or the {admiral} template scripts can trigger an update to {pharmaverseadam}."
+  },
+  {
+    "objectID": "posts/2025-01-15-nest-admiral-test-data/index.html#recent-developments",
+    "href": "posts/2025-01-15-nest-admiral-test-data/index.html#recent-developments",
+    "title": "A collaborative triumph: Re-using test data between the NEST and admiral teams",
+    "section": "Recent Developments",
+    "text": "Recent Developments\nThe collaboration bore fruit as the teams uncovered critical insights and improvements. For instance, using the {pharmaverseadam} data in the {scda.test} package helped the NEST team identify and correct issues in their table template development, specifically in calculating denominator values. The realistic test data also revealed minor inconsistencies in the derivation of ECG data within the {admiral} templates, which were promptly addressed, enhancing data quality."
+  },
+  {
+    "objectID": "posts/2025-01-15-nest-admiral-test-data/index.html#conclusion",
+    "href": "posts/2025-01-15-nest-admiral-test-data/index.html#conclusion",
+    "title": "A collaborative triumph: Re-using test data between the NEST and admiral teams",
+    "section": "Conclusion",
+    "text": "Conclusion\nThe collaboration between the NEST and {admiral} teams showcases the power of open-source initiatives and community-driven efforts such as the pharmaverse in advancing clinical research. By integrating realistic data and refining their testing processes, they have significantly enhanced the robustness and reliability of their tools. This partnership not only accelerates insight generation but also cultivates a culture of collaboration and innovation, benefiting the broader pharmaverse community.\nThe success of this collaboration highlights the profound impact of shared goals and collective innovation, paving the way for future advancements in clinical research methodologies and outcomes."
+  },
+  {
+    "objectID": "posts/2025-01-15-nest-admiral-test-data/index.html#acknowledgements",
+    "href": "posts/2025-01-15-nest-admiral-test-data/index.html#acknowledgements",
+    "title": "A collaborative triumph: Re-using test data between the NEST and admiral teams",
+    "section": "Acknowledgements",
+    "text": "Acknowledgements\nWe would like to thank the following people for their support during this project:\n\nDaphne Grasselly for establishing the automated CI refresh pipeline in {pharmaverseadam}, and Kangjie Zhang for leading the {pharmaverseadam} team in 2024.\nBen Straub, Stefan Bundfuss, Zelos Zhu, Ross Farrugia and Jeff Dickinson for their support from the {admiral} side.\nLeena Khatri and Emily de la Rua for support from the NEST side."
+  },
+  {
+    "objectID": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html",
+    "href": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html",
+    "title": "Roche Open-Source TLG Packages Move to pharmaverse",
+    "section": "",
+    "text": "Originally published on the pharmaverse blog.\nWritten on behalf of the NEST team.\nOver the past few months, we have reached an important milestone in our open-source journey: transitioning key clinical reporting and exploratory analysis R packages from the insightsengineering GitHub organization into the pharmaverse.\nThe recent migration of the {teal} framework marks another step in this transition, bringing these framework packages under pharmaverse governance."
+  },
+  {
+    "objectID": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#why-the-move-to-pharmaverse",
+    "href": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#why-the-move-to-pharmaverse",
+    "title": "Roche Open-Source TLG Packages Move to pharmaverse",
+    "section": "Why the Move to pharmaverse?",
+    "text": "Why the Move to pharmaverse?\nWhen we initially incubated these packages under insightsengineering, our primary goal was to modernize clinical reporting workflows and pioneer reproducible, interactive data exploration. However, open source in the pharmaceutical industry is at its most powerful when built with the community, not just for it.\nMoving these packages directly under the pharmaverse organization:\n\nBreaks Down Barriers to Collaboration: Moving beyond decision-making led by a single organization allows other companies and community contributors to help shape priorities, roadmaps, and development.\nHarmonizes the Ecosystem: Consolidating standard clinical data manipulation, table creation, and exploration tools into a unified organization makes it easier for teams across industry sponsors and CROs to adopt, contribute to, and integrate tools.\nFosters Long-Term Sustainability: It paves the way for joint ownership, core co-maintainership, and broader industry governance across life-science data science stacks."
+  },
+  {
+    "objectID": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#what-packages-have-migrated",
+    "href": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#what-packages-have-migrated",
+    "title": "Roche Open-Source TLG Packages Move to pharmaverse",
+    "section": "What Packages Have Migrated?",
+    "text": "What Packages Have Migrated?\nThe transition has taken place gradually over the past several months and includes foundational packages spanning tabular reporting, clinical analysis modules, and interactive exploration:\n\nReporting & Tabulation Foundation:\n\nformatters — Core rendering engine for ASCII and rich-text table layouts.\nrtables — Tabular summaries and complex multi-level layout generation.\nrlistings — Clinical listings supporting pagination and display formatting.\ncards & cardx — Analysis results datasets (ARDs) creation and statistical helper utilities.\n\nAnalysis & Automation Modules:\n\ntern — Standard clinical trial summary tables, figures, and listings (TLGs).\nautoslider.core — Automated presentation/slide generation engines.\n\nInteractive Exploration ({teal} ecosystem):\n\nThe entire suite of {teal} framework core packages (including teal, teal.code, teal.data, teal.widgets, teal.reporter, teal.slice, teal.logger, teal.picks)."
+  },
+  {
+    "objectID": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#what-changes-for-users-and-developers",
+    "href": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#what-changes-for-users-and-developers",
+    "title": "Roche Open-Source TLG Packages Move to pharmaverse",
+    "section": "What Changes for Users and Developers?",
+    "text": "What Changes for Users and Developers?\n\nCRAN / Release Users: Zero breaking changes. The repository move does not change existing released package versions. If you install these versions via CRAN or an internal mirror, no changes to your R code are required as a result of the move.\nGitHub Remotes & Dev Versions: GitHub automatically handles redirection for repository moves, but we recommend updating your development remotes and remotes::install_github() / pak::pkg_install() references from insightsengineering/&lt;pkg&gt; to pharmaverse/&lt;pkg&gt;:\n\npak::pkg_install(\"pharmaverse/teal\")\npak::pkg_install(\"pharmaverse/rtables\")\n\nContributing & Issue Tracking: For the migrated packages, all active issue trackers, feature requests, and discussions are now centralized under pharmaverse/&lt;repo&gt;. You are welcome to submit PRs, suggest features, or report bugs directly there."
+  },
+  {
+    "objectID": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#looking-ahead",
+    "href": "posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html#looking-ahead",
+    "title": "Roche Open-Source TLG Packages Move to pharmaverse",
+    "section": "Looking Ahead",
+    "text": "Looking Ahead\nAs these packages become part of pharmaverse, we look forward to broader participation and shared stewardship across the community. We welcome contributions from companies and individuals to help shape their direction and support their continued development."
+  }
+]

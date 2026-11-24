@@ -1,539 +1,899 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>NEST</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- owl carousel style -->
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css" />
-      <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <link rel="stylesheet" href="css/timeline.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
-      <!-- owl stylesheets --> 
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-      <link rel="stylesheet" href="css/owl.theme.default.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-   </head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
-   <body>
-      <!--header section start -->
-      <div class="header_section header_bg">
-         <div class="container">
-            <a class="logo" href="index.html"><img src="images/logo.png"></a>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-               <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="about.html">About</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="blog.html">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="contribute.html">Contribute</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="learn.html">Learn</a>
-                  </li>
-               </ul>
-            </nav>
-         </div>
-      </div>
-      <!--header section end -->
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
 
-      <!--about section start -->
-      <div class="about_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-7">
-                  <video controls width="600" autoplay muted loop style='border: 1px solid #000;'><source src="video/subtitled_video.mp4" type="video/mp4"></video>
-               </div>
-               <div class="col-md-5">
-                  <h1 class="about_taital"><span class="nest_text">NEST</span><em> &nbsp;Accelerating Clinical Reporting</em></h1>
-                  <p class="about_text">NEST is a collection of open-sourced R packages, which enables faster and more efficient insights generation under clinical 
-                     research settings, for both exploratory and regulatory purposes.</p>
-                  <p class="about_text">NEST was originally developed at Roche. Since open-sourced, it has attracted many collaborators 
-                     through efforts such as <u><a href="https://pharmaverse.org/" target="_blank">pharmaverse</a></u>. With the vision of accelerating clinical reporting, 
-                     we welcome new collaborators from academia, pharmaceutical industry, as well as clinical research institutes.</p> 
-               </div>
-            </div>
-            <div class="row">
-               <div class="offset-md-1"></div>
-               <div class="col-md-2">
-                  <div class="read_bt_1"><a href="about.html">More about NEST</a></div>
-               </div>
-               <div class="offset-md-2"></div>
-               <div class="col-md-2">
-                  <div class="read_bt_1"><a href="learn.html">Use NEST</a></div>
-               </div>
-               <div class="offset-md-2"></div>
-               <div class="col-md-2">
-                  <div class="read_bt_1"><a href="https://github.com/insightsengineering" target="_blank">NEST on GitHub</a></div>
-               </div>
-            </div> 
-         </div>
-      </div>
-      <!--about section end -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-      <!-- product section start -->
-      <div class="product_section">
-         <div class="container">
-            <!-- product carousel intro text -->
-            <h1 class="product_taital"><span class="nest_text">NEST</span> Products</h1>
-            <p class="product_text">Packages and products under NEST cover a variety of needs for clinical reporting, ranging from 
-               generation of regulatory-required tables, listings and graphs (TLGs), to creation of interactive dashboard for data exploration.
-            </p>
-            <!-- product carousel slider details-->
-            <div id="my_slider" class="carousel slide" data-ride="carousel">
-               <div class="carousel-inner">            
-                  <!-- Carousel Item: rtables -->
-                  <div class="carousel-item active">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-1"></div>
-                           <div class="col-md-10">
-                              <div class="carousel_row">
-                                 <div class="carousel-left">
-                                    <h4 class="carousel_taital">rtables</h4>
-                                    <p class="carousel_text">A package creating and displaying complex tables in R</p>
-                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/rtables/latest-release/" target="_blank">Learn More</a></div>
-                                 </div>
-                                 <div class="carousel-middle"></div>
-                                 <div class="carousel-right">
-                                    <div><img src="images/rtables.png"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Carousel Item: tern -->
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-1"></div>
-                           <div class="col-md-10">
-                              <div class="carousel_row">
-                                 <div class="carousel-left">
-                                    <h4 class="carousel_taital">tern</h4>
-                                    <p class="carousel_text">An R package built for conducting statistical analyses in clinical trials</p>
-                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/tern/latest-tag/" target="_blank">Learn More</a></div>
-                                 </div>
-                                 <div class="carousel-middle"></div>
-                                 <div class="carousel-right">
-                                    <div><img src="images/tern.png"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>                  
-                  <!-- Carousel Item: rlistings -->
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-1"></div>
-                           <div class="col-md-10">
-                              <div class="carousel_row">
-                                 <div class="carousel-left">
-                                    <h4 class="carousel_taital">rlistings</h4>
-                                    <p class="carousel_text">A package creating and displaying clinical data listings in R</p>
-                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/rlistings/latest-tag/" target="_blank">Learn More</a></div>
-                                 </div>
-                                 <div class="carousel-middle"></div>
-                                 <div class="carousel-right">
-                                    <div><img src="images/rlistings.png"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>    
-                  <!-- Carousel Item: TLG Catalog -->
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-1"></div>
-                           <div class="col-md-10">
-                              <div class="carousel_row">
-                                 <div class="carousel-left">
-                                    <h4 class="carousel_taital">TLG Catalog</h4>
-                                    <p class="carousel_text">A catalog of Tables, Listings and Graphs created with NEST packages</p>
-                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/tlg-catalog/" target="_blank">Learn More</a></div>
-                                 </div>
-                                 <div class="carousel-middle"></div>
-                                 <div class="carousel-right">
-                                    <div><img src="images/TLG Catalog.png"></div> 
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>     
-                  <!-- Carousel Item: Biomarker Catalog -->
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-1"></div>
-                           <div class="col-md-10">
-                              <div class="carousel_row">
-                                 <div class="carousel-left">
-                                    <h4 class="carousel_taital">Biomarker Catalog</h4>
-                                    <p class="carousel_text">A catalog of TLGs focusing on biomarker analyses in clincal analyses</p>
-                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/biomarker-catalog/" target="_blank">Learn More</a></div>
-                                 </div>
-                                 <div class="carousel-middle"></div>
-                                 <div class="carousel-right">
-                                    <div><img src="images/Biomarker Catalog.png"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Carousel Item: teal -->
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-1"></div>
-                           <div class="col-md-10">
-                              <div class="carousel_row">
-                                 <div class="carousel-left">
-                                    <h4 class="carousel_taital">teal</h4>
-                                    <p class="carousel_text">A modularized RShiny-based interactive data exploration framework</p>
-                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/teal/latest-tag/" target="_blank">Learn More</a></div>
-                                 </div>
-                                 <div class="carousel-middle"></div>
-                                 <div class="carousel-right">
-                                    <div><img src="images/teal.png"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>  
-                  <!-- Carousel Item: teal.gallery -->
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-1"></div>
-                           <div class="col-md-10">
-                              <div class="carousel_row">
-                                 <div class="carousel-left">
-                                    <h4 class="carousel_taital">teal.gallery</h4>
-                                    <p class="carousel_text">A gallery displaying various example teal apps</p>
-                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/teal.gallery/demo.html" target="_blank">Learn More</a></div>
-                                 </div>
-                                 <div class="carousel-middle"></div>
-                                 <div class="carousel-right">
-                                    <div><img src="images/teal.gallery.png"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>                                                 
-                  <!-- Carousel Item: formatters -->
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-1"></div>
-                           <div class="col-md-10">
-                              <div class="carousel_row">
-                                 <div class="carousel-left">
-                                    <h4 class="carousel_taital">formatters</h4>
-                                    <p class="carousel_text">A package dealing with headers, footnotes, and pagination in R</p>
-                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/formatters/latest-tag/" target="_blank">Learn More</a></div>
-                                 </div>
-                                 <div class="carousel-middle"></div>
-                                 <div class="carousel-right">
-                                    <div><img src="images/formatters.png"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>                                            
-                  <!-- Carousel Item: scda -->
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="row">
-                           <div class="col-md-1"></div>
-                           <div class="col-md-10">
-                              <div class="carousel_row">
-                                 <div class="carousel-left">
-                                    <h4 class="carousel_taital">scda</h4>
-                                    <p class="carousel_text">An R package creating synthetic CDISC analysis data</p>
-                                    <div class="carousel_read_bt"><a href="https://insightsengineering.github.io/scda/latest-tag/" target="_blank">Learn More</a></div>
-                                 </div>
-                                 <div class="carousel-middle"></div>
-                                 <div class="carousel-right">
-                                    <div><img src="images/scda.png"></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>                                                                                                     
-               </div>
-               <!-- carousel slider buttons -->
-               <div>
-                  <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-                  <i class=""><img src="images/left-arrow.png" width="100%"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-                  <i class=""><img src="images/right-arrow.png" width="100%"></i>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- product section end -->
 
-      <!-- interative timeline starts-->
-      <section class="timeline" style="padding-top: 60px;padding-bottom: 60px;">
-         <!-- add timeline info/intro -->
-         <div class="info">
-           <h1 class="timeline_taital"><span class="nest_text">NEST</span> Timeline</h1>
-           <br>
-           <p class="timeline_text" style="text-align: left;">Here, you can learn about important milestones NEST has achieved so far, and get a preview of key products and features 
-            that will become available in the near future.
-           </p>
-         </div>      
-         <!-- add timeline details -->
-         <ol>
-           <li>
-             <div>
-               <time>2017 Q1</time> The first PoC version of <u><a href="https://insightsengineering.github.io/teal/latest-tag/" target="_blank">{teal}</a></u> was launched. {teal} is one of the key and foundational components that later formed the NEST project.
-             </div>
-           </li>
-           <li>
-             <div>
-               <time>2017 Q4 ~ 2018 Q1</time> <u><a href="https://insightsengineering.github.io/rtables/latest-release/" target="_blank">{rtables}</a></u> PoC was presented at BaselR event, followed by the launch of first versions of {rtables}, {tern}, {teal.oncology}, {random.cdisc.data}.
-             </div>
-           </li>
-           <li>
-             <div>
-               <time>2018 Q3</time> Workshop on {rtables} and numerous talks about NEST were presented at the first <u><a href="https://rinpharma.com/event/" target="_blank">RinPharma</a></u> conference.
-             </div>
-           </li>
-           <li>
-             <div>
-               <time>2019 Q1</time> NEST project got funded at Roche PD Data Sciences (formally Biometrics). A team of full time developers was established.
-             </div>
-           </li>
-           <li>
-             <div>
-               <time>2019 Q2</time> The first official release of NEST packages and TLG-Catalog to the Roche internal exploratory computing environment.
-             </div>
-           </li>
-           <li>
-             <div>
-               <time>2020 Q2</time> NEST packages successfully went through the internal validation process and was allowed to be used in the regulatory computing environment.
-             </div>
-           </li>
-           <li>
-             <div>
-               <time>2021 Q1 ~ Q3</time> The first CRAN release of {rtables}, followed by open source of the codebase which kicked off collaborations with other pharma companies.
-             </div>
-           </li>
-           <li>
-             <div>
-               <time>2022 Q1</time> NEST project was internally recognised by winning the Roche PD Breakthrough Award, and it was used to support the first R-based submission to FDA.
-             </div>
-           </li>
-           <li>
-             <div>
-               <time>2022 Q2 ~ Q3</time> <u><a href="https://insightsengineering.github.io/formatters/latest-tag/" target="_blank">{formatters}</a></u> and <u><a href="https://insightsengineering.github.io/tern/latest-tag/" target="_blank">{tern}</a></u> were released to CRAN, and a 
-               PoC version of <u><a href="https://insightsengineering.github.io/rlistings/latest-tag/" target="_blank">{rlistings}</a></u> was launched.
-             </div>
-           </li>
-           <li>
-             <div>
-               <time>2023 Q1 ~ Q2</time> - NEST was highlighted at various external events, including RConsortium Webinar, PHUSE US Event, and several UseR! Events. <br>
-               - <u><a href="https://insightsengineering.github.io/tlg-catalog/" target="_blank">TLG-Catalog</a></u> is open-sourced.
-             </div>
-           </li>
-           <li>
-             <div>
-               <time>Upcoming: 2023 Q3</time> The industry collaborative effort <u><a href="https://pharmaverse.github.io/falcon/" target="_blank">{falcon}</a></u>, which aims to promote harmonized TLG layouts for clinical reporting, is expected to be released to CRAN.
-            </div>
-           </li>
-           <li>
-             <div>
-               <time>Upcoming: 2023 Q4</time> - A CRAN release of {teal} is planned, with a redesigned and enhanced filter panel. <br> - {falcon} will be presented at PHUSE EU Event.
-             </div>
-           </li>
-           <li>
-             <div>
-               <time>Upcoming: 2024+</time> - Launch & open source the package {cardinal} for analysis result data (ARD) <br> - More exciting features in various NEST packages
-             </div>
-           </li>
-           <li></li>
-         </ol>
-       </section>
-      <!-- timeline ends-->
+<title>Home – NEST</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
 
-      <!--operating section start -->
-      <div class="operating_section">
-         <div class="container">
-            <h1 class="operating_taital">How <span class="nest_text">NEST</span> Operates</h1>
-            <p class="operating_text">A set of operating principles guide NEST team to keep innovating and delivering high-quality products to users.</p>
-            <div>
-               <div class="row">
-                  <div class="col-sm-4">
-                     <div class="icon_1"><img src="images/icon-user.png"></div>
-                     <h4 class="principle_text">User Centric</h4>
-                     <p class="principle_detail_text">NEST's development priorities are driven by our users needs and business benefits.</p>
-                  </div>
-                  <div class="col-sm-4">
-                     <div class="icon_1"><img src="images/icon-agile.png"></div>
-                     <h4 class="principle_text">Agile Development</h4>
-                     <p class="principle_detail_text">NEST is composed of four product teams, which all apply Scale Agile Framework in daily activities.</p>
-                     <div class="principle_read_bt"><a href="about.html">Learn More about NEST</a></div>
-                  </div>
-                  <div class="col-sm-4">
-                     <div class="icon_1"><img src="images/icon-collaborate.png"></div>
-                     <h4 class="principle_text">Collaborative</h4>
-                     <p class="principle_detail_text">NEST is an open-source project, which so far has attracted 100+ developers to collaborate.</p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!--operating section end -->
 
-      <!--blog section start -->
-      <!-- TO DO: Will update news section later -->
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-8fd075f0e1719df40a11dc8fd9787ce5.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
 
-      <!-- <div class="blog_section">
-         <div class="container">
-            <h1 class="blog_taital"><span class="nest_text">NEST</span> News</h1>
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="box_main">
-                     <div class="student_bg"><img src="images/img-3.png" class="student_bg"></div>
-                     <div class="image_15">19<br>Apr</div>
-                     <h4 class="post_title">There are many variations</h4>
-                     <p class="post_text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box_main">
-                     <div class="student_bg"><img src="images/img-4.png" class="student_bg"></div>
-                     <div class="image_15">19<br>Feb</div>
-                     <h4 class="post_title">There are many variations</h4>
-                     <p class="post_text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box_main">
-                     <div><img src="images/img-5.png" class="student_bg"></div>
-                     <div class="image_15">19<br>Jan</div>
-                     <h4 class="post_title">There are many variations</h4>
-                     <p class="post_text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div> -->
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-latest-news .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-categories','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      <!--blog section end -->
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-latest-news'] = new List('listing-latest-news', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+  </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/NEST.svg" alt="" class="navbar-logo light-content">
+    <img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/NEST.svg" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">NEST</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./products.html"> 
+<span class="menu-text">Products</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./news.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./community.html"> 
+<span class="menu-text">Community</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/insightsengineering"> 
+<span class="menu-text"><img class="nav-icon nav-icon-github" src="./assets/github.svg" alt="GitHub"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar" tabindex="-1">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+<!-- main -->
 
 
-      
-      <!--footer section start -->
-      <!-- TO DO: May need to update footer section later -->
-
-      <!-- <div class="footer_section layout_padding">
-         <div class="container">
-            <div class="address_main">
-               <div class="address_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_15">Loram Ipusm hosting web</span></a></div>
-               <div class="address_text"><a href="#"><img src="images/call-icon.png"><span class="padding_left_15">+7586656566</span></a></div>
-               <div class="address_text"><a href="#"><img src="images/mail-icon.png"><span class="padding_left_15">demo@gmail.com</span></a></div>
-            </div>
-            <div class="footer_section_2">
-               <div class="row">
-                  <div class="col-lg-3 col-sm-6">
-                     <h4 class="link_text">Useful link</h4>
-                     <div class="footer_menu">
-                        <ul>
-                           <li><a href="index.html">Home</a></li>
-                           <li><a href="about.html">About</a></li>
-                           <li><a href="services.html">Contribute</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <h4 class="link_text">web design</h4>
-                     <p class="footer_text">Lorem ipsum dolor sit amet, consectetur adipiscinaliquaL oreadipiscing </p>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <h4 class="link_text">social media</h4>
-                     <div class="social_icon">
-                        <ul>
-                           <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                           <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                           <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-                           <li><a href="#"><img src="images/youtub-icon.png"></a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-lg-3 col-sm-6">
-                     <h4 class="link_text">Our Branchs</h4>
-                     <p class="footer_text_1">Lorem ipsum dolor sit amet, consectetur adipiscinaliquaLoreadipiscing </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div> -->
-      <!--footer section end -->
-
-      <!--copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <p class="copyright_text">Copyright @2023 All Right Reserved</p>
-         </div>
-      </div>
-      <!--copyright section end -->
 
 
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-      <script src="js/timeline.js"></script>
-      <script src="js/owl.carousel.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
-      <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-      <script src="../../assets/js/vendor/popper.min.js"></script>
-      <script src="../../dist/js/bootstrap.min.js"></script>
-   </body>
-</html>
+<div class="hero">
+<img class="hero-waves" src="assets/hero-waves.svg" alt="" aria-hidden="true">
+<div class="hero-copy">
+<div class="eyebrow">
+<p>Open-source R packages for clinical research</p>
+</div>
+<section id="faster-reporting-clearer-insights" class="level1">
+<h1><span class="line"><span class="t">Faster Reporting</span></span> <span class="line accent"><span class="t sweep">Clearer Insights</span></span></h1>
+<p>Discover open-source R packages for clinical data, from interactive exploration to structured analysis results</p>
+<div class="actions">
+<p><a href="./products.html" class="btn-nest">Explore the tools <span class="arrow">→</span></a></p>
+</div>
+<div class="tagline">
+<p>Born at Roche. Built with pharmaverse.</p>
+</div>
+</section>
+</div>
+</div>
+<div class="products-band">
+<div class="band-head">
+<div>
+<div class="eyebrow">
+<p>Small tools. Shared possibilities.</p>
+</div>
+<section id="find-your-starting-point" class="level2">
+<h2 data-anchor-id="find-your-starting-point">Find your starting point</h2>
+<div class="band-intro">
+<p>Choose the right tool for your use case, from interactive exploration to structured analysis results and extended workflows.</p>
+</div>
+</section>
+</div>
+<div class="more">
+<p><a href="./products.html">See all products →</a></p>
+</div>
+</div>
+<div class="pc" role="region" aria-label="NEST products">
+<button class="pc-btn pc-prev" type="button" aria-label="Previous product"><span class="bi bi-chevron-left"></span></button>
+<div class="pc-track" tabindex="0">
+<div class="card-tool"><div class="head"><img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/teal.svg" alt="teal hex sticker"><div><div class="name">teal</div><div class="kind">Interactive exploration</div></div></div><div class="desc">Interactive analysis applications built from composable packages for data, filtering, and reporting.</div><a class="go" href="https://pharmaverse.github.io/teal/" target="_blank" rel="noopener">Explore teal ↗</a></div>
+<div class="card-tool"><div class="head"><img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/crane.svg" alt="crane hex sticker"><div><div class="name">crane</div><div class="kind">Regulatory reporting</div></div></div><div class="desc">Clinical trial tables and summaries, extending the gtsummary package.</div><a class="go" href="https://insightsengineering.github.io/crane/" target="_blank" rel="noopener">Explore crane ↗</a></div>
+<div class="card-tool"><div class="head"><img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/cards.svg" alt="cards hex sticker"><div><div class="name">cards</div><div class="kind">Regulatory reporting</div></div></div><div class="desc">Analysis results data (ARDs) in the CDISC standard, with tools to extend them.</div><a class="go" href="https://pharmaverse.github.io/cards/" target="_blank" rel="noopener">Explore cards ↗</a></div>
+<div class="card-tool"><div class="head"><img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/rtables.svg" alt="rtables hex sticker"><div><div class="name">rtables</div><div class="kind">Regulatory reporting</div></div></div><div class="desc">Build and format reporting tables with R.</div><a class="go" href="https://pharmaverse.github.io/rtables/" target="_blank" rel="noopener">Explore rtables ↗</a></div>
+<div class="card-tool"><div class="head"><img src="https://raw.githubusercontent.com/insightsengineering/hex-stickers/main/SVG/tern.svg" alt="tern hex sticker"><div><div class="name">tern</div><div class="kind">Regulatory reporting</div></div></div><div class="desc">Table, listing, and graph (TLG) library for common clinical trial outputs.</div><a class="go" href="https://pharmaverse.github.io/tern/" target="_blank" rel="noopener">Explore tern ↗</a></div>
+</div>
+<button class="pc-btn pc-next" type="button" aria-label="Next product"><span class="bi bi-chevron-right"></span></button>
+</div>
+<script>
+// Move the product row by exactly one card per click; the browser handles scrolling and snapping.
+(function () {
+  var track = document.querySelector('.pc-track');
+  if (!track) return;
+  var prev = document.querySelector('.pc-prev'), next = document.querySelector('.pc-next');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function step() {
+    var card = track.querySelector('.card-tool');
+    return card.getBoundingClientRect().width + (parseFloat(getComputedStyle(track).columnGap) || 0);
+  }
+  function update() {
+    prev.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+  }
+  function move(dir) {
+    track.scrollBy({ left: dir * step(), behavior: reduce ? 'auto' : 'smooth' });
+    setTimeout(update, 450); setTimeout(update, 900); // refresh the arrows once the scroll has settled
+  }
+  prev.addEventListener('click', function () { move(-1); });
+  next.addEventListener('click', function () { move(1); });
+  track.addEventListener('scroll', update, { passive: true });
+  track.addEventListener('scrollend', update);
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
+</div>
+<div class="news-band">
+<div class="band-head">
+<div>
+<div class="eyebrow">
+<p>Keep up with the ecosystem</p>
+</div>
+<section id="latest-from-nest" class="level2">
+<h2 data-anchor-id="latest-from-nest">Latest from NEST</h2>
+</section>
+</div>
+<div class="more">
+<p><a href="./news.html">All news →</a></p>
+</div>
+</div>
+<div id="listing-latest-news" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="QW5ub3VuY2VtZW50cw==" data-listing-date-sort="1793750400000" data-listing-file-modified-sort="1795557683457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="685">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2026-11-04-roche-appsilon-teal/index.html" class="no-external-icon">Roche and Appsilon Build on Their Collaboration to Support teal’s Continued Development</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QW5ub3VuY2VtZW50cw=='); return false;">Announcements</div>
+
+</div>
+<div class="listing-description">
+<a href="./posts/2026-11-04-roche-appsilon-teal/index.html" class="no-external-icon">
+<p>Following teal’s move to pharmaverse, Appsilon’s recognition as a core contributor and copyright holder marks the next step in an established partnership.</p>
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2026-11-04-roche-appsilon-teal/index.html" class="no-external-icon">
+<div class="listing-date">
+Nov 4, 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="QW5ub3VuY2VtZW50cw==" data-listing-date-sort="1793664000000" data-listing-file-modified-sort="1795557683457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="469">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html" class="no-external-icon">Roche Open-Source TLG Packages Move to pharmaverse</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QW5ub3VuY2VtZW50cw=='); return false;">Announcements</div>
+
+</div>
+<div class="listing-description">
+<a href="./posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html" class="no-external-icon">
+<p>Key clinical reporting and exploration packages, including {rtables}, {tern} and the {teal} framework, have moved from insightsengineering to the pharmaverse GitHub organization. Here is why, and what it means for you.</p>
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2026-11-03-tlg-packages-move-to-pharmaverse/index.html" class="no-external-icon">
+<div class="listing-date">
+Nov 3, 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="UmVsZWFzZXM=" data-listing-date-sort="1791849600000" data-listing-file-modified-sort="1795557683457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="245">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2026-10-13-teal-modules-releases/index.html" class="no-external-icon">New releases: teal.modules.general 0.9.0 and teal.modules.clinical 0.14.0</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVsZWFzZXM='); return false;">Releases</div>
+
+</div>
+<div class="listing-description">
+<a href="./posts/2026-10-13-teal-modules-releases/index.html" class="no-external-icon">
+<p>Two teal module packages have new versions. teal.modules.clinical moves to teal.picks for selecting data, and teal.modules.general fixes several plotting and data issues.</p>
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2026-10-13-teal-modules-releases/index.html" class="no-external-icon">
+<div class="listing-date">
+Oct 13, 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="QW5ub3VuY2VtZW50cw==" data-listing-date-sort="1736899200000" data-listing-file-modified-sort="1795557683457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="772">
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/2025-01-15-nest-admiral-test-data/index.html" class="no-external-icon">A collaborative triumph: Re-using test data between the NEST and admiral teams</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QW5ub3VuY2VtZW50cw=='); return false;">Announcements</div>
+
+</div>
+<div class="listing-description">
+<a href="./posts/2025-01-15-nest-admiral-test-data/index.html" class="no-external-icon">
+<p>This post describes one of the first joint efforts between the NEST and admiral teams, where test data from the pharmaverseadam package was used within the NEST framework.</p>
+</a>
+</div>
+</div>
+<div class="metadata">
+<a href="./posts/2025-01-15-nest-admiral-test-data/index.html" class="no-external-icon">
+<div class="listing-date">
+Jan 15, 2025
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+<div class="community-band">
+<img class="community-art" src="assets/community.png" alt="" aria-hidden="true">
+<section id="built-together.-shared-openly." class="level3 community-copy">
+<h3 data-anchor-id="built-together.-shared-openly.">Built together. Shared openly.</h3>
+<p>Explore the code, ask a question, or help shape what comes next.</p>
+</section>
+<p><a href="./community.html" class="btn-nest">Join the community</a></p>
+</div>
+
+
+
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>NEST · Open-source tools for clinical research</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><a href="https://github.com/insightsengineering">Open source on GitHub ↗</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

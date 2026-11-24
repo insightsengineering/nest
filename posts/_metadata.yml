@@ -1,0 +1,2 @@
+# Applies to every post: show the title banner (styled in theme/nest.scss).
+title-block-banner: true
